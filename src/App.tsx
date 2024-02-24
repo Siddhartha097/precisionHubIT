@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import Box from "./components/Box";
 import { Button } from "./components/ui/button";
 
@@ -44,7 +46,7 @@ const App = () => {
 
             {/* title and description */}
             <h1 className="text-4xl font-bold tracking-wide">Transforming Ideas into Powerful Solutions</h1>
-            <p className="text-sm tracking-wide font-medium">
+            <p className="text-sm tracking-wide">
               We provide cutting-edge software solutions that drive innovation and empower businesses to succeed. Our team of experts combines creativity and technical expertise to deliver exceptional results.
             </p>
 
@@ -63,9 +65,9 @@ const App = () => {
             </div>
 
             {/* buttons */}
-            <div className="space-x-5">
-              <Button className="bg-transparent text-black font-bold border-2 border-black rounded-none p-6 hover:bg-neutral-200">Learn More</Button>
-              <Button className="p-6 rounded-none border-transparent font-bold" variant={'outline'}>Contact Us</Button>
+            <div className="space-x-4">
+              <Button className="bg-transparent text-black font-semibold border-2 border-black rounded-none p-6 hover:bg-neutral-200">Learn More</Button>
+              <Link to={'#'} className="p-6 rounded-none border-transparent font-semibold">Contact Us </Link>
             </div>
 
           </div>
@@ -105,7 +107,7 @@ const App = () => {
             <h1 className="text-3xl font-bold">
               Unlock the full potential of your business with our powerful software solutions.
             </h1>
-            <p className="">
+            <p className="text-neutral-500 font-medium">
               Our software solutions are designed to streamline your operations, increase efficiency, and drive growth. Experience the difference today.
             </p>
           </div>
@@ -118,7 +120,36 @@ const App = () => {
         </section>
 
         {/* 6th */}
-        <section></section>
+        <section className="flex items-center justify-between gap-10">
+          <Box 
+            label="Streamline your workflow
+            with our software"
+            desc="Our software provides a step-by-step guide on how to integrate it into your workflow, easy to implement and use."
+            className="flex flex-col items-center justify-center space-y-5 text-center w-1/3"
+            titleSize="text-3xl"
+            iconSize={40}
+            descSize="text-base"
+            isBtn
+          />
+          <Box 
+            label="Increase productivity with our intuitive software"
+            desc="Our software is designed to simplify complex tasks, allowing you to focus on what matters most."
+            className="flex flex-col items-center justify-center space-y-5 text-center w-1/3"
+            titleSize="text-3xl"
+            iconSize={40}
+            descSize="text-base"
+            isBtn
+          />
+          <Box 
+            label="Optimize your workflow with our powerful software"
+            desc="Our software offers advanced features and tools to streamline your processes and boost efficiency."
+            className="flex flex-col items-center justify-center space-y-5 text-center w-1/3"
+            titleSize="text-3xl"
+            iconSize={40}
+            descSize="text-base"
+            isBtn
+          />
+        </section>
 
         {/* 7th */}
         <section></section>
@@ -131,7 +162,7 @@ const App = () => {
 
         {/* 10th */}
         <section></section>
-        
+
     </main>
   )
 }
