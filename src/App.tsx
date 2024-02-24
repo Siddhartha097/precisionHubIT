@@ -1,28 +1,43 @@
-import Box from "./components/Box"
-import { Button } from "./components/ui/button"
+import Box from "./components/Box";
+import { Button } from "./components/ui/button";
 
+
+const Features = [
+  {
+    label: "Powerful Software Solutions",
+    para: "Our software provides advanced features and benefits to help you streamline your workflow and achieve your goals.",
+  },
+  {
+    label: "User-Friendly Interface",
+    para: "Our software is designed with a user-friendly interface, making it easy for anyone to navigate and use.",
+  },
+  {
+    label: "Seamless Integration",
+    para: "Our software seamlessly integrates with other tools and systems, allowing you to work efficiently and effectively.",
+  },
+];
 
 const App = () => {
   return (
     <main className="p-14 space-y-10">
-      
+
         {/* 1st */}
-        <div className="flex flex-col items-center justify-center space-y-6">
+        <section className="flex flex-col items-center justify-center space-y-6">
           <h1 className="text-7xl font-bold text-center">Transforming businesses <div className="p-2" /> with innovative software <div className="p-2" /> solutions</h1>
           <p className="text-center">Welcome to our company, where we create cutting-edge software solutions to help businesses <div className="p-1" /> thrive in the digital age.</p>
           <div className="space-x-6">
             <Button className="rounded-none border border-black" variant={'outline'}>Learn More</Button>
             <Button className="rounded-none">Sign Up</Button>
           </div>
-        </div>
+        </section>
 
         {/* 2nd */}
-        <div className="w-full px-16 py-10 flex items-center justify-center">
+        <section className="w-full px-16 py-10 flex items-center justify-center">
           <img className="object-contain shadow-md rounded-lg" src="https://images.unsplash.com/photo-1604328698692-f76ea9498e76?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="hero" />
-        </div>
+        </section>
 
         {/* 3rd */}
-        <div className="flex items-center justify-between space-x-8">
+        <section className="flex items-center justify-between space-x-8">
 
           {/* non-image */}
           <div className="space-y-8 w-1/2">
@@ -60,9 +75,30 @@ const App = () => {
             <img className="rounded-md shadow-md" src="https://images.unsplash.com/photo-1708614896043-9ff9d03d641d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="hero" />
           </div>
 
-        </div>
-        {/* 4th */}
+        </section>
 
+        {/* 4th */}
+        <section className="flex items-center justify-between space-x-10">
+
+          {/* Image */}
+          <div className="w-1/2">
+            <img className="rounded-md shadow-md scale-95 transition-all hover:scale-100" src="https://images.unsplash.com/photo-1708556863286-16a9ada29871?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="feature" />
+          </div>
+
+          {/* Features */}
+          <div className="w-1/2 space-y-10">
+            {Features.map(feature =>(
+              <div className="space-y-5" key={feature.label}>
+                <h1 className="text-3xl font-bold">{feature.label}</h1>
+                <p className="text-sm font-medium">{feature.para}</p>
+              </div>
+            ))}
+          </div>
+
+        </section>
+
+        {/* 5th */}
+        <section></section>
     </main>
   )
 }
