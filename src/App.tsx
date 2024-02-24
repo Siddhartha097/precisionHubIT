@@ -78,7 +78,7 @@ const App = () => {
         </section>
 
         {/* 4th */}
-        <section className="flex items-center justify-between space-x-10">
+        <section className="flex items-center justify-between gap-20">
 
           {/* Image */}
           <div className="w-1/2">
@@ -90,7 +90,7 @@ const App = () => {
             {Features.map(feature =>(
               <div className="space-y-5" key={feature.label}>
                 <h1 className="text-3xl font-bold">{feature.label}</h1>
-                <p className="text-sm font-medium">{feature.para}</p>
+                <p className="">{feature.para}</p>
               </div>
             ))}
           </div>
@@ -98,7 +98,40 @@ const App = () => {
         </section>
 
         {/* 5th */}
+        <section className="flex items-center justify-around gap-16">
+
+          {/* non-image */}
+          <div className="w-1/3 space-y-5">
+            <h1 className="text-3xl font-bold">
+              Unlock the full potential of your business with our powerful software solutions.
+            </h1>
+            <p className="">
+              Our software solutions are designed to streamline your operations, increase efficiency, and drive growth. Experience the difference today.
+            </p>
+          </div>
+
+          {/* image */}
+          <div className="w-1/2">
+            <img className="rounded-lg shadow-md scale-95 hover:scale-100 transition-all" src="https://images.unsplash.com/photo-1708704974484-3ca56db9384f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="room" />
+          </div>
+
+        </section>
+
+        {/* 6th */}
         <section></section>
+
+        {/* 7th */}
+        <section></section>
+
+        {/* 8th */}
+        <section></section>
+
+        {/* 9th */}
+        <section></section>
+
+        {/* 10th */}
+        <section></section>
+        
     </main>
   )
 }
