@@ -38,7 +38,7 @@ const Supports = [
 
 const App = () => {
   return (
-    <main className="p-14 space-y-10">
+    <main className="p-14 space-y-16">
 
         {/* 1st */}
         <section className="flex flex-col items-center justify-center space-y-6">
@@ -255,9 +255,21 @@ const App = () => {
         <section>
           <img className="rounded-lg scale-90 hover:scale-95 transition-all" src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
         </section>
+        
+        <Separator className="my-10" />
 
         {/* 10th */}
-        <section></section>
+        <section className="space-y-7 text-center">
+          <h1 className="text-5xl font-bold">Take Your Business Further</h1>
+          <p className=" font-medium">Discover our innovative solutions and boost your productivity today.</p>
+          <div className="flex items-center justify-center space-x-4">
+            <Button className="rounded-none border p-6 border-black hover:bg-black hover:text-white" variant={'outline'}>Contact Sales</Button>
+            <Separator orientation="vertical" />
+            <Button  className="p-6 rounded-none hover:bg-black/70">Sign Up</Button>
+          </div>
+        </section>
+
+        {/* <Separator className="my-10" /> */}
 
     </main>
   )
