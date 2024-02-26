@@ -10,11 +10,11 @@ const Navbar = () => {
             </header>
 
             <header className="flex items-center justify-between space-x-8">
-                <ul className="flex items-center justify-between space-x-8 font-semibold">
-                    <Link to={'#'}><li>Home</li></Link>
-                    <Link to={'#'}><li>Solutions</li></Link>
-                    <Link to={'#'}><li>Research</li></Link>
-                    <Link to={'#'}><li>Portfolio</li></Link>
+                <ul className="flex items-center justify-between space-x-8 font-semibold ">
+                    <Link className="hover:text-purple-500 transition-all" to={'#'}><li>Home</li></Link>
+                    <Link className="hover:text-purple-500 transition-all" to={'#'}><li>Solutions</li></Link>
+                    <Link className="hover:text-purple-500 transition-all" to={'#'}><li>Research</li></Link>
+                    <Link className="hover:text-purple-500 transition-all" to={'#'}><li>Portfolio</li></Link>
                 </ul>
                 <div className="space-x-6">
                     <Button className="rounded-none border border-black" variant={'outline'}>Learn More</Button>
