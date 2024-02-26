@@ -19,6 +19,21 @@ const Features = [
   },
 ];
 
+const Supports = [
+  {
+    label: "Customization, Support, Training",
+    desc: "We offer additional services such as customization, support, and training to meet your specific needs. Our team of experts is here to assist you every step of the way."
+  },
+  {
+    label: "Customization Options",
+    desc: "We provide a wide range of customization options to tailor our software solutions to your unique requirements. Our team will work closely with you to ensure that the final product meets your expectations."
+  },
+  {
+    label: "24/7 Support",
+    desc: "Our dedicated support team is available 24/7 to assist you with any technical issues or questions you may have. We are committed to providing prompt and reliable support to ensure your satisfaction."
+  },
+]
+
 const App = () => {
   return (
     <main className="p-14 space-y-10">
@@ -28,8 +43,8 @@ const App = () => {
           <h1 className="text-7xl font-bold text-center">Transforming businesses <div className="p-2" /> with innovative software <div className="p-2" /> solutions</h1>
           <p className="text-center">Welcome to our company, where we create cutting-edge software solutions to help businesses <div className="p-1" /> thrive in the digital age.</p>
           <div className="space-x-6">
-            <Button className="rounded-none border border-black" variant={'outline'}>Learn More</Button>
-            <Button className="rounded-none">Sign Up</Button>
+            <Button className="rounded-none border border-black hover:bg-black hover:text-white" variant={'outline'}>Learn More</Button>
+            <Button className="rounded-none hover:bg-black/70">Sign Up</Button>
           </div>
         </section>
 
@@ -66,7 +81,7 @@ const App = () => {
 
             {/* buttons */}
             <div className="space-x-4">
-              <Button className="bg-transparent text-black font-semibold border-2 border-black rounded-none p-6 hover:bg-neutral-200">Learn More</Button>
+              <Button className="bg-transparent text-black font-semibold border-2 hover:bg-black hover:text-white border-black rounded-none p-5">Learn More</Button>
               <Link to={'#'} className="p-6 rounded-none border-transparent font-semibold">Contact Us </Link>
             </div>
 
@@ -152,10 +167,60 @@ const App = () => {
         </section>
 
         {/* 7th */}
-        <section></section>
+        <section className="flex items-center justify-between space-x-8">
+
+          {/* image */}
+          <div className="w-1/2">
+            <img className="rounded-lg scale-95 hover:scale-100 transition-all" src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="support" />
+          </div>
+
+          {/* non-image */}
+          <div className="space-y-8">
+            {Supports.map(support => (
+              <div className="space-y-6">
+                <h1 className="text-3xl font-bold">{support.label}</h1>
+                <p className="text-sm font-medium text-neutral-500">{support.desc}</p>
+              </div>
+            ))}
+          </div>
+        </section>
 
         {/* 8th */}
-        <section></section>
+        <section className="flex items-center justify-between space-x-7">
+
+          {/* left */}
+          <div className="w-1/2">
+            <h1 className="text-5xl font-bold">
+              Transforming the way businesses operate with cutting-edge solutions
+            </h1>
+          </div>
+
+          {/* right */}
+          <div className="w-1/2 space-y-6">
+            <h3 className="font-medium">
+              With over a decade of experience, we have successfully delivered exceptional software solutions to clients worldwide. Our team of experts is dedicated to providing innovative and reliable products that meet the unique needs of each business.
+            </h3>
+            <div className="flex justify-between items-center">
+              <div className="space-y-2">
+                <h1 className="text-5xl font-bold">50%</h1>
+                <p className="text-neutral-600 font-medium">
+                  Increase in productivity for our clients
+                </p>
+              </div>
+              <div className="space-y-2">
+                <h1 className="text-5xl font-bold">50%</h1>
+                <p className="text-neutral-600 font-medium">
+                  Increase in productivity for our clients
+                </p>
+              </div>
+            </div>
+            <div className="font-medium space-x-5">
+              <Button className="border-2 border-black rounded-none p-5" variant={'outline'}>Learn More</Button>
+              <Link className="hover:text-purple-500" to={'#'}>Contact Us</Link>
+            </div>
+          </div>
+
+        </section>
 
         {/* 9th */}
         <section></section>

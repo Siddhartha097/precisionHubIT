@@ -24,8 +24,8 @@ const Box : React.FC<BoxProps>= ({
             <p className={`${descSize ? descSize : 'text-sm'} text-neutral-500 font-medium`}>{desc}</p>
             {isBtn && (
                 <div className="flex items-center justify-center gap-7">
-                    <Button className="rounded-none border-2 font-semibold border-black hover:bg-neutral-200" variant={'outline'}>Get started</Button>
-                    <Link className="font-semibold" to={'#'}>Learn More</Link>
+                    <Button className="rounded-none border-2 font-semibold border-black hover:bg-black hover:text-white" variant={'outline'}>Get started</Button>
+                    <Link className="font-semibold hover:text-neutral-500" to={'#'}>Learn More</Link>
                 </div>
             )}
         </main>
