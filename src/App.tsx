@@ -45,7 +45,7 @@ const App = () => {
           <h1 className="text-7xl font-bold text-center">Transforming businesses <div className="p-2" /> with innovative software <div className="p-2" /> solutions</h1>
           <p className="text-center">Welcome to our company, where we create cutting-edge software solutions to help businesses <div className="p-1" /> thrive in the digital age.</p>
           <div className="space-x-6">
-            <Button className="rounded-none border border-black hover:bg-black hover:text-white" variant={'outline'}>Learn More</Button>
+            <Button className="rounded-none border border-black hover:bg-purple-500 hover:text-white" variant={'outline'}>Learn More</Button>
             <Button className="rounded-none hover:bg-black/70">Sign Up</Button>
           </div>
         </section>
@@ -253,19 +253,27 @@ const App = () => {
 
         {/* 9th */}
         <section>
-          <img className="rounded-lg scale-90 hover:scale-95 transition-all" src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+          <img className="rounded-lg scale-90 shadow-md transition-all" src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
         </section>
         
         <Separator className="my-10" />
 
         {/* 10th */}
-        <section className="space-y-7 text-center">
-          <h1 className="text-5xl font-bold">Take Your Business Further</h1>
-          <p className=" font-medium">Discover our innovative solutions and boost your productivity today.</p>
-          <div className="flex items-center justify-center space-x-4">
-            <Button className="rounded-none border p-6 border-black hover:bg-black hover:text-white" variant={'outline'}>Contact Sales</Button>
-            <Separator orientation="vertical" />
-            <Button  className="p-6 rounded-none hover:bg-black/70">Sign Up</Button>
+        <section className="space-y-8 flex flex-col h-[70vh] items-center justify-between text-center">
+          <div className="space-y-6">
+            <h1 className="text-5xl font-bold">Take Your Business Further</h1>
+            <p className=" font-medium">Discover our innovative solutions and boost your productivity today.</p>
+            <div className="flex items-center justify-center space-x-4">
+              <Button className="rounded-none border p-6 border-black hover:bg-purple-600 hover:text-white" variant={'outline'}>Contact Sales</Button>
+              <Separator orientation="vertical" />
+              <Button  className="p-6 rounded-none hover:bg-black/70">Sign Up</Button>
+            </div>
+          </div>
+
+          <div className="space-y-6 text-center">
+            <h1 className="text-5xl font-bold">Stay Informed with Our Newsletter</h1>
+            <p>Subscribe to recieve updates, insights and industry news.</p>
+            
           </div>
         </section>
 
