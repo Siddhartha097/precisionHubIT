@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Box from "./components/Box";
 import { Button } from "./components/ui/button";
 import { Label } from "./components/ui/label";
+import { Separator } from "./components/ui/separator";
 
 
 const Features = [
@@ -49,10 +50,14 @@ const App = () => {
           </div>
         </section>
 
+        <Separator className="my-10" />
+
         {/* 2nd */}
         <section className="w-full px-16 py-10 flex items-center justify-center">
           <img className="object-contain shadow-md rounded-lg" src="https://images.unsplash.com/photo-1604328698692-f76ea9498e76?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="hero" />
         </section>
+
+        <Separator className="my-10" />
 
         {/* 3rd */}
         <section className="flex items-center justify-between space-x-8">
@@ -96,6 +101,8 @@ const App = () => {
 
         </section>
 
+        <Separator className="my-10" />
+
         {/* 4th */}
         <section className="flex items-center justify-between gap-20">
 
@@ -115,6 +122,8 @@ const App = () => {
           </div>
 
         </section>
+
+        <Separator className="my-10" />
 
         {/* 5th */}
         <section className="flex items-center justify-around gap-16">
@@ -136,6 +145,8 @@ const App = () => {
 
         </section>
 
+        <Separator className="my-10" />
+
         {/* 6th */}
         <section className="flex items-center justify-between gap-10">
           <Box 
@@ -148,6 +159,7 @@ const App = () => {
             descSize="text-base"
             isBtn
           />
+          <Separator orientation="vertical" />
           <Box 
             label="Increase productivity with our intuitive software"
             desc="Our software is designed to simplify complex tasks, allowing you to focus on what matters most."
@@ -157,6 +169,7 @@ const App = () => {
             descSize="text-base"
             isBtn
           />
+          <Separator orientation="vertical" />
           <Box 
             label="Optimize your workflow with our powerful software"
             desc="Our software offers advanced features and tools to streamline your processes and boost efficiency."
@@ -167,6 +180,8 @@ const App = () => {
             isBtn
           />
         </section>
+
+        <Separator className="my-10" />
 
         {/* 7th */}
         <section className="flex items-center justify-between space-x-8">
@@ -187,6 +202,8 @@ const App = () => {
           </div>
         </section>
 
+        <Separator className="my-10" />
+
         {/* 8th */}
         <section className="flex items-center justify-between space-x-7">
 
@@ -197,6 +214,8 @@ const App = () => {
               Transforming the way businesses operate with cutting-edge solutions
             </h1>
           </div>
+
+          
 
           {/* right */}
           <div className="w-1/2 space-y-8">
@@ -212,7 +231,7 @@ const App = () => {
                   Increase in productivity for our clients
                 </p>
               </div>
-
+              <Separator orientation="vertical" />
               <div className="space-y-2">
                 <h1 className="text-5xl font-bold">50%</h1>
                 <p className="text-neutral-600 font-medium">
@@ -230,9 +249,11 @@ const App = () => {
 
         </section>
 
+        <Separator className="my-10" />
+
         {/* 9th */}
         <section>
-          <img src="" alt="" />
+          <img className="rounded-lg scale-90 hover:scale-95 transition-all" src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
         </section>
 
         {/* 10th */}
