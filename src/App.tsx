@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 import Box from "./components/Box";
 import { Button } from "./components/ui/button";
+import { Label } from "./components/ui/label";
 
 
 const Features = [
@@ -60,8 +61,9 @@ const App = () => {
           <div className="space-y-8 w-1/2">
 
             {/* title and description */}
+            <Label htmlFor="text">Innovative</Label>
             <h1 className="text-4xl font-bold tracking-wide">Transforming Ideas into Powerful Solutions</h1>
-            <p className="text-sm tracking-wide">
+            <p className="text-sm font-medium text-neutral-500 tracking-wide">
               We provide cutting-edge software solutions that drive innovation and empower businesses to succeed. Our team of experts combines creativity and technical expertise to deliver exceptional results.
             </p>
 
@@ -189,33 +191,39 @@ const App = () => {
         <section className="flex items-center justify-between space-x-7">
 
           {/* left */}
-          <div className="w-1/2">
+          <div className="w-1/2 space-y-4">
+            <Label htmlFor="text">Innovative</Label>
             <h1 className="text-5xl font-bold">
               Transforming the way businesses operate with cutting-edge solutions
             </h1>
           </div>
 
           {/* right */}
-          <div className="w-1/2 space-y-6">
+          <div className="w-1/2 space-y-8">
             <h3 className="font-medium">
               With over a decade of experience, we have successfully delivered exceptional software solutions to clients worldwide. Our team of experts is dedicated to providing innovative and reliable products that meet the unique needs of each business.
             </h3>
+
             <div className="flex justify-between items-center">
+
               <div className="space-y-2">
                 <h1 className="text-5xl font-bold">50%</h1>
                 <p className="text-neutral-600 font-medium">
                   Increase in productivity for our clients
                 </p>
               </div>
+
               <div className="space-y-2">
                 <h1 className="text-5xl font-bold">50%</h1>
                 <p className="text-neutral-600 font-medium">
-                  Increase in productivity for our clients
+                  Reduction in operational costs for our clients
                 </p>
               </div>
+
             </div>
+
             <div className="font-medium space-x-5">
-              <Button className="border-2 border-black rounded-none p-5" variant={'outline'}>Learn More</Button>
+              <Button className="border-2 border-black rounded-none p-5 hover:bg-black hover:text-neutral-200 transition-all" variant={'outline'}>Learn More</Button>
               <Link className="hover:text-purple-500" to={'#'}>Contact Us</Link>
             </div>
           </div>
@@ -223,7 +231,9 @@ const App = () => {
         </section>
 
         {/* 9th */}
-        <section></section>
+        <section>
+          <img src="" alt="" />
+        </section>
 
         {/* 10th */}
         <section></section>
