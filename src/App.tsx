@@ -4,7 +4,69 @@ import Box from "./components/Box";
 import { Button } from "./components/ui/button";
 import { Label } from "./components/ui/label";
 import { Separator } from "./components/ui/separator";
+import { z } from 'zod';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { useForm } from "react-hook-form";
+import { Form, FormControl, FormField, FormItem, FormMessage } from "./components/ui/form";
+import { Input } from "./components/ui/input";
+import { Carousel, CarouselContent, CarouselItem} from "./components/ui/carousel";
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "./components/ui/collapsible";
+import { useState } from "react";
 
+const FormSchema = z.object({
+  email: z.string(),
+});
+
+const Locations = [
+  {
+    label: "Sydney",
+    imgSrc: 'https://images.unsplash.com/photo-1558329228-bebb840e134f?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    address: '123 sample st, Sydney NSW 2000 AU'
+  },
+  {
+    label: "New York",
+    imgSrc: 'https://images.unsplash.com/photo-1599374172782-2abc889e78ce?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    address: '123 sample st, New York NY 10000 USA'
+  },
+  {
+    label: "Kolkata",
+    imgSrc: 'https://images.unsplash.com/photo-1667208210604-3a4c452317bc?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    address: '123 sample st, Kolkata WB 70000 IN'
+  },
+  {
+    label: "Bengaluru",
+    imgSrc: 'https://images.unsplash.com/photo-1651991372794-b1fcaaf4d634?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    address: '123 sample st, Bengaluru KN 80000 IN'
+  },
+];
+
+const FAQs = [
+  {
+    title: 'How does it work?',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, aspernatur animi sit dolores labore dolor odio ad iste qui vero.',
+    
+  },
+  {
+    title: 'What are te benefits?',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, aspernatur animi sit dolores labore dolor odio ad iste qui vero.',
+
+  },
+  {
+    title: 'Is it customizable?',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, aspernatur animi sit dolores labore dolor odio ad iste qui vero.',
+
+  },
+  {
+    title: 'How can I get  support?',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, aspernatur animi sit dolores labore dolor odio ad iste qui vero.',
+
+  },
+  {
+    title: 'Is there a free trial?',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, aspernatur animi sit dolores labore dolor odio ad iste qui vero.',
+
+  },
+];
 
 const Features = [
   {
@@ -37,7 +99,27 @@ const Supports = [
 ]
 
 const App = () => {
+
+  const newsletter = useForm<z.infer<typeof FormSchema>>({
+    resolver: zodResolver(FormSchema),
+    defaultValues: {
+      email: "",
+    }
+  });
+
+  const onSubmit = (values: z.infer<typeof FormSchema>) => {
+    console.log(values);
+    
+  };
+
+  const [sign, setSign] = useState(false);
+
+  const changeSign = () => {
+    setSign(!sign);
+  };
+
   return (
+
     <main className="p-14 space-y-16">
 
         {/* 1st */}
@@ -107,12 +189,12 @@ const App = () => {
         <section className="flex items-center justify-between gap-20">
 
           {/* Image */}
-          <div className="w-1/2">
+          <div className="basis-1/2">
             <img className="rounded-md shadow-md scale-95 transition-all hover:scale-100" src="https://images.unsplash.com/photo-1708556863286-16a9ada29871?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="feature" />
           </div>
 
           {/* Features */}
-          <div className="w-1/2 space-y-10">
+          <div className="basis-1/2 space-y-10">
             {Features.map(feature =>(
               <div className="space-y-5" key={feature.label}>
                 <h1 className="text-3xl font-bold">{feature.label}</h1>
@@ -153,7 +235,7 @@ const App = () => {
             label="Streamline your workflow
             with our software"
             desc="Our software provides a step-by-step guide on how to integrate it into your workflow, easy to implement and use."
-            className="flex flex-col items-center justify-center space-y-5 text-center w-1/3"
+            className="flex flex-col items-center justify-center space-y-5 text-center basis-1/3"
             titleSize="text-3xl"
             iconSize={40}
             descSize="text-base"
@@ -163,7 +245,7 @@ const App = () => {
           <Box 
             label="Increase productivity with our intuitive software"
             desc="Our software is designed to simplify complex tasks, allowing you to focus on what matters most."
-            className="flex flex-col items-center justify-center space-y-5 text-center w-1/3"
+            className="flex flex-col items-center justify-center space-y-5 text-center basis-1/3"
             titleSize="text-3xl"
             iconSize={40}
             descSize="text-base"
@@ -173,7 +255,7 @@ const App = () => {
           <Box 
             label="Optimize your workflow with our powerful software"
             desc="Our software offers advanced features and tools to streamline your processes and boost efficiency."
-            className="flex flex-col items-center justify-center space-y-5 text-center w-1/3"
+            className="flex flex-col items-center justify-center space-y-5 text-center basis-1/3"
             titleSize="text-3xl"
             iconSize={40}
             descSize="text-base"
@@ -259,7 +341,7 @@ const App = () => {
         <Separator className="my-10" />
 
         {/* 10th */}
-        <section className="space-y-8 flex flex-col h-[70vh] items-center justify-between text-center">
+        <section className="space-y-8 flex flex-col h-screen items-center justify-between text-center">
           <div className="space-y-6">
             <h1 className="text-5xl font-bold">Take Your Business Further</h1>
             <p className=" font-medium">Discover our innovative solutions and boost your productivity today.</p>
@@ -273,11 +355,75 @@ const App = () => {
           <div className="space-y-6 text-center">
             <h1 className="text-5xl font-bold">Stay Informed with Our Newsletter</h1>
             <p>Subscribe to recieve updates, insights and industry news.</p>
-            
+            <Form {...newsletter}>
+              <form onSubmit={newsletter.handleSubmit(onSubmit)} className="space-y-4">
+                <FormField 
+                  control={newsletter.control}
+                  name="email"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormControl>
+                        <Input className="rounded-none p-6" placeholder="Your email address" {...field} />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <Button className="rounded-none p-5" type="submit">Subscribe</Button>
+              </form>
+            </Form>
           </div>
         </section>
 
-        {/* <Separator className="my-10" /> */}
+        <Separator className="my-10" />
+
+        {/* 11th  */}
+        <section className="space-y-8">
+
+          <div className="space-y-5 text-center">
+            <Label htmlFor="text">Innovative</Label>
+            <h1 className="text-5xl font-bold">Locations</h1>
+            <p className="font-medium text-neutral-500">We have offices worldwide to serve you better.</p>
+          </div>
+
+          <div className="p-10">
+            <Carousel opts={{loop: true}} className="flex items-center justify-center">
+              <CarouselContent>
+                {Locations.map(location => (
+                  <CarouselItem key={location.label} className="basis-1/4 pl-4 space-y-6 text-center">
+                    <img className="rounded-lg shadow-md" src={location.imgSrc} alt={location.label} />
+                    <h1 className="text-4xl font-bold">{location.label}</h1>
+                    <p className="font-medium text-neutral-500">{location.address}</p>
+                    <Link className="font-medium hover:text-purple-600 transition-all" to={'#'}>Get directions</Link>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+            </Carousel>
+          </div>
+
+        </section>
+
+        {/* 12th */}
+        <section className="flex flex-col items-center space-y-6 justify-between">
+          <div className="space-y-6 text-center">
+            <h1 className="text-5xl font-bold">Frquently Asked Questions</h1>
+            <p className="font-medium text-neutral-500">Find answers to common questions about our company and solutions.</p>
+          </div>
+
+          <div className="space-y-6 transition-all">
+            {FAQs.map(faq => (
+              <Collapsible className="transition-all space-y-5 relative w-[50vw] border-2 p-6 border-black">
+                <div className="flex items-center justify-between relative ">
+                  <h3 className="text-xl font-semibold">{faq.title}</h3>
+                  <CollapsibleTrigger onClick={changeSign} className={`absolute right-0 transition-all text-3xl font-bold`}>+</CollapsibleTrigger>                 
+                </div>
+                <CollapsibleContent className="font-medium transition-all text-neutral-500">
+                  {faq.content}
+                </CollapsibleContent>
+              </Collapsible>
+            ))}
+          </div>
+        </section>
 
     </main>
   )
