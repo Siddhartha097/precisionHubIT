@@ -127,8 +127,7 @@ const App = () => {
           <h1 className="text-7xl font-bold text-center">Transforming businesses <div className="p-2" /> with innovative software <div className="p-2" /> solutions</h1>
           <p className="text-center">Welcome to our company, where we create cutting-edge software solutions to help businesses <div className="p-1" /> thrive in the digital age.</p>
           <div className="space-x-6">
-            <Button className="rounded-none border border-black hover:bg-purple-500 hover:text-white" variant={'outline'}>Learn More</Button>
-            <Button className="rounded-none hover:bg-black/70">Sign Up</Button>
+            <Button className="rounded-none border border-black hover:bg-green-600 hover:border-green-600 hover:text-white" variant={'outline'}>Learn More</Button>
           </div>
         </section>
 
@@ -170,8 +169,8 @@ const App = () => {
 
             {/* buttons */}
             <div className="space-x-4">
-              <Button className="bg-transparent text-black font-semibold border-2 hover:bg-black hover:text-white border-black rounded-none p-5">Learn More</Button>
-              <Link to={'#'} className="p-6 rounded-none border-transparent font-semibold">Contact Us </Link>
+              <Button className="bg-transparent text-black font-semibold border-2 hover:bg-green-600 hover:border-green-600 hover:text-white border-black rounded-none p-5">Learn More</Button>
+              <Link to={'#'} className="p-6 rounded-none border-transparent hover:text-green-600 font-semibold">Contact Us </Link>
             </div>
 
           </div>
@@ -324,8 +323,8 @@ const App = () => {
             </div>
 
             <div className="font-medium space-x-5">
-              <Button className="border-2 border-black rounded-none p-5 hover:bg-black hover:text-neutral-200 transition-all" variant={'outline'}>Learn More</Button>
-              <Link className="hover:text-purple-500" to={'#'}>Contact Us</Link>
+              <Button className="border-2 border-black rounded-none p-5 hover:bg-green-600 hover:border-green-600 hover:text-neutral-200 transition-all" variant={'outline'}>Learn More</Button>
+              <Link className="hover:text-green-600" to={'#'}>Contact Us</Link>
             </div>
           </div>
 
@@ -336,48 +335,11 @@ const App = () => {
         {/* 9th */}
         <section>
           <img className="rounded-lg scale-90 shadow-md transition-all" src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-        </section>
-        
-        <Separator className="my-10" />
-
-        {/* 10th */}
-        <section className="space-y-8 flex flex-col h-screen items-center justify-between text-center">
-          <div className="space-y-6">
-            <h1 className="text-5xl font-bold">Take Your Business Further</h1>
-            <p className=" font-medium">Discover our innovative solutions and boost your productivity today.</p>
-            <div className="flex items-center justify-center space-x-4">
-              <Button className="rounded-none border p-6 border-black hover:bg-purple-600 hover:text-white" variant={'outline'}>Contact Sales</Button>
-              <Separator orientation="vertical" />
-              <Button  className="p-6 rounded-none hover:bg-black/70">Sign Up</Button>
-            </div>
-          </div>
-
-          <div className="space-y-6 text-center">
-            <h1 className="text-5xl font-bold">Stay Informed with Our Newsletter</h1>
-            <p>Subscribe to recieve updates, insights and industry news.</p>
-            <Form {...newsletter}>
-              <form onSubmit={newsletter.handleSubmit(onSubmit)} className="space-y-4">
-                <FormField 
-                  control={newsletter.control}
-                  name="email"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormControl>
-                        <Input className="rounded-none p-6" placeholder="Your email address" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <Button className="rounded-none p-5" type="submit">Subscribe</Button>
-              </form>
-            </Form>
-          </div>
-        </section>
+        </section> 
 
         <Separator className="my-10" />
 
-        {/* 11th  */}
+        {/* 10th  */}
         <section className="space-y-8">
 
           <div className="space-y-5 text-center">
@@ -403,7 +365,7 @@ const App = () => {
 
         </section>
 
-        {/* 12th */}
+        {/* 11th */}
         <section className="flex flex-col items-center space-y-6 justify-between">
           <div className="space-y-6 text-center">
             <h1 className="text-5xl font-bold">Frquently Asked Questions</h1>
@@ -412,7 +374,7 @@ const App = () => {
 
           <div className="space-y-6 transition-all">
             {FAQs.map(faq => (
-              <Collapsible className="transition-all space-y-5 relative w-[50vw] border-2 p-6 border-black">
+              <Collapsible className="transition-all space-y-5 relative w-[70vw] border-2 p-6 border-black">
                 <div className="flex items-center justify-between relative ">
                   <h3 className="text-xl font-semibold">{faq.title}</h3>
                   <CollapsibleTrigger onClick={changeSign} className={`absolute right-0 transition-all text-3xl font-bold`}>+</CollapsibleTrigger>                 
@@ -425,6 +387,40 @@ const App = () => {
           </div>
         </section>
 
+        <Separator className="my-10 bg-neutral-300" />
+
+        {/* 12th */}
+        <section className="space-y-8 flex flex-col h-[80vh] items-center justify-between text-center">
+          <div className="space-y-6">
+            <h1 className="text-5xl font-bold max-md:text-3xl">Take Your Business Further</h1>
+            <p className=" font-medium max-md:text-sm">Discover our innovative solutions and boost your productivity today.</p>
+            <div className="flex items-center justify-center space-x-4">
+              <Button className="rounded-none text-base border p-6 max-md:p-3 max-md:text-sm border-black hover:bg-green-600 hover:border-green-600 hover:text-white" variant={'outline'}>Contact Sales</Button>
+            </div>
+          </div>
+
+          <div className="space-y-6 text-center">
+            <h1 className="text-5xl font-bold max-md:text-3xl">Stay Informed with Our Newsletter</h1>
+            <p className="font-medium text-neutral-600 max-md:text-sm">Subscribe to recieve updates, insights and industry news.</p>
+            <Form {...newsletter}>
+              <form onSubmit={newsletter.handleSubmit(onSubmit)} className="space-y-4">
+                <FormField 
+                  control={newsletter.control}
+                  name="email"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormControl>
+                        <Input className="rounded-none p-6 max-md:p-4 max-md:text-sm" placeholder="Your email address" {...field} />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <Button className="rounded-none p-5" type="submit">Subscribe</Button>
+              </form>
+            </Form>
+          </div>
+        </section>
     </main>
   )
 }

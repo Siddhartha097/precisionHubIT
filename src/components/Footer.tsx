@@ -56,18 +56,18 @@ const Socials = [
 
 const Footer = () => {
     return (
-        <footer className="p-12 flex flex-col w-full h-full relative shadow-md border-t ">
+        <footer className="p-12 flex flex-col w-full h-full relative shadow-md border-t max-md:p-7">
             {/* Upper part */}
-            <section className="flex items-center justify-between">
+            <section className="flex items-center justify-between max-md:space-y-8 max-md:flex-col">
 
                 {/* Logo */}
-                <div className="text-3xl font-bold">
+                <div className="text-2xl font-bold">
                     Logo
                 </div>
 
                 {/* Services */}
                 <div>
-                    <ul className="flex items-center justify-between space-x-8 font-semibold text-sm">
+                    <ul className="flex items-center justify-between space-x-8 max-md:space-x-6 font-semibold max-md:text-sm">
                         {Services.map(service => (
                             <Link to={service.link}>
                                 {service.label}
@@ -78,7 +78,7 @@ const Footer = () => {
 
                 {/* Socials */}
                 <div>
-                    <ul className="flex items-center justify-between space-x-5 text-xl">
+                    <ul className="flex items-center justify-between space-x-6 max-md:space-x-10 text-2xl ">
                         {Socials.map(social => (
                             <Link key={social.label} to={social.link}>
                                 {social.icon}
@@ -89,13 +89,13 @@ const Footer = () => {
 
             </section>
 
-            {/* seperaction */}
+            {/* seperation */}
             <Separator className="my-8 bg-black" />
 
             {/* Lower part */}
-            <section className="flex items-center justify-center text-sm font-semibold gap-10">
+            <section className="flex items-center justify-center text-sm font-semibold gap-10 max-md:gap-6 max-md:flex-col">
                 ©2023 PrecisionHub IT. All rights reserved.
-                <div className="flex items-center justify-between space-x-6 underline">
+                <div className="flex items-center justify-between space-x-6 max-md:space-x-4 underline">
                     <Link to={'#'}>Privacy Policy</Link>
                     <Link to={'#'}>Terms & Conditions</Link>
                     <Link to={'#'}>Cookie Policy</Link>
