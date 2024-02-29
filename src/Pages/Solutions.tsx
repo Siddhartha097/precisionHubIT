@@ -1,6 +1,31 @@
 import Box from "@/components/Box"
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
+import { Link } from "react-router-dom";
+
+const Sols = [
+  {
+    title: "Streamline Your Processes with Our Innovative Solutions",
+    content: "Our solutions are designed to meet your specific needs, ensuring seamless implementation and maximum efficiency.",
+    button: "Learn More",
+    link: "#",
+    imgSrc: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    title: "Optimize Your Operations with Our Tailored Solutions",
+    content: "We work closely with you to understand your challenges and provide customized solutions that drive results.",
+    button: "Contact Us",
+    link: "#",
+    imgSrc: "https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    title: "Transform Your Business with Our Cutting-Edge Solutions",
+    content: "Our team of experts will guide you through the implementation process, ensuring a smooth transition and optimal performance.",
+    button: "Get Started",
+    link: "#",
+    imgSrc: "https://images.unsplash.com/photo-1527689368864-3a821dbccc34?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+];
 
 const Solutions = () => {
   return (
@@ -18,7 +43,7 @@ const Solutions = () => {
          </div>
       </section>
 
-      <Separator className="my-12" />
+      <Separator className="my-20" />
     
       <section className="flex items-center justify-between w-full h-full py-6 max-md:flex-col max-md:space-y-6">
 
@@ -55,13 +80,35 @@ const Solutions = () => {
         </div>
       </section>
 
-      <Separator className="my-12" />
+      <Separator className="my-20" />
 
       <section className="flex items-center justify-center">
-        <img className="rounded-lg shadow-md w-4/5" src="https://images.unsplash.com/photo-1583321500900-82807e458f3c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="hero" />
+        <img className="rounded-lg shadow-md scale-90 transition-all" src="https://images.unsplash.com/photo-1583321500900-82807e458f3c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="hero" />
       </section>
 
-      <Separator className="my-12" />
+      <Separator className="my-20" />
+
+      <section className="flex flex-col space-y-10 items-center justify-between">
+        <div className="flex items-center justify-between">
+          <div className="w-1/2">
+            <h1 className="text-4xl font-bold">
+              Experience the Power of Our Second Solution for Maximum Efficiency
+            </h1>
+          </div>
+          <Separator orientation="vertical" className="mx-8" />
+          <div className="w-1/2">
+            <h3 className="font-medium ">
+              Our second solution is designed to streamline your workflow, saving you time and resources. With its advanced features and user-friendly interface, you can easily manage and optimize your tasks, ensuring maximum efficiency.
+            </h3>
+          </div>
+        </div>
+
+        <div className="flex items-center justify-center pt-6">
+          <img className="rounded-lg scale-90 shadow-md" src="https://images.unsplash.com/photo-1627634777217-c864268db30c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="sols" />
+        </div>
+      </section>
+
+      <Separator className="my-20" />
 
       <section className="flex items-center justify-between space-x-8 ">
         <div className="w-1/2 space-y-8">
@@ -94,10 +141,77 @@ const Solutions = () => {
         <Separator className="my-10" orientation="vertical" />
 
         <div className="w-1/2">
-          <img className="rounded-lg shadow-md" src="https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?q=80&w=1924&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="sol" />
+          <img className="rounded-lg shadow-md scale-90 hover:scale-95 transition-all" src="https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?q=80&w=1924&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="sol" />
         </div>
 
       </section>
+
+      <Separator className="my-20" />
+
+      <section className="flex items-center justify-between space-x-8 ">
+        <div className="w-1/2 space-y-8">
+
+          <div className="space-y-6">
+            <h1 className="text-4xl font-bold">Discover the Advantages of Our Solutions</h1>
+            <p className="font-medium text-neutral-500">
+            Our solutions offer a range of benefits that set us apart from the competition. With our innovative features and exceptional customer service, you can trust us to meet your needs.
+            </p>
+          </div>
+
+          <div className="flex items-center justify-between space-x-7">
+            <Box 
+              label="Reliable Performance"
+              className="w-1/2 space-y-5"
+              desc="Experience consistent and reliable performance with our cutting-edge solutions."
+            />
+            <Separator orientation="vertical" />
+            <Box 
+              label="Cost-Effective"
+              className="w-1/2 space-y-5"
+              desc="Save money without compromising on quality with our affordable solutions."
+            />
+          </div>
+
+        </div>
+
+        <Separator className="my-10" orientation="vertical" />
+
+        <div className="w-1/2">
+          <img className="rounded-lg shadow-md scale-90 hover:scale-95 transition-all" src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="sol" />
+        </div>
+
+      </section>
+
+      <Separator className="my-20" />
+
+      <section className="flex pt-10 flex-col items-center justify-center">
+        <div className="w-[60vw]">
+          <h1 className="text-3xl md:text-5xl text-center font-bold">
+            Discover Our Effective Solutions for Your Business
+          </h1>
+        </div>
+        
+        <div className="flex items-center justify-between space-x-6 mt-20">
+          {Sols.map(sol => (
+            <div className="flex flex-col justify-center items-center w-1/3 space-y-5 text-center">
+              <img className="rounded-md shadow-sm scale-95" src={sol.imgSrc} alt="sols" />
+              <h1 className="text-2xl font-bold">
+                {sol.title}
+              </h1>
+              <p className=" text-neutral-500 font-medium text-[15px]">
+                {sol.content}
+              </p>
+              <Link className="text-lg hover:text-green-600 transition-all font-semibold underline" to={sol.link}>
+                {sol.button}
+              </Link>
+
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <Separator className="my-20" />
+
 
     </main>
   )
