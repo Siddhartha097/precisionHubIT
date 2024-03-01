@@ -221,7 +221,7 @@ const Solutions = () => {
 
       <Separator className="my-20" />
 
-      <section>
+      <section className="py-8">
         <Swiper   pagination={{
           dynamicBullets: true,
         }}
@@ -264,7 +264,7 @@ const Solutions = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide className="">
-              <div className="min-h-[60vh] flex items-center justify-center ">
+              <div className="min-h-[50vh] flex items-center justify-center ">
                 <div className="w-full max-w-2xl p-6 bg-white rounded-lg">
                   <div className="flex space-x-2 mb-5 items-center justify-center">
                     <FaStar />
