@@ -20,7 +20,9 @@ const Navbar = () => {
                     <Link className="hover:text-green-600 transition-all" to={'#'}><li>Portfolio</li></Link>
                     <Link className="hover:text-green-600 transition-all" to={'#'}><li>About Us</li></Link>
                 </ul>
-                <Button className="rounded-none border border-black hover:bg-green-600 hover:border-green-600 hover:text-white text-sm" variant={'outline'}>Learn More</Button>
+                <Link to={'/learn'}>
+                    <Button className="rounded-none border border-black hover:bg-green-600 hover:border-green-600 hover:text-white text-sm" variant={'outline'}>Learn More</Button>
+                </Link>
             </header>
             <Sheet>
                 <SheetTrigger className="md:hidden"><FaHamburger /></SheetTrigger>
@@ -39,9 +41,11 @@ const Navbar = () => {
                             <SheetClose asChild><Link className="hover:text-green-600 transition-all" to={'#'}><li>About Us</li></Link></SheetClose> 
                         </ul>
                        <SheetClose asChild>
-                            <Button className="rounded-none border border-black hover:bg-green-600 hover:border-green-600 hover:text-white p-6" variant={'outline'}>
-                                Learn More
-                            </Button>
+                            <Link to={'/learn'}>
+                                    <li className="rounded-none border border-black hover:bg-green-600 hover:border-green-600 hover:text-white p-6" variant={'outline'}>
+                                    Learn More
+                                    </li>
+                            </Link>
                        </SheetClose>
                     </header>
                 </SheetContent>
