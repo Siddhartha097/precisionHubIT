@@ -29,22 +29,22 @@ const Navbar = () => {
                 <SheetContent className="bg-neutral-300 p-12">
                     {/* <SheetHeader>
                         <SheetTitle >Menu</SheetTitle>
-                        <SheetDescription>What you want to see?</SheetDescription> 
+                        <SheetDescription>What you want to see?</SheetDescription>
                     </SheetHeader> */}
                     <Separator className="my-6" />
                     <header className="flex flex-col items-center justify-between space-y-10">
                         <ul className="flex items-center justify-between space-y-8 font-semibold flex-col text-xl">
                             <SheetClose asChild><Link className="hover:text-green-600 transition-all" to={'/'}><li>Home</li></Link></SheetClose>
-                            <SheetClose asChild><Link className="hover:text-green-600 transition-all" to={'/solutions'}><li>Solutions</li></Link></SheetClose> 
+                            <SheetClose asChild><Link className="hover:text-green-600 transition-all" to={'/solutions'}><li>Solutions</li></Link></SheetClose>
                             <SheetClose asChild><Link className="hover:text-green-600 transition-all" to={'#'}><li>Research</li></Link></SheetClose> 
                             <SheetClose asChild><Link className="hover:text-green-600 transition-all" to={'#'}><li>Portfolio</li></Link></SheetClose> 
                             <SheetClose asChild><Link className="hover:text-green-600 transition-all" to={'#'}><li>About Us</li></Link></SheetClose> 
                         </ul>
                        <SheetClose asChild>
                             <Link to={'/learn'}>
-                                    <li className="rounded-none border border-black hover:bg-green-600 hover:border-green-600 hover:text-white p-6" variant={'outline'}>
+                                    <Button className="rounded-none border border-black hover:bg-green-600 hover:border-green-600 hover:text-white p-6" variant={'outline'}>
                                     Learn More
-                                    </li>
+                                    </Button>
                             </Link>
                        </SheetClose>
                     </header>
