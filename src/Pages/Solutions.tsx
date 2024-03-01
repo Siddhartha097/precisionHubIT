@@ -230,6 +230,7 @@ const Solutions = () => {
         navigation={true} 
         modules={[Pagination, Navigation]}
         className="mySwiper h-[50vh] *:text-center">
+
             <SwiperSlide className="">
               <div className="min-h-[50vh] flex items-center justify-center ">
                 <div className="w-full max-w-2xl p-6 bg-white rounded-lg">
@@ -263,6 +264,7 @@ const Solutions = () => {
                 </div>
               </div>
             </SwiperSlide>
+
             <SwiperSlide className="">
               <div className="min-h-[50vh] flex items-center justify-center ">
                 <div className="w-full max-w-2xl p-6 bg-white rounded-lg">
@@ -296,6 +298,7 @@ const Solutions = () => {
                 </div>
               </div>
             </SwiperSlide>
+            
         </Swiper>
       </section>
 
