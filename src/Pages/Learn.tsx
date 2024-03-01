@@ -1,8 +1,9 @@
-
+import  Box  from '@/components/Box'
+import React from 'react'
 const Learn = () => {
   return (
     <main className='LearnMore-container'>
-        <div className='flex justify-center'>
+        <div className='flex justify-center h-screen'>
 
             <div className="flex pt-56 justify-center h-screen bg-white px-20 w-3/5">
                 <h1 className="text-6xl font-bold text-gray-800 mb-8">
@@ -23,13 +24,20 @@ const Learn = () => {
                 </div>
             </div>
         </div>
-        <div className='learn-page2 flex justify-between'>
-            <div>
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
+        <div className='learn-page2 grid grid-cols-2 px-20'>
+            <div className='px-20'>
+                <h1 className='text-6xl font-bold'>Revolutionize WorkFlow With Our Software</h1>
+                <div className='py-10 font-semibold text-gray-500'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis accusamus eaque nulla alias fugit tempora voluptas quae maxime, error velit eos minima dolores voluptatibus aliquam odio, tempore consequatur, ullam eum?</div>
+                <div className='flex'>
+                    <Box label='Powerful Solutions' desc='lorem dak ajdiw hsjda hasdhaw hawduud hadwuhd hwah h u uwhadu' className='*:h-16'></Box>
+                    <Box label='Powerful Solutions' desc='lorem dak ajdiw hsjda hasdhaw hawduud hadwuhd hwah h u uwhadu' className='*:h-16'></Box>
+                </div>
             </div>
-            <div><img src="" alt="" className='bg-black'/>hi</div>
+            <div><img src="https://media.istockphoto.com/id/865215930/vector/abstract-colorful-geometric-square-border-pattern-on-white-background.jpg?s=2048x2048&w=is&k=20&c=8s7O24vxGlHlzwROjyrmIdAfwjne-Sbs6zUcCh8Czc4=" alt="" className=' px-20'/></div>
+            <ul className='flex px-20'>
+                <button className='border-2 p-3 mr-2'>Learn More</button>
+                <button>Sign Up </button>
+            </ul>
         </div>
     </main>
   )
