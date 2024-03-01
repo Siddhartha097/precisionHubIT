@@ -16,7 +16,7 @@ const Navbar = () => {
                 <ul className="flex items-center justify-between space-x-8 font-semibold ">
                     <Link className="hover:text-green-600 transition-all" to={'/'}><li>Home</li></Link>
                     <Link className="hover:text-green-600 transition-all" to={'/solutions'}><li>Solutions</li></Link>
-                    <Link className="hover:text-green-600 transition-all" to={'#'}><li>Research</li></Link>
+                    <Link className="hover:text-green-600 transition-all" to={'/research'}><li>Research</li></Link>
                     <Link className="hover:text-green-600 transition-all" to={'#'}><li>Portfolio</li></Link>
                     <Link className="hover:text-green-600 transition-all" to={'#'}><li>About Us</li></Link>
                 </ul>
