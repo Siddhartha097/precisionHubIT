@@ -2,6 +2,13 @@ import Box from "@/components/Box"
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
 import { Link } from "react-router-dom";
+import { FaStar } from "react-icons/fa6";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import "swiper/css";
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Pagination } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 
 const Sols = [
   {
@@ -26,6 +33,8 @@ const Sols = [
     imgSrc: "https://images.unsplash.com/photo-1527689368864-3a821dbccc34?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
+
+
 
 const Solutions = () => {
   return (
@@ -212,6 +221,83 @@ const Solutions = () => {
 
       <Separator className="my-20" />
 
+      <section>
+        <Swiper   pagination={{
+          dynamicBullets: true,
+        }}
+        spaceBetween={40}
+        slidesPerView={1}
+        navigation={true} 
+        modules={[Pagination, Navigation]}
+        className="mySwiper h-[50vh] *:text-center">
+            <SwiperSlide className="">
+              <div className="min-h-[50vh] flex items-center justify-center ">
+                <div className="w-full max-w-2xl p-6 bg-white rounded-lg">
+                  <div className="flex space-x-2 mb-5 items-center justify-center">
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
+                  </div>
+                  <h1 className="text-3xl font-bold text-center mb-6">
+                    Our Experience with the Company
+                  </h1>
+                  <div className="text-gray-700">
+                    <p className="mb-4 font-medium text-neutral-500">
+                      Our experience with the company has been nothing short of exceptional.
+                      Their solutions have helped us streamline our processes and increase
+                      productivity.
+                      Their solutions have been instrumental in helping us achieve our
+                      business goals and improve our bottom line.
+                      We highly recommend their services to any organization looking to
+                      streamline their processes and increase productivity.
+                    </p>
+                    <Separator className="my-6" />
+                    <div className="text-center flex items-center justify-center space-x-8">
+                      <p className="text-gray-700"> <b>Rick Dawson, CEO,</b><br /> XYZ Corp</p>
+                      <p className="text-3xl font-bold">|</p>
+                      <p className="font-bold">WorkFlow</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="">
+              <div className="min-h-[60vh] flex items-center justify-center ">
+                <div className="w-full max-w-2xl p-6 bg-white rounded-lg">
+                  <div className="flex space-x-2 mb-5 items-center justify-center">
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
+                  </div>
+                  <h1 className="text-3xl font-bold text-center mb-6">
+                    Our Experience with the Company
+                  </h1>
+                  <div className="text-gray-700">
+                    <p className="mb-4 font-medium text-neutral-500">
+                      Our experience with the company has been nothing short of exceptional.
+                      Their solutions have helped us streamline our processes and increase
+                      productivity.
+                      Their solutions have been instrumental in helping us achieve our
+                      business goals and improve our bottom line.
+                      We highly recommend their services to any organization looking to
+                      streamline their processes and increase productivity.
+                    </p>
+                    <Separator className="my-6" />
+                    <div className="text-center flex items-center justify-center space-x-8">
+                      <p className="text-gray-700"> <b>John Doe, CEO,</b><br /> ABC Corp</p>
+                      <p className="text-3xl font-bold">|</p>
+                      <p className="font-bold">WorkFlow</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+        </Swiper>
+      </section>
 
     </main>
   )
