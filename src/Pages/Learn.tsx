@@ -16,7 +16,7 @@ const Learn = () => {
                 </p>
                 <div>
                     <button className="bg-black hover:bg-blue-700 text-white font-bold py-2 px-4 ">
-                    Learn More
+                    Learn More with me
                     </button>
                     <button className="bg-white hover:bg-blue-700 text-black font-bold border-2 py-2 px-4 ml-4">
                     Sign Up
