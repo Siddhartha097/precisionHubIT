@@ -38,10 +38,10 @@ const Sols = [
 
 const Solutions = () => {
   return (
-    <main className="relative p-20 w-full h-full space-y-14">   
+    <main className="relative p-20 max-md:px-8 w-full h-full space-y-14">   
 
-      <section className="relative h-[90vh] max-md:h-[50vh] rounded-md flex flex-col justify-center space-y-6 bg-cover bg-[url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]">
-      <div className=" h-screen rounded-md space-y-6 text-white bg-slate-600/40  w-full relative flex flex-col justify-center items-center">
+      <section className="relative h-[90vh] max-md:h-[60vh] rounded-md flex flex-col justify-center space-y-6 bg-cover bg-[url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]">
+      <div className=" h-screen rounded-md space-y-6 text-white bg-slate-600/40  w-full relative flex flex-col max-md:text-center justify-center items-center">
           <h1 className="text-5xl max-md:text-3xl font-bold">
               Transforming Businesses with Innovative Solutions
             </h1>
@@ -60,11 +60,11 @@ const Solutions = () => {
           <h1 className="text-4xl max-md:text-3xl font-bold">Discover the Power of Our Innovatve Solution</h1>
         </div>
 
-        <Separator className="mx-6 " orientation="vertical" />
+        <Separator className="mx-6 max-md:mx-0" orientation="vertical" />
 
         <div className="w-1/2 max-md:w-full flex flex-col justify-between gap-20 items-center">
 
-          <h3 className="text-2xl max-md:text-xl max-md:text-center font-medium">
+          <h3 className="text-2xl max-md:text-lg max-md:text-center font-medium">
             Our solution revolutionizes the way you work, providing unmatched efficiency and productivity.
           </h3>
 
@@ -92,39 +92,39 @@ const Solutions = () => {
       <Separator className="my-20" />
 
       <section className="flex items-center justify-center">
-        <img className="rounded-lg shadow-md scale-90 transition-all" src="https://images.unsplash.com/photo-1583321500900-82807e458f3c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="hero" />
+        <img className="rounded-lg shadow-md scale-90 max-md:scale-100 transition-all" src="https://images.unsplash.com/photo-1583321500900-82807e458f3c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="hero" />
       </section>
 
       <Separator className="my-20" />
 
-      <section className="flex flex-col space-y-10 items-center justify-between">
-        <div className="flex items-center justify-between">
-          <div className="w-1/2">
-            <h1 className="text-4xl font-bold">
+      <section className="flex flex-col space-y-10 max-md:space-y-6 items-center justify-between">
+        <div className="flex max-md:flex-col max-md:space-y-6 items-center justify-between">
+          <div className="w-1/2 max-md:w-full">
+            <h1 className="text-4xl max-md:text-3xl max-md:text-center font-bold">
               Experience the Power of Our Second Solution for Maximum Efficiency
             </h1>
           </div>
-          <Separator orientation="vertical" className="mx-8" />
-          <div className="w-1/2">
-            <h3 className="font-medium ">
+          <Separator orientation="vertical" className="mx-8 max-md:hidden" />
+          <div className="w-1/2 max-md:w-full max-md:text-center">
+            <h3 className="font-medium max-md:text-sm">
               Our second solution is designed to streamline your workflow, saving you time and resources. With its advanced features and user-friendly interface, you can easily manage and optimize your tasks, ensuring maximum efficiency.
             </h3>
           </div>
         </div>
 
         <div className="flex items-center justify-center pt-6">
-          <img className="rounded-lg scale-90 shadow-md" src="https://images.unsplash.com/photo-1627634777217-c864268db30c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="sols" />
+          <img className="rounded-lg scale-90 max-md:scale-100 shadow-md" src="https://images.unsplash.com/photo-1627634777217-c864268db30c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="sols" />
         </div>
       </section>
 
       <Separator className="my-20" />
 
-      <section className="flex items-center justify-between space-x-8 ">
-        <div className="w-1/2 space-y-8">
+      <section className="flex items-center justify-between space-x-8 max-md:space-x-0 max-md:space-y-8 max-md:flex-col max-md:*:w-full">
+        <div className="w-1/2 space-y-8 max-md:space-y-5 max-md:">
 
-          <div className="space-y-6">
-            <h1 className="text-4xl font-bold">Discover the Cost-Effective Solution For Your Business</h1>
-            <p className="font-medium text-neutral-500">
+          <div className="space-y-6  max-md:text-center">
+            <h1 className="text-4xl max-md:text-3xl font-bold">Discover the Cost-Effective Solution For Your Business</h1>
+            <p className="font-medium text-neutral-500 max-md:text-sm">
               Our third solution offers a cost-effective way to meet your business needs. With its innovative features and competitive pricing. you can save both time and money.
             </p>
           </div>
@@ -136,7 +136,7 @@ const Solutions = () => {
               className="w-1/2 space-y-5"
               desc="Streamline operations and reduced overhead costs with our efficient solution"
             />
-            <Separator orientation="vertical" />
+            <Separator className="" orientation="vertical" />
             <Box 
               label="2. Features:"
               iconDisabled
@@ -147,7 +147,7 @@ const Solutions = () => {
 
         </div>
 
-        <Separator className="my-10" orientation="vertical" />
+        <Separator className="my-10 hidden md:block" orientation="vertical" />
 
         <div className="w-1/2">
           <img className="rounded-lg shadow-md scale-90 hover:scale-95 transition-all" src="https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?q=80&w=1924&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="sol" />
@@ -157,12 +157,12 @@ const Solutions = () => {
 
       <Separator className="my-20" />
 
-      <section className="flex items-center justify-between space-x-8 ">
+      <section className="flex items-center justify-between space-x-8 max-md:space-x-0 max-md:flex-col max-md:space-y-8 max-md:*:w-full">
         <div className="w-1/2 space-y-8">
 
-          <div className="space-y-6">
-            <h1 className="text-4xl font-bold">Discover the Advantages of Our Solutions</h1>
-            <p className="font-medium text-neutral-500">
+          <div className="space-y-6 max-md:text-center">
+            <h1 className="text-4xl max-md:text-3xl font-bold">Discover the Advantages of Our Solutions</h1>
+            <p className="font-medium text-neutral-500 max-md:text-sm">
             Our solutions offer a range of benefits that set us apart from the competition. With our innovative features and exceptional customer service, you can trust us to meet your needs.
             </p>
           </div>
@@ -183,7 +183,7 @@ const Solutions = () => {
 
         </div>
 
-        <Separator className="my-10" orientation="vertical" />
+        <Separator className="my-10 max-md:hidden" orientation="vertical" />
 
         <div className="w-1/2">
           <img className="rounded-lg shadow-md scale-90 hover:scale-95 transition-all" src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="sol" />
@@ -193,17 +193,17 @@ const Solutions = () => {
 
       <Separator className="my-20" />
 
-      <section className="flex pt-10 flex-col items-center justify-center">
-        <div className="w-[60vw]">
+      <section className="flex pt-10 max-md:pt-5 flex-col items-center justify-center">
+        <div className="">
           <h1 className="text-3xl md:text-5xl text-center font-bold">
             Discover Our Effective Solutions for Your Business
           </h1>
         </div>
         
-        <div className="flex items-center justify-between space-x-6 mt-20">
+        <div className="flex max-md:flex-col items-center justify-between space-x-6 max-md:space-x-0 max-md:space-y-8 mt-20 max-md:mt-10">
           {Sols.map(sol => (
-            <div className="flex flex-col justify-center items-center w-1/3 space-y-5 text-center">
-              <img className="rounded-md shadow-sm scale-95" src={sol.imgSrc} alt="sols" />
+            <div className="flex flex-col justify-center items-center w-1/3 max-md:w-full space-y-5 text-center">
+              <img className="rounded-md shadow-sm scale-100 max-md:scale-90" src={sol.imgSrc} alt="sols" />
               <h1 className="text-2xl font-bold">
                 {sol.title}
               </h1>
@@ -233,7 +233,7 @@ const Solutions = () => {
 
             <SwiperSlide className="">
               <div className="min-h-[50vh] flex items-center justify-center ">
-                <div className="w-full max-w-2xl p-6 bg-white rounded-lg">
+                <div className="w-full p-6 bg-white rounded-lg">
                   <div className="flex space-x-2 mb-5 items-center justify-center">
                     <FaStar />
                     <FaStar />
@@ -241,23 +241,22 @@ const Solutions = () => {
                     <FaStar />
                     <FaStar />
                   </div>
-                  <h1 className="text-3xl font-bold text-center mb-6">
+                  <h1 className="text-3xl max-md:text-xl font-bold text-center mb-6">
                     Our Experience with the Company
                   </h1>
                   <div className="text-gray-700">
-                    <p className="mb-4 font-medium text-neutral-500">
+                    <p className="mb-4 font-medium max-md:text-xs text-neutral-500">
                       Our experience with the company has been nothing short of exceptional.
                       Their solutions have helped us streamline our processes and increase
-                      productivity.
-                      Their solutions have been instrumental in helping us achieve our
+                      productivity.Their solutions have been instrumental in helping us achieve our
                       business goals and improve our bottom line.
                       We highly recommend their services to any organization looking to
                       streamline their processes and increase productivity.
                     </p>
                     <Separator className="my-6" />
                     <div className="text-center flex items-center justify-center space-x-8">
-                      <p className="text-gray-700"> <b>Rick Dawson, CEO,</b><br /> XYZ Corp</p>
-                      <p className="text-3xl font-bold">|</p>
+                      <p className="text-gray-700 max-md:text-sm"> <b>Rick Dawson, CEO,</b><br /> XYZ Corp</p>
+                      <p className="text-3xl  font-bold">|</p>
                       <p className="font-bold">WorkFlow</p>
                     </div>
                   </div>
@@ -275,11 +274,11 @@ const Solutions = () => {
                     <FaStar />
                     <FaStar />
                   </div>
-                  <h1 className="text-3xl font-bold text-center mb-6">
+                  <h1 className="text-3xl  max-md:text-xl font-bold text-center mb-6">
                     Our Experience with the Company
                   </h1>
                   <div className="text-gray-700">
-                    <p className="mb-4 font-medium text-neutral-500">
+                    <p className="mb-4 max-md:text-xs font-medium text-neutral-500">
                       Our experience with the company has been nothing short of exceptional.
                       Their solutions have helped us streamline our processes and increase
                       productivity.
@@ -290,7 +289,7 @@ const Solutions = () => {
                     </p>
                     <Separator className="my-6" />
                     <div className="text-center flex items-center justify-center space-x-8">
-                      <p className="text-gray-700"> <b>John Doe, CEO,</b><br /> ABC Corp</p>
+                      <p className="text-gray-700 max-md:text-sm"> <b>John Doe, CEO,</b><br /> ABC Corp</p>
                       <p className="text-3xl font-bold">|</p>
                       <p className="font-bold">WorkFlow</p>
                     </div>

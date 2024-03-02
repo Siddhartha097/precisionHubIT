@@ -21,8 +21,8 @@ const Box : React.FC<BoxProps>= ({
     return (
         <main className={className}>
             <BsBoxFill className={`${!iconDisabled ? "" : "hidden"}`} size={ !iconSize ? 30 : iconSize } />
-            <h1 className={`font-bold ${titleSize ? titleSize : 'text-xl'}`}>{label}</h1>
-            <p className={`${descSize ? descSize : 'text-sm'} text-neutral-500 font-medium`}>{desc}</p>
+            <h1 className={`font-bold ${titleSize ? titleSize : 'text-xl'} max-md:text-lg`}>{label}</h1>
+            <p className={`${descSize ? descSize : 'text-sm'} text-neutral-500 font-medium max-md:text-xs`}>{desc}</p>
             {isBtn && (
                 <div className="flex items-center justify-center gap-7">
                     <Button className="rounded-none border-2 font-semibold border-black hover:bg-green-600 hover:border-green-600 hover:text-white" variant={'outline'}>Get started</Button>

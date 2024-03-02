@@ -36,7 +36,7 @@ const Navbar = () => {
                         <ul className="flex items-center justify-between space-y-8 font-semibold flex-col text-xl">
                             <SheetClose asChild><Link className="hover:text-green-600 transition-all" to={'/'}><li>Home</li></Link></SheetClose>
                             <SheetClose asChild><Link className="hover:text-green-600 transition-all" to={'/solutions'}><li>Solutions</li></Link></SheetClose>
-                            <SheetClose asChild><Link className="hover:text-green-600 transition-all" to={'#'}><li>Research</li></Link></SheetClose> 
+                            <SheetClose asChild><Link className="hover:text-green-600 transition-all" to={'/research'}><li>Research</li></Link></SheetClose> 
                             <SheetClose asChild><Link className="hover:text-green-600 transition-all" to={'#'}><li>Portfolio</li></Link></SheetClose> 
                             <SheetClose asChild><Link className="hover:text-green-600 transition-all" to={'#'}><li>About Us</li></Link></SheetClose> 
                         </ul>
