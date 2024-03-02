@@ -1,5 +1,4 @@
 import  Box  from '@/components/Box'
-
 const Learn = () => {
   return (
     <main className='LearnMore-container'>
