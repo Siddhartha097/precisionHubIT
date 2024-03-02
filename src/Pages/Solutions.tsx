@@ -40,8 +40,8 @@ const Solutions = () => {
   return (
     <main className="relative p-20 w-full h-full space-y-14">   
 
-      <section className="relative w-[90vw] h-[90vh] max-md:h-[50vh] max-md:w-full rounded-md flex flex-col justify-center p-10 max-md:p-6 space-y-6 bg-cover bg-[url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]">
-         <div className="space-y-5 bg-slate-600/20 relative text-white p-10 max-md:p-0">
+      <section className="relative h-[90vh] max-md:h-[50vh] rounded-md flex flex-col justify-center space-y-6 bg-cover bg-[url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]">
+      <div className=" h-screen rounded-md space-y-6 text-white bg-slate-600/40  w-full relative flex flex-col justify-center items-center">
           <h1 className="text-5xl max-md:text-3xl font-bold">
               Transforming Businesses with Innovative Solutions
             </h1>
