@@ -28,10 +28,10 @@ const Learn = () => {
                     <div className=' grid grid-cols-2'>
                         <div className='px-20'>
                             <h1 className='text-6xl font-bold'>Revolutionize WorkFlow With Our Software</h1>
-                            <div className='py-10 font-semibold text-gray-500'>Transform your business with our innovative software stolutions. Increase efficiency, streamline processes and drive growth</div>
+                            <div className='py-10 font-semibold text-gray-500'>Our software is debugged to streamtape your process, increase efficiency, and save you time. With its advanced features and user friendly interface, you will be able to tackle task with ease.</div>
                             <div className='flex'>
-                                <Box label='Powerful Solutions' desc='lorem dak ajdiw hsjda hasdhaw hawduud hadwuhd hwah h u uwhadu' className='*:h-16'></Box>
-                                <Box label='Powerful Solutions' desc='lorem dak ajdiw hsjda hasdhaw hawduud hadwuhd hwah h u uwhadu' className='*:h-16'></Box>
+                                <Box label='Powerful Solutions' desc='Ecperience the benefits of our software and take your productivity to new levels.' className='*:h-16'></Box>
+                                <Box label='Seamless Integrations' desc='Our software seamlessly integrates with your working tools and system, emulating a smooth transition.' className='*:h-16'></Box>
                             </div>
                         </div>
                         <div><img src="https://media.istockphoto.com/id/865215930/vector/abstract-colorful-geometric-square-border-pattern-on-white-background.jpg?s=2048x2048&w=is&k=20&c=8s7O24vxGlHlzwROjyrmIdAfwjne-Sbs6zUcCh8Czc4=" alt="" className=' px-20 h-full'/></div>
@@ -44,21 +44,21 @@ const Learn = () => {
 
                     <div className='grid grid-cols-3 px-20 py-40'>
                         <section>
-                            <Box label='Powerful Solutions' desc='lorem dak ajdiw hsjda hasdhaw hawduud hadwuhd hwah h u uwhadu' className='*:h-16' titleSize='text-5xl'></Box>
+                            <Box label='Powerful Solutions for your Business' desc='' className='*:h-16' titleSize='text-5xl'></Box>
                             <ul className='flex'>
                             <button className='border-2 p-3 mr-2 '>Learn More</button>
                             <button>Sign Up </button>
                         </ul>
                         </section>
                         <section>
-                            <Box label='Powerful Solutions' desc='lorem dak ajdiw hsjda hasdhaw hawduud hadwuhd hwah h u uwhadu' className='*:h-16' titleSize='text-5xl'></Box>
+                            <Box label='Powerful Solutions for Your Business' desc='Our software affers a wide range of features and benefits to help your business succeed.' className='*:h-16' titleSize='text-5xl'></Box>
                             <ul className='flex'>
                             <button className='border-2 p-3 mr-2'>Learn More</button>
                             <button>Sign Up </button>
                         </ul>
                         </section>
                         <section>
-                            <Box label='Powerful Solutions' desc='lorem dak ajdiw hsjda hasdhaw hawduud hadwuhd hwah h u uwhadu' className='*:h-16' titleSize='text-5xl'></Box>
+                            <Box label='Streamline Your Workflow with Ease' desc='Our software simplifies complex tasks and improves efficiency.' className='*:h-16' titleSize='text-5xl'></Box>
                             <ul className='flex'>
                             <button className='border-2 p-3 mr-2'>Learn More</button>
                             <button>Sign Up </button>
