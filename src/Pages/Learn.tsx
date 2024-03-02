@@ -45,10 +45,10 @@ const Learn = () => {
                     <div className='grid grid-cols-3 px-20 py-40'>
                         <section>
                             <Box label='Powerful Solutions for your Business' desc='' className='*:h-16' titleSize='text-5xl'></Box>
-                            <ul className='flex'>
+                            <div className='flex'>
                             <button className='border-2 p-3 mr-2 '>Learn More</button>
                             <button>Sign Up </button>
-                        </ul>
+                        </div>
                         </section>
                         <section>
                             <Box label='Powerful Solutions for Your Business' desc='Our software affers a wide range of features and benefits to help your business succeed.' className='*:h-16' titleSize='text-5xl'></Box>
