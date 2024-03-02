@@ -35,10 +35,10 @@ const Learn = () => {
                             </div>
                         </div>
                         <div><img src="https://media.istockphoto.com/id/865215930/vector/abstract-colorful-geometric-square-border-pattern-on-white-background.jpg?s=2048x2048&w=is&k=20&c=8s7O24vxGlHlzwROjyrmIdAfwjne-Sbs6zUcCh8Czc4=" alt="" className=' px-20 h-full'/></div>
-                        <ul className='flex px-20'>
+                        <div className='flex px-20'>
                             <button className='border-2 p-3 mr-2'>Learn More</button>
                             <button>Sign Up </button>
-                        </ul>
+                        </div>
                     </div>
 
 
