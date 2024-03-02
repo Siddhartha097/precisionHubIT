@@ -28,7 +28,7 @@ const Learn = () => {
                     <div className=' grid grid-cols-2'>
                         <div className='px-20'>
                             <h1 className='text-6xl font-bold'>Revolutionize WorkFlow With Our Software</h1>
-                            <div className='py-10 font-semibold text-gray-500'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis accusamus eaque nulla alias fugit tempora voluptas quae maxime, error velit eos minima dolores voluptatibus aliquam odio, tempore consequatur, ullam eum?</div>
+                            <div className='py-10 font-semibold text-gray-500'>Transform your business with our innovative software stolutions. Increase efficiency, streamline processes and drive growth</div>
                             <div className='flex'>
                                 <Box label='Powerful Solutions' desc='lorem dak ajdiw hsjda hasdhaw hawduud hadwuhd hwah h u uwhadu' className='*:h-16'></Box>
                                 <Box label='Powerful Solutions' desc='lorem dak ajdiw hsjda hasdhaw hawduud hadwuhd hwah h u uwhadu' className='*:h-16'></Box>
@@ -51,14 +51,14 @@ const Learn = () => {
                         </ul>
                         </section>
                         <section>
-                            <Box label='Powerful Solutions' desc='lorem dak ajdiw hsjda hasdhaw hawduud hadwuhd hwah h u uwhadu' className='*:h-16'></Box>
+                            <Box label='Powerful Solutions' desc='lorem dak ajdiw hsjda hasdhaw hawduud hadwuhd hwah h u uwhadu' className='*:h-16' titleSize='text-5xl'></Box>
                             <ul className='flex'>
                             <button className='border-2 p-3 mr-2'>Learn More</button>
                             <button>Sign Up </button>
                         </ul>
                         </section>
                         <section>
-                            <Box label='Powerful Solutions' desc='lorem dak ajdiw hsjda hasdhaw hawduud hadwuhd hwah h u uwhadu' className='*:h-16'></Box>
+                            <Box label='Powerful Solutions' desc='lorem dak ajdiw hsjda hasdhaw hawduud hadwuhd hwah h u uwhadu' className='*:h-16' titleSize='text-5xl'></Box>
                             <ul className='flex'>
                             <button className='border-2 p-3 mr-2'>Learn More</button>
                             <button>Sign Up </button>
