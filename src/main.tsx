@@ -19,7 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path='/research' element={<Researches />}/>
         <Route path= '/learn' element={<Learn />} />
       </Routes>
-    <Footer />
+      <Footer />
     </BrowserRouter>
   </React.StrictMode>,
 )
