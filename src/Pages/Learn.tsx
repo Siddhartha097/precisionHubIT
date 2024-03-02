@@ -1,4 +1,5 @@
 import  Box  from '@/components/Box';
+import { Button } from '@/components/ui/button';
 
 const Learn = () => {
   return (
@@ -15,12 +16,9 @@ const Learn = () => {
                     Transform your business with our innovative software solutions. Increase efficiency, streamline processes, and drive growth.
                 </p>
                 <div>
-                    <button className="bg-black hover:bg-blue-700 text-white font-bold py-2 px-4 ">
+                    <Button className="bg-black hover:bg-blue-700 text-white font-bold py-2 px-4 ">
                     Learn More with me
-                    </button>
-                    <button className="bg-white hover:bg-blue-700 text-black font-bold border-2 py-2 px-4 ml-4">
-                    Sign Up
-                    </button>
+                    </Button>
                 </div>
             </div>
         </div>
@@ -46,23 +44,20 @@ const Learn = () => {
                         <section>
                             <Box label='Powerful Solutions for your Business' desc='' className='*:h-16' titleSize='text-5xl'></Box>
                             <div className='flex'>
-                            <button className='border-2 p-3 mr-2 '>Learn More</button>
-                            <button>Sign Up </button>
+                            <Button className='border-2 p-3 mr-2 '>Learn More</Button>
                         </div>
                         </section>
                         <section>
                             <Box label='Powerful Solutions for Your Business' desc='Our software affers a wide range of features and benefits to help your business succeed.' className='*:h-16' titleSize='text-5xl'></Box>
-                            <ul className='flex'>
-                            <button className='border-2 p-3 mr-2'>Learn More</button>
-                            <button>Sign Up </button>
-                        </ul>
+                            <div className='flex'>
+                                <Button className='border-2 p-3 mr-2'>Learn More</Button>
+                            </div>
                         </section>
                         <section>
                             <Box label='Streamline Your Workflow with Ease' desc='Our software simplifies complex tasks and improves efficiency.' className='*:h-16' titleSize='text-5xl'></Box>
-                            <ul className='flex'>
-                            <button className='border-2 p-3 mr-2'>Learn More</button>
-                            <button>Sign Up </button>
-                        </ul>
+                            <div className='flex'>
+                                <Button className='border-2 p-3 mr-2'>Learn More</Button>
+                            </div>
                         </section>
                     </div>
 
