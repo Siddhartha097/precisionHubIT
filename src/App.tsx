@@ -383,7 +383,7 @@ const App = () => {
                   <h3 className="text-xl font-semibold max-md:text-lg">{faq.title}</h3>
                   <CollapsibleTrigger onClick={changeSign} className={`absolute right-0 transition-all text-3xl font-bold ${!sign ? "" : ''}`}>+</CollapsibleTrigger>                 
                 </div>
-                <CollapsibleContent className="font-medium transition-all text-neutral-500">
+                <CollapsibleContent className="font-medium transition-all text-neutral-500 max-md:text-sm">
                   {faq.content}
                 </CollapsibleContent>
               </Collapsible>
