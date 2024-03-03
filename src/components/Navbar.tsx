@@ -1,15 +1,23 @@
-import { Link } from "react-router-dom"
-import { Button } from "./ui/button"
-import { FaHamburger } from "react-icons/fa"
-import { Sheet, SheetClose, SheetContent, SheetTrigger } from "./ui/sheet"
-import { Separator } from "./ui/separator"
+import { Link } from "react-router-dom";
+import { Button } from "./ui/button";
+import { Sheet, SheetClose, SheetContent, SheetTrigger } from "./ui/sheet";
+import { Separator } from "./ui/separator";
+import { MenuIcon } from "lucide-react";
+import Logo from '../images/PreciSync_LogoIcon_V6.svg';
 
 
 const Navbar = () => {
     return (
         <nav className="flex items-center justify-between px-12 max-md:px-8 py-6 border-b-2 shadow-md border-black">
-            <header className="text-2xl font-bold">
-                <Link to={'/'}>Logo</Link>
+            <header className="">
+                <Link to={'/'} className="flex items-center justify-center">
+                    <img className="w-12 md:w-16" src={Logo} alt="" />
+                    <div className="space-y-1">
+                    <h1 className="font-bold text-3xl max-md:text-2xl">PreciSync</h1>
+                    {/* <p className="text-xs tracking-widest font-semibold">Precision Hub Pvt. Ltd.</p> */}
+                    </div>
+                </Link>
+                
             </header>
 
             <header className="flex items-center justify-between space-x-8 max-md:hidden">
@@ -25,7 +33,7 @@ const Navbar = () => {
                 </Link>
             </header>
             <Sheet>
-                <SheetTrigger className="md:hidden"><FaHamburger /></SheetTrigger>
+                <SheetTrigger className="md:hidden"><MenuIcon /></SheetTrigger>
                 <SheetContent className="bg-neutral-300 p-12">
                     {/* <SheetHeader>
                         <SheetTitle >Menu</SheetTitle>
