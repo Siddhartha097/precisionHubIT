@@ -7,7 +7,7 @@ import { Logo } from "@/images";
 const Services = [
     {
         label: 'About Us',
-        link: '#',
+        link: '/about',
     },
     {
         label: 'Services',

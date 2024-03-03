@@ -26,7 +26,7 @@ const Navbar = () => {
                     <Link className="hover:text-green-600 transition-all" to={'/solutions'}><li>Solutions</li></Link>
                     <Link className="hover:text-green-600 transition-all" to={'/research'}><li>Research</li></Link>
                     <Link className="hover:text-green-600 transition-all" to={'#'}><li>Portfolio</li></Link>
-                    <Link className="hover:text-green-600 transition-all" to={'#'}><li>About Us</li></Link>
+                    <Link className="hover:text-green-600 transition-all" to={'/about'}><li>About Us</li></Link>
                 </ul>
                 <Link to={'/learn'}>
                     <Button className="rounded-none border border-black hover:bg-green-600 hover:border-green-600 hover:text-white text-sm" variant={'outline'}>Learn More</Button>
@@ -46,7 +46,7 @@ const Navbar = () => {
                             <SheetClose asChild><Link className="hover:text-green-600 transition-all" to={'/solutions'}><li>Solutions</li></Link></SheetClose>
                             <SheetClose asChild><Link className="hover:text-green-600 transition-all" to={'/research'}><li>Research</li></Link></SheetClose> 
                             <SheetClose asChild><Link className="hover:text-green-600 transition-all" to={'#'}><li>Portfolio</li></Link></SheetClose> 
-                            <SheetClose asChild><Link className="hover:text-green-600 transition-all" to={'#'}><li>About Us</li></Link></SheetClose> 
+                            <SheetClose asChild><Link className="hover:text-green-600 transition-all" to={'/about'}><li>About Us</li></Link></SheetClose> 
                         </ul>
                        <SheetClose asChild>
                             <Link to={'/learn'}>
