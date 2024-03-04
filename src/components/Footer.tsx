@@ -2,11 +2,12 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube, } from "react-icons/fa"
 import { FaXTwitter } from "react-icons/fa6";
 import { Separator } from "./ui/separator";
 import { Link } from "react-router-dom";
+import { Logo } from "@/images";
 
 const Services = [
     {
         label: 'About Us',
-        link: '#',
+        link: '/about',
     },
     {
         label: 'Services',
@@ -56,13 +57,19 @@ const Socials = [
 
 const Footer = () => {
     return (
-        <footer className="p-12 flex flex-col w-full h-full relative shadow-md border-t max-md:p-7">
+        <footer className="p-14 flex flex-col w-full h-full relative bg-neutral-50 shadow-md border-t max-md:p-7">
             {/* Upper part */}
             <section className="flex items-center justify-between max-md:space-y-8 max-md:flex-col">
 
                 {/* Logo */}
-                <div className="text-2xl font-bold">
-                    Logo
+                <div className="">
+                    <Link to={'/'} className="flex items-center justify-center">
+                        <img src={Logo} className="w-14" alt="Logo" />
+                        <div className="space-y-1">
+                            <h1 className="font-bold text-3xl">PreciSync</h1>
+                            {/* <p className="text-xs tracking-widest font-semibold">Precision Hub Pvt. Ltd.</p> */}
+                        </div>
+                    </Link>
                 </div>
 
                 {/* Services */}
