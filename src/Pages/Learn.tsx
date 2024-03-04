@@ -2,7 +2,7 @@ import  Box  from '@/components/Box';
 import { Button } from '@/components/ui/button';
 
 const Learn = () => {
-  return (
+return (
     // Container
     <main className='LearnMore-container'>
         {/* First Page */}
@@ -183,7 +183,7 @@ const Learn = () => {
             
         </div>
     </main>
-  )
+)
 }
 
 export default Learn
