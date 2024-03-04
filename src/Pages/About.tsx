@@ -2,8 +2,28 @@ import Box from "@/components/Box"
 import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
 import { Separator } from "@/components/ui/separator"
+import { BsBoxFill } from "react-icons/bs"
 import { Link } from "react-router-dom"
 
+
+const WorkFlow = [
+    {
+        label: "Efficiency Boost",
+        content: "Our software seamlessly integrates into your existing systems, optimizing your operations.",
+    },
+    {
+        label: "Cost Savings",
+        content: "Reduce expenses and maximize your budget with our software's cost-effective features.",
+    },
+    {
+        label: "User-Friendly",
+        content: "Experience a smooth learning curve with our intuitive software interface and comprehensive support.",
+    },
+    {
+        label: "Customizable Solutions",
+        content: "Tailor our software to meet your specific needs and achieve your business goals.",
+    },
+];
 
 const About = () => {
     return (
@@ -161,6 +181,54 @@ const About = () => {
 
             </section>
 
+            <Separator className="my-10" />
+
+            <section className="flex items-center p-6 justify-between gap-16 max-md:gap-10 flex-col md:flex-row">
+                <div className="space-y-5">
+                    <Label htmlFor="text">Innovative</Label>
+                    <h1 className="text-5xl font-bold max-md:text-3xl">
+                        Streamline Your Workflow with Our Software Solution
+                    </h1>
+                    <Link to={'/learn'}>
+                        <Button className="rounded-none border mt-5 border-black hover:bg-green-600 hover:border-green-600 hover:text-white">
+                            Learn More
+                        </Button>
+                    </Link>
+                </div>
+
+                <div className="flex gap-8">
+                    <div className="gap-20 flex flex-col items-center">
+                        <div className="flex flex-col items-center space-y-8">
+                            <BsBoxFill size={30} />
+                            <div className="h-[2px] w-[50px] bg-black rotate-90" />
+                        </div>
+                        <div className="flex flex-col items-center space-y-8">
+                            <BsBoxFill size={30} />
+                            <div className="h-[2px] w-[50px] bg-black rotate-90" />
+                        </div>
+                        <div className="flex flex-col items-center space-y-8">
+                            <BsBoxFill size={30} />
+                            <div className="h-[2px] w-[50px] bg-black rotate-90" />
+                        </div>
+                        <div className="flex flex-col items-center space-y-8">
+                            <BsBoxFill size={30} />
+                            <div className="h-[2px] w-[50px] bg-black rotate-90" />
+                        </div>
+                        
+                    </div>
+                    <div className="space-y-10">
+                        {WorkFlow.map(work => (
+                            <div className="space-y-5">
+                                <h1 className="text-2xl font-bold max-md:text-xl">{work.label}</h1>
+                                <p className="max-md:text-sm text-slate-600 font-medium">{work.content}</p>
+                            </div>
+                        ))}
+                    </div>
+
+                </div>
+
+            </section>
+           
             <Separator className="my-10" />
 
         </main>
