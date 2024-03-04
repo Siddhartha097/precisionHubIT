@@ -144,7 +144,7 @@ const App = () => {
         <section className="flex max-md:flex-col-reverse max-md:space-x-0 max-md:space-y-7 items-center justify-between space-x-8">
 
           {/* non-image */}
-          <div className="space-y-8">
+          <div className="space-y-8 md:w-1/2 w-full">
 
             {/* title and description */}
             <Label className="hidden md:block" htmlFor="text">Innovative</Label>
@@ -168,7 +168,7 @@ const App = () => {
             </div>
 
             {/* buttons */}
-            <div className="space-x-4 flex items-center max-md:justify-center">
+            <div className="space-x-4 flex items-center max-md:justify-center ">
               <Link to={'/learn'}><Button className="bg-transparent text-black font-semibold border-2 hover:bg-green-600 hover:border-green-600 hover:text-white border-black rounded-none p-5">Learn More</Button></Link>
               <Link to={'#'} className="p-6 rounded-none border-transparent hover:text-green-600 font-semibold">Contact Us </Link>
             </div>
