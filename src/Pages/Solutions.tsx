@@ -42,7 +42,7 @@ const Solutions = () => {
 
       <section className="relative h-[90vh] max-md:h-[60vh] rounded-md flex flex-col justify-center space-y-6 bg-cover bg-[url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]">
       <div className=" h-screen rounded-md space-y-6 text-white bg-slate-600/40  w-full relative flex flex-col max-md:text-center justify-center items-center">
-          <h1 className="text-5xl max-md:text-3xl font-bold">
+            <h1 className="text-5xl max-md:text-3xl font-bold">
               Transforming Businesses with Innovative Solutions
             </h1>
             <p className="font-medium max-md:text-sm">
@@ -233,7 +233,7 @@ const Solutions = () => {
 
             <SwiperSlide className="">
               <div className="min-h-[50vh] flex items-center justify-center ">
-                <div className="w-full p-6 bg-white rounded-lg">
+                <div className="w-full max-w-2xl p-6 bg-white rounded-lg">
                   <div className="flex space-x-2 mb-5 items-center justify-center">
                     <FaStar />
                     <FaStar />
