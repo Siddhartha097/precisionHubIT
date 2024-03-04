@@ -32,14 +32,15 @@ return (
                 </div>
             </div>
         </div>
-        <section className=''>
+        <section className='mx-20'>
             <img src="https://images.unsplash.com/photo-1638202947561-e372255007b3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
         </section>
         {/* Second page */}
+        <p className='ml-20 font-semibold md:px-0 pt-32'>Innovative</p>
         <div className='learn-page2 pb-20 px-5'>
                     {/* description and right image */}
-                    <p className='pl-20 font-semibold md:px-0'>Innovative</p>
-                    <div className=' md:grid grid-cols-2'>
+                    
+                    <div className=' md:grid grid-cols-2 pb-20'>
 
                         <div className='md:px-20'>
                             <h1 className='text-6xl font-bold py-10'>Revolutionize WorkFlow With Our Software</h1>
@@ -50,17 +51,17 @@ return (
                             </div>
                         </div>
 
-                        <div><img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className=' md:px-20 h-full'/></div>
-                        <div className='flex px-20'>
+                        <div><img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className=' md:px-20 h-full py-10 md:py-0'/></div>
+                        <div className='px-20  flex '>
                         <Button className="rounded-none border border-black hover:bg-pink-600 hover:border-pink-600 hover:text-white" variant={'outline'}>Learn More</Button>
                             
                         </div>
                     </div>
 
                     {/* three box */}
-                    <div className='md:grid grid-cols-3 md:px-20 py-40 '>
+                    <div className='md:grid grid-cols-3 gap-10 md:px-20 py-40 '>
                         <section>
-                            <Box label='Increase Productivity and Collaboration' desc='Our software provides innovative solutions to somplex problems helping you achieve your goals faster and with greater precision' className=' flex flex-col gap-7 md:pr-20 pr-2' titleSize='text-5xl'></Box>
+                            <Box label='Increase Productivity and Collaboration' desc='Our software provides innovative solutions to somplex problems helping you achieve your goals faster and with greater precision' className=' flex flex-col gap-12' titleSize='text-4xl'></Box>
                             <div className='flex'>
                             <Button className="rounded-none border border-black hover:bg-pink-600 hover:border-pink-600 hover:text-white mt-5 mb-5" variant={'outline'}>Learn More</Button>
                             
@@ -69,7 +70,7 @@ return (
 
 
                         <section>
-                            <Box label='Powerful Solutions for Your Business' desc='Our software affers a wide range of features and benefits to help your business succeed.' className='flex flex-col gap-12 ' titleSize='text-5xl'></Box>
+                            <Box label='Powerful Solutions for Your Business' desc='Our software affers a wide range of features and benefits to help your business succeed.' className='flex flex-col gap-12 ' titleSize='text-4xl'></Box>
                             <ul className='flex'>
                             <Button className="rounded-none border border-black hover:bg-pink-600 hover:border-pink-600 hover:text-white mt-10" variant={'outline'}>Learn More</Button>
                             
@@ -78,9 +79,9 @@ return (
 
 
                         <section>
-                            <Box label='Streamline Your Workflow with Ease' desc='Our software simplifies complex tasks and improves efficiency.' className='*:h-28' titleSize='text-5xl'></Box>
+                            <Box label='Streamline Your Workflow with Ease' desc='Our software simplifies complex tasks and improves efficiency.' className='flex flex-col gap-12' titleSize='text-4xl'></Box>
                             <ul className='flex'>
-                            <Button className="rounded-none border border-black hover:bg-pink-600 hover:border-green-600 hover:text-white" variant={'outline'}>Learn More</Button>
+                            <Button className="rounded-none border border-black hover:bg-pink-600 hover:border-green-600 hover:text-white mt-10" variant={'outline'}>Learn More</Button>
                             
                         </ul>
                         </section>
@@ -100,18 +101,18 @@ return (
                     </div>
                     {/* Three boxes 2*/}
 
-                    <div className='grid grid-cols-3 md:px-20 py-40 '>
-                        <section className='md:pr-10'>
-                            <Box label='Efficient and Effective Solutions' desc='' className='md:*:h-40' titleSize='text-5xl'></Box>
+                    <div className='md:grid grid-cols-3 md:px-20 py-40 '>
+                        <section className='md:pr-10 pb-10'>
+                            <Box label='Efficient and Effective Solutions' desc='Our software provides innovative solution to complex problems , helping yuo achieve your goals with great potential.' className='flex flex-col gap-5 mb-5' titleSize='text-5xl'></Box>
                             <div className='flex'>
-                            <Button className="rounded-none border border-black hover:bg-pink-600 hover:border-pink-600 hover:text-white" variant={'outline'}>Learn More</Button>
+                            <Button className="rounded-none border border-black hover:bg-pink-600 hover:border-pink-600 hover:text-white " variant={'outline'}>Learn More</Button>
                             
                         </div>
                         </section>
 
 
-                        <section className='md:pr-10'>
-                            <Box label='Powerful Solutions for Your Business' desc='Our software affers a wide range of features and benefits to help your business succeed.' className='md:*:h-40' titleSize='text-5xl'></Box>
+                        <section className='md:pr-10 pb-10'>
+                            <Box label='Seamless Intregation with Your Workflow' desc='Integrate our software. Seamlessly into your existing workflow and experience a boost in productivity and efficiency. ' className='flex flex-col gap-5 mb-5' titleSize='text-5xl'></Box>
                             <ul className='flex'>
                             <Button className="rounded-none border border-black hover:bg-pink-600 hover:border-pink-600 hover:text-white" variant={'outline'}>Learn More</Button>
                             
@@ -120,7 +121,7 @@ return (
 
 
                         <section>
-                            <Box label='Streamline Your Workflow with Ease' desc='Our software simplifies complex tasks and improves efficiency.' className='md:*:h-40' titleSize='text-5xl'></Box>
+                            <Box label='Stay organized and on track ' desc='Our software helps you stay organized, manage tasks efficiently and keep track of important deadlines ' className='md:*:h-40' titleSize='text-5xl'></Box>
                             <ul className='flex'>
                             
                             
@@ -140,7 +141,7 @@ return (
                     {/* Three boxes 3*/}
                     <div className='grid grid-cols-3 md:-20 my-36 '>
                         <section className='md:pr-10 '>
-                            <Box label='Efficient and effective Solutions' desc='' className=' gap-5 flex flex-col justify-center items-center text-center' titleSize='text-4xl'></Box>
+                            <Box label='Custom development. ' desc='Our experienced developers can create tailored solutions to address your specific requirement ' className=' gap-5 flex flex-col justify-center items-center text-center' titleSize='text-4xl'></Box>
                             <div className='flex'>
                             
                             
@@ -149,7 +150,7 @@ return (
 
 
                         <section className='md:pr-10'>
-                            <Box label='Powerful Solutions for Your Business' desc='Our software affers a wide rang111sfdfe of features and benefits to help your business succeed.' className='gap-5 flex flex-col justify-center items-center text-center ' titleSize='text-4xl'></Box>
+                            <Box label='Expert Consulting' desc='Our consultants provide valuable insights and audience to help you make informed decisions.' className='gap-5 flex flex-col justify-center items-center text-center ' titleSize='text-4xl'></Box>
                             <ul className='flex justify-center py-20'>
                             
                             <Button className="rounded-none border border-black hover:bg-pink-600 hover:border-pink-600 hover:text-white" variant={'outline'}>Learn More</Button>
@@ -160,7 +161,7 @@ return (
 
 
                         <section>
-                            <Box label='Streamline Your Workflow with Ease' desc='Our software simplifies complex tasks and improves efficiency.' className='gap-5 flex flex-col justify-center items-center text-center ' titleSize='text-4xl'></Box>
+                            <Box label='Collaborative Approach' desc='We work closely with our clients to ensure their goals are met and expectations exceeded.' className='gap-5 flex flex-col justify-center items-center text-center ' titleSize='text-4xl'></Box>
                             <ul className='flex'>
                             
                             
@@ -177,10 +178,10 @@ return (
             </section>
             <section className='md:w-2/4'>
                 <p className=''>Our software has been proven to deliver exceptional results, providing reliable solutions for the business of all sizes.</p>
-                <div className='grid grid-cols-2 pt-10'>
-                    <div>
+                <div className='grid grid-cols-2 pt-10 gap-10'>
+                    <div >
                         <h1 className='text-4xl font-bold'>50%</h1>
-                        <p></p>
+                        <p>Increase productivity and streamline operation with our software. </p>
                     </div>
                     <div>
                         <h1 className='text-4xl font-bold'>50%</h1>
@@ -280,8 +281,8 @@ return (
         <div className='md:pl-20 px-5'>
             <p>innovative</p>
             <h1 className='text-4xl'>Get to know our team</h1>
-            <p className='text-gray-400'>Get to know the experts behind our softwares</p>
-            <section className='grid grid-cols-4 '>
+            <p className='text-gray-400 pb-10'>Get to know the experts behind our softwares</p>
+            <section className='grid grid-cols-4 gap-10 '>
                 <Member name='John Doe' designation='Front End Developer' desc='With knowlege of 10 to 15 front end frameworks and languages.' className='md:p-20'/>
                 <Member name='John Doe' designation='Front End Developer' desc='With knowlege of 10 to 15 front end frameworks and languages.' className='md:p-20'/>
                 <Member name='John Doe' designation='Front End Developer' desc='With knowlege of 10 to 15 front end frameworks and languages.' className='md:p-20'/>
@@ -290,6 +291,19 @@ return (
                 <Member name='John Doe' designation='Front End Developer' desc='With knowlege of 10 to 15 front end frameworks and languages.' className='md:p-20'/>
             </section>
         </div>
+        unlock potential
+        <section className='flex items-center min-h-96 m-20 p-10 border-4'>
+            <div className='w-2/4 ali'>
+                <h1 className='text-5xl font-bold pb-10'>Unlock your potential</h1>
+                <p> Discover how our software can revolutionize your business operations.</p>
+                <section>
+                    
+                </section>
+            </div>
+            <div className='w-2/4'>
+                <img src="" alt="" />hi
+            </div>
+        </section>
 
     </main>
 )
