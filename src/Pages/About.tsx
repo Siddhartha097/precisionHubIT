@@ -2,6 +2,7 @@ import Box from "@/components/Box"
 import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
 import { Separator } from "@/components/ui/separator"
+import { techVid } from "@/images"
 import { BsBoxFill } from "react-icons/bs"
 import { Link } from "react-router-dom"
 
@@ -22,6 +23,21 @@ const WorkFlow = [
     {
         label: "Customizable Solutions",
         content: "Tailor our software to meet your specific needs and achieve your business goals.",
+    },
+];
+
+const Services = [
+    {
+        label: "Comprehensive Support and Training",
+        content: "Our software comes with a range of support and training options to ensure your success.",
+    },
+    {
+        label: "24/7 Customer Support",
+        content: "Our dedicated team is available around the clock to assist you with any questions or issues.",
+    },
+    {
+        label: "Personalized Training Programs",
+        content: "We offer customized training programs tailored to your specific needs and goals.",
     },
 ];
 
@@ -229,6 +245,87 @@ const About = () => {
 
             </section>
            
+            <Separator className="my-10" />
+
+            <section className="flex p-6 max-md:flex-col items-center justify-between gap-10">
+                {Services.map(service => (
+                    <Box 
+                        label={service.label}
+                        desc={service.content}
+                        className="space-y-6 w-1/3 max-md:w-full tracking-wide flex flex-col items-center justify-center text-center"
+                        iconSize={35}
+                        titleSize="text-3xl max-md:text-2xl"
+                        descSize="text-base"
+                        isBtn
+                    />
+                ))}
+            </section>
+
+            <Separator className="my-10" />
+
+            <section className="flex max-md:flex-col items-center gap-8 justify-evenly">
+
+                {/* image */}
+                <div className="md:w-2/3">
+                    <img className="rounded-lg shadow-md scale-90 hover:scale-95 transition-all" src="https://images.unsplash.com/photo-1598520106830-8c45c2035460?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="room" />
+                </div>
+
+                {/* non-image */}
+                <div className=" space-y-5 md:w-1/2">
+                    <h1 className="text-4xl font-bold max-md:text-3xl">
+                        Welcome to our company, where innovation meets excellence.
+                    </h1>
+                    <p className="text-slate-500 font-medium max-md:text-sm max-md:text-right">
+                    At our company, we are dedicated to providing cutting-edge solutions that empower businesses to thrive in the digital age.
+                    </p>
+                </div>
+
+            </section>
+
+            <Separator className="my-10" />
+
+            <section className="flex items-center max-md:flex-col-reverse justify-center space-x-8 *:w-1/2 max-md:*:w-full max-md:space-x-0 max-md:gap-10">
+
+                <div className="space-y-8 max-md:text-center">
+                    <Label htmlFor="text">Innovative</Label>
+                    <h1 className="font-bold text-4xl max-md:text-3xl">
+                        Fueling Growth and Success with Cutting-Edge Solutions
+                    </h1>
+                    <p className="font-medium text-neutral-600 max-md:text-sm">
+                        Our company has achieved remarkable growth and success, backed by compelling statistics that demonstrate our impact in the industry. We are proud to be at the forefront of innovation, delivering cutting-edge solutions to our clients.
+                    </p>
+                    <div className="flex *:w-1/2 items-center justify-between space-x-7 *:space-y-5">
+                        <div>
+                            <h1 className="text-4xl font-bold max-md:text-3xl">
+                                50%
+                            </h1>
+                            <p className="font-medium text-neutral-500 text-sm max-md:text-xs">Increase in Revenue Year Over Year</p>
+                        </div>
+                        <div>
+                            <h1 className="text-4xl font-bold max-md:text-3xl">
+                                50%
+                            </h1>
+                            <p className="font-medium text-neutral-500 text-sm max-md:text-xs">Reduction in Customer Churn Rate</p>
+                        </div>
+                    </div>
+
+                    <Link to={'/learn'}>
+                        <Button className="rounded-none border mt-5 border-black hover:bg-green-600 hover:border-green-600 hover:text-white">
+                            Learn More
+                        </Button>
+                    </Link>
+                </div>
+
+                <div className="">
+                    <video loop muted autoPlay className="rounded-md scale-100">
+                        <source src={techVid} type="video/mp4" />
+                    </video>
+                </div>
+
+                
+
+            </section>  
+
             <Separator className="my-10" />
 
         </main>
