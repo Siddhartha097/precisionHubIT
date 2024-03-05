@@ -17,7 +17,7 @@ const MoreBtn = ({
 } : MoreBtnProps) => {
     return (
         <Link to={link}>
-            <Button className={`${className} rounded-none border  border-black hover:bg-green-600 hover:border-green-600 hover:text-white text-sm`} variant={variant}>
+            <Button className={`${className} rounded-none border-2  border-black hover:bg-green-600 hover:border-green-600 hover:text-white text-sm`} variant={variant}>
                 {label}
             </Button>
         </Link>

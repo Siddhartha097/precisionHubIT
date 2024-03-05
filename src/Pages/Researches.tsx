@@ -1,3 +1,4 @@
+import PercentBox from "@/components/PercentBox"
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
 
@@ -25,18 +26,12 @@ const Researches = () => {
                     <h1 className="font-bold text-4xl max-md:text-2xl">Simplify Your Research Process with Our Long Heading Feature</h1>
                     <p className="font-medium text-neutral-600 max-md:text-sm">Our software is designed to streamline the research process, making it easier and more efficient for researchers.</p>
                     <div className="flex *:w-1/2 items-center justify-between space-x-7 *:space-y-5">
-                        <div>
-                            <h1 className="text-4xl font-bold max-md:text-3xl">
-                                50%
-                            </h1>
-                            <p className="font-medium text-neutral-500 text-sm max-md:text-xs">Save time and effort with our powerful research tools.</p>
-                        </div>
-                        <div>
-                            <h1 className="text-4xl font-bold max-md:text-3xl">
-                                50%
-                            </h1>
-                            <p className="font-medium text-neutral-500 text-sm max-md:text-xs">Access valuable insights and make informed decisions.</p>
-                        </div>
+                        <PercentBox 
+                            text="Save time and effort with our powerful research tools."
+                        />
+                        <PercentBox 
+                            text="Access valuable insights and make informed decisions."
+                        />
                     </div>
                 </div>
 

@@ -1,5 +1,6 @@
 import Box from "@/components/Box";
 import MoreBtn from "@/components/MoreBtn";
+import PercentBox from "@/components/PercentBox";
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 
@@ -196,7 +197,7 @@ const About = () => {
                     <h1 className="text-5xl font-bold max-md:text-3xl">
                         Streamline Your Workflow with Our Software Solution
                     </h1>
-                    <MoreBtn link="/learn" />
+                    <MoreBtn className="mt-6" link="/learn" />
                 </div>
 
                 <div className="flex gap-8">
@@ -282,18 +283,12 @@ const About = () => {
                         Our company has achieved remarkable growth and success, backed by compelling statistics that demonstrate our impact in the industry. We are proud to be at the forefront of innovation, delivering cutting-edge solutions to our clients.
                     </p>
                     <div className="flex *:w-1/2 items-center justify-between space-x-7 *:space-y-5">
-                        <div>
-                            <h1 className="text-4xl font-bold max-md:text-3xl">
-                                50%
-                            </h1>
-                            <p className="font-medium text-neutral-500 text-sm max-md:text-xs">Increase in Revenue Year Over Year</p>
-                        </div>
-                        <div>
-                            <h1 className="text-4xl font-bold max-md:text-3xl">
-                                50%
-                            </h1>
-                            <p className="font-medium text-neutral-500 text-sm max-md:text-xs">Reduction in Customer Churn Rate</p>
-                        </div>
+                        <PercentBox 
+                            text="Increase in Revenue Year Over Year"
+                        />
+                        <PercentBox 
+                            text="Reduction in Customer Churn Rate"
+                        />
                     </div>
 
                     <MoreBtn className="mt-5" link="/learn" />
