@@ -26,7 +26,7 @@ const Box : React.FC<BoxProps>= ({
             {isBtn && (
                 <div className="flex items-center justify-center gap-7">
                     <Button className="rounded-none border-2 font-semibold border-black hover:bg-green-600 hover:border-green-600 hover:text-white" variant={'outline'}>Get started</Button>
-                    <Link className="font-semibold hover:text-green-600" to={'#'}>Learn More</Link>
+                    <Link className="font-semibold hover:text-green-600 underline" to={'#'}>Learn More</Link>
                 </div>
             )}
         </main>

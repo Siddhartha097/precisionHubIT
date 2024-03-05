@@ -12,6 +12,7 @@ import { Input } from "./components/ui/input";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious} from "./components/ui/carousel";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "./components/ui/collapsible";
 import { useState } from "react";
+import MoreBtn from "./components/MoreBtn";
 
 const FormSchema = z.object({
   email: z.string(),
@@ -125,10 +126,8 @@ const App = () => {
         {/* 1st */}
         <section className="flex flex-col items-center justify-center space-y-6">
           <h1 className="text-7xl max-md:text-4xl font-bold text-center">Transforming businesses with innovative software solutions</h1>
-          <p className="text-center max-md:text-sm">Welcome to our company, where we create cutting-edge software solutions to help businesses <div className="p-1" /> thrive in the digital age.</p>
-          <div className="space-x-6">
-            <Button className="rounded-none border border-black hover:bg-green-600 hover:border-green-600 hover:text-white" variant={'outline'}>Learn More</Button>
-          </div>
+          <p className="text-center text-lg max-md:text-base">Welcome to our company, where we create cutting-edge software solutions to help businesses <div className="p-1" /> thrive in the digital age.</p>
+          <MoreBtn link="/learn" />
         </section>
 
         <Separator className="my-10 max-md:my-6" />
@@ -169,7 +168,7 @@ const App = () => {
 
             {/* buttons */}
             <div className="space-x-4 flex items-center max-md:justify-center ">
-              <Link to={'/learn'}><Button className="bg-transparent text-black font-semibold border-2 hover:bg-green-600 hover:border-green-600 hover:text-white border-black rounded-none p-5">Learn More</Button></Link>
+              <MoreBtn link="/learn" />
               <Link to={'#'} className="p-6 rounded-none border-transparent hover:text-green-600 font-semibold">Contact Us </Link>
             </div>
 
@@ -325,7 +324,7 @@ const App = () => {
             </div>
 
             <div className="font-medium space-x-5 flex items-center max-md:justify-evenly">
-              <Button className="border-2 border-black rounded-none p-5 hover:bg-green-600 hover:border-green-600 hover:text-neutral-200 transition-all" variant={'outline'}>Learn More</Button>
+              <MoreBtn link="/learn" />
               <Link className="hover:text-green-600" to={'#'}>Contact Us</Link>
             </div>
           </div>
@@ -399,7 +398,7 @@ const App = () => {
             <h1 className="text-5xl font-bold max-md:text-3xl">Take Your Business Further</h1>
             <p className=" font-medium max-md:text-sm">Discover our innovative solutions and boost your productivity today.</p>
             <div className="flex items-center justify-center space-x-4">
-              <Button className="rounded-none text-base border p-6 max-md:p-3 max-md:text-sm border-black hover:bg-green-600 hover:border-green-600 hover:text-white" variant={'outline'}>Contact Sales</Button>
+              <MoreBtn label="Contact Sales" />
             </div>
           </div>
 

@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import { Button } from "./ui/button";
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from "./ui/sheet";
 import { Separator } from "./ui/separator";
 import { MenuIcon } from "lucide-react";
 import Logo from '../images/PreciSync_LogoIcon_V6.svg';
+import MoreBtn from "./MoreBtn";
 
 
 const Navbar = () => {
@@ -21,16 +21,14 @@ const Navbar = () => {
             </header>
 
             <header className="flex items-center justify-between space-x-8 max-md:hidden">
-                <ul className="flex items-center justify-between space-x-8 font-semibold ">
+                <ul className="flex text-lg items-center justify-between space-x-8 font-semibold ">
                     <Link className="hover:text-green-600 transition-all" to={'/'}><li>Home</li></Link>
                     <Link className="hover:text-green-600 transition-all" to={'/solutions'}><li>Solutions</li></Link>
                     <Link className="hover:text-green-600 transition-all" to={'/research'}><li>Research</li></Link>
                     <Link className="hover:text-green-600 transition-all" to={'#'}><li>Portfolio</li></Link>
                     <Link className="hover:text-green-600 transition-all" to={'/about'}><li>About Us</li></Link>
                 </ul>
-                <Link to={'/learn'}>
-                    <Button className="rounded-none border border-black hover:bg-green-600 hover:border-green-600 hover:text-white text-sm" variant={'outline'}>Learn More</Button>
-                </Link>
+                <MoreBtn link="/learn" />
             </header>
             <Sheet>
                 <SheetTrigger className="md:hidden"><MenuIcon /></SheetTrigger>
@@ -49,11 +47,7 @@ const Navbar = () => {
                             <SheetClose asChild><Link className="hover:text-green-600 transition-all" to={'/about'}><li>About Us</li></Link></SheetClose> 
                         </ul>
                        <SheetClose asChild>
-                            <Link to={'/learn'}>
-                                    <Button className="rounded-none border border-black hover:bg-green-600 hover:border-green-600 hover:text-white p-6" variant={'outline'}>
-                                    Learn More
-                                    </Button>
-                            </Link>
+                            <MoreBtn link="/learn" />
                        </SheetClose>
                     </header>
                 </SheetContent>

@@ -1,10 +1,11 @@
-import Box from "@/components/Box"
-import { Button } from "@/components/ui/button"
-import { Label } from "@/components/ui/label"
-import { Separator } from "@/components/ui/separator"
-import { techVid } from "@/images"
-import { BsBoxFill } from "react-icons/bs"
-import { Link } from "react-router-dom"
+import Box from "@/components/Box";
+import MoreBtn from "@/components/MoreBtn";
+import { Label } from "@/components/ui/label";
+import { Separator } from "@/components/ui/separator";
+
+import { techVid } from "@/images";
+
+import { BsBoxFill } from "react-icons/bs";
 
 
 const WorkFlow = [
@@ -58,11 +59,7 @@ const About = () => {
                     <p className="text-sm md:text-base font-medium text-slate-600">
                         Founded in September 2023, PrecisionHub IT Industries Private Limited embarked on a transformative journey with a mission to redefine B2B IT solutions. From our humble beginnings, we have been dedicated to harnessing the power of cutting-edge technologies to drive innovation and efficiency for businesses across diverse industries. We are a leading software company that specializes in developing cutting-edge solutions to help businesses thrive in the digital age.
                     </p>
-                    <Link to={'/learn'}>
-                        <Button className="rounded-none border mt-5 border-black hover:bg-green-600 hover:border-green-600 hover:text-white">
-                            Learn More
-                        </Button>
-                    </Link>
+                    <MoreBtn link="/learn" />
                 </div>
             </section>
 
@@ -130,11 +127,7 @@ const About = () => {
                     />
                 </div>
 
-                <Link to={'/learn'}>
-                    <Button className="rounded-none border hover:shadow-md border-black hover:bg-green-600 hover:border-green-600 hover:text-white">
-                        Learn More
-                    </Button>
-                </Link>
+                <MoreBtn link="/learn" />
             </section>
 
             <Separator className="my-10" />
@@ -149,9 +142,7 @@ const About = () => {
                     <p className="font-medium w-1/2 text-center max-md:text-sm">
                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti iure cupiditate nisi, porro consequuntur expedita delectus laborum ipsam aut deserunt?
                     </p>
-                    <Button className="rounded-none border border-black hover:bg-green-600 hover:border-green-600 hover:text-white" >
-                        View More
-                    </Button>
+                    <MoreBtn label="View More" variant="default" />
                 </div>
             </section>
 
@@ -205,11 +196,7 @@ const About = () => {
                     <h1 className="text-5xl font-bold max-md:text-3xl">
                         Streamline Your Workflow with Our Software Solution
                     </h1>
-                    <Link to={'/learn'}>
-                        <Button className="rounded-none border mt-5 border-black hover:bg-green-600 hover:border-green-600 hover:text-white">
-                            Learn More
-                        </Button>
-                    </Link>
+                    <MoreBtn link="/learn" />
                 </div>
 
                 <div className="flex gap-8">
@@ -309,11 +296,7 @@ const About = () => {
                         </div>
                     </div>
 
-                    <Link to={'/learn'}>
-                        <Button className="rounded-none border mt-5 border-black hover:bg-green-600 hover:border-green-600 hover:text-white">
-                            Learn More
-                        </Button>
-                    </Link>
+                    <MoreBtn link="/learn" />
                 </div>
 
                 <div className="">
