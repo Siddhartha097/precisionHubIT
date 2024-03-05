@@ -9,6 +9,7 @@ import { Pagination } from 'swiper/modules';
 import { FaStar } from 'react-icons/fa';
 import Member from '@/components/Member';
 import { Separator } from '@radix-ui/react-separator';
+import MoreBtn from '@/components/MoreBtn';
 
 const Learn = () => {
 return (
@@ -29,7 +30,7 @@ return (
                 </p>
                 <div>
                 <Button className="rounded-none border border-black hover:bg-white text-white hover:text-black bg-black " variant={'outline'}>Learn More</Button>
-                <Button className="rounded-none border border-black hover:bg-green-600 hover:border-green-600 hover:text-white ml-5" variant={'outline'}>Sign Up</Button>
+                {/* <Button className="rounded-none border border-black hover:bg-green-600 hover:border-green-600 hover:text-white ml-5" variant={'outline'}>Sign Up</Button> */}
                 </div>
             </div>
         </div>
@@ -74,19 +75,19 @@ return (
 
                         <section>
                             <Box label='Powerful Solutions for Your Business' desc='Our software affers a wide range of features and benefits to help your business succeed.' className='flex flex-col gap-12 ' titleSize='text-4xl'></Box>
-                            <ul className='flex'>
+                            <div className='flex'>
                             <Button className="rounded-none border border-black hover:bg-pink-600 hover:border-pink-600 hover:text-white mt-10" variant={'outline'}>Learn More</Button>
                             
-                        </ul>
+                        </div>
                         </section>
 
 
                         <section>
                             <Box label='Streamline Your Workflow with Ease' desc='Our software simplifies complex tasks and improves efficiency.' className='flex flex-col gap-12' titleSize='text-4xl'></Box>
-                            <ul className='flex'>
+                            <div className='flex'>
                             <Button className="rounded-none border border-black hover:bg-pink-600 hover:border-green-600 hover:text-white mt-10" variant={'outline'}>Learn More</Button>
                             
-                        </ul>
+                        </div>
                         </section>
                     </div>
                     <Separator className='border-b-2 mx-5 md:mx-20'/>
@@ -116,10 +117,10 @@ return (
 
                         <section className='md:pr-10 pb-10'>
                             <Box label='Seamless Intregation with Your Workflow' desc='Integrate our software. Seamlessly into your existing workflow and experience a boost in productivity and efficiency. ' className='flex flex-col gap-5 mb-5' titleSize='text-5xl'></Box>
-                            <ul className='flex'>
+                            <div className='flex'>
                             <Button className="rounded-none border border-black hover:bg-pink-600 hover:border-pink-600 hover:text-white" variant={'outline'}>Learn More</Button>
                             
-                        </ul>
+                        </div>
                         </section>
 
 
@@ -154,12 +155,12 @@ return (
 
                         <section className='md:pr-10'>
                             <Box label='Expert Consulting' desc='Our consultants provide valuable insights and audience to help you make informed decisions.' className='gap-5 flex flex-col justify-center items-center text-center ' titleSize='text-4xl'></Box>
-                            <ul className='flex justify-center py-20'>
+                            <div className='flex justify-center py-20'>
                             
                             <Button className="rounded-none border border-black hover:bg-pink-600 hover:border-pink-600 hover:text-white" variant={'outline'}>Learn More</Button>
-                            <Button className='rounded-none border-0' variant={'outline'}>Sign up {'>'} </Button>
+                            {/* <Button className='rounded-none border-0' variant={'outline'}>Sign up {'>'} </Button> */}
                             
-                        </ul>
+                        </div>
                         </section>
 
 
@@ -304,15 +305,15 @@ return (
         </div>
         {/* add buttons and a image */}
         <section className='flex items-center min-h-96 m-20 p-10 border-4'>
-            <div className='w-2/4 ali'>
-                <h1 className='text-5xl font-bold pb-10'>Unlock your potential</h1>
+            <div className='w-1/2 space-y-5'>
+                <h1 className='text-5xl font-bold'>Unlock your potential</h1>
                 <p> Discover how our software can revolutionize your business operations.</p>
                 <section>
-                    
+                    <MoreBtn label='Request Demo' />
                 </section>
             </div>
             <div className='w-2/4'>
-                <img src="" alt="" />hi
+                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
             </div>
         </section>
 
