@@ -349,7 +349,13 @@ const About = () => {
 
             <Separator className="my-10" />
 
-            <section>
+            <section className="flex items-center flex-col justify-center gap-10 md:gap-20 w-full *:w-full">
+                <div className="flex flex-col items-center justify-center gap-6">
+                    <Label htmlFor="text">Affordable</Label>
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold">Flexible Pricing</h1>
+                    <p className="text-sm font-medium text-slate-600">Choose the pricing plan that suits your needs!</p>
+                </div>
+
                 <Pricing />
             </section>
 

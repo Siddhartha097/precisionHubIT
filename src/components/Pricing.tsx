@@ -1,14 +1,13 @@
-import BasicPlan from "./BasicPlan";
-import BusinessPlan from "./BusinessPlan";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "./ui/tabs";
+import Plan from "./Plan";
 
 
 const Pricing = () => {
     return (
         <div className="flex items-center justify-center">
-            <Tabs defaultValue="monthly" className=" w-full  gap-6 flex flex-col items-center">
+            <Tabs defaultValue="monthly" className=" w-full flex flex-col items-center gap-2">
 
-                <TabsList className=" bg-slate-600 text-white">
+                <TabsList className=" bg-black h-12 text-white *:w-full w-1/2 *:h-full *:text-lg *:font-semibold rounded-none *:rounded-none">
                     <TabsTrigger value="monthly">Monthly</TabsTrigger>
                     <TabsTrigger value="yearly">Yearly</TabsTrigger>
                 </TabsList>
@@ -17,13 +16,15 @@ const Pricing = () => {
                 <TabsContent className="w-full flex items-center justify-center gap-10" value="monthly">
                     
                     {/* basic */}
-                    <BasicPlan 
+                    <Plan 
+                        title="Basic"
                         price={19}
                         time="mo"
                     />
 
                     {/* business */}
-                    <BusinessPlan 
+                    <Plan 
+                        title="Business"
                         price={29}
                         time="mo"
                     />
@@ -34,13 +35,15 @@ const Pricing = () => {
                 <TabsContent className="w-full flex items-center justify-center gap-10"  value="yearly">
 
                     {/* basic */}
-                    <BasicPlan 
+                    <Plan 
+                        title="Basic"
                         price={190}
                         time="yr"
                     />
 
                     {/* business */}
-                    <BusinessPlan 
+                    <Plan 
+                        title="Business"
                         price={286}
                         time="yr"
                     />
