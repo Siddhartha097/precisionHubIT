@@ -8,6 +8,7 @@ import { Navigation } from 'swiper/modules';
 import { Pagination } from 'swiper/modules';
 import { FaStar } from 'react-icons/fa';
 import Member from '@/components/Member';
+import { Separator } from '@radix-ui/react-separator';
 
 const Learn = () => {
 return (
@@ -16,7 +17,7 @@ return (
         {/* First Page */}
         <div className='md:flex justify-center md:h-30 py-20'>
             {/* left */}
-            <div className="flex md:pt-56 justify-center h-30 bg-white md:px-20 md:w-3/5">
+            <div className="flex md:pt-56 justify-center h-30 bg-white md:px-20 md:w-3/5 px-5">
                 <h1 className="text-6xl font-bold text-gray-800 mb-8">
                     Powerful Software Solutions for Your Business
                 </h1>
@@ -35,9 +36,11 @@ return (
         <section className='mx-20'>
             <img src="https://images.unsplash.com/photo-1638202947561-e372255007b3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
         </section>
+        <br/>
+        <Separator className='border-b-2 mx-5 md:mx-20' />
         {/* Second page */}
         <p className='ml-20 font-semibold md:px-0 pt-32'>Innovative</p>
-        <div className='learn-page2 pb-20 px-5'>
+        <div className='learn-page2 pb-20 '>
                     {/* description and right image */}
                     
                     <div className=' md:grid grid-cols-2 pb-20'>
@@ -57,9 +60,9 @@ return (
                             
                         </div>
                     </div>
-
+                    <Separator className='border-b-2 mx-5 md:mx-20'/>
                     {/* three box */}
-                    <div className='md:grid grid-cols-3 gap-10 md:px-20 py-40 '>
+                    <div className='md:grid grid-cols-3 gap-10 md:px-20 px-5 py-40 '>
                         <section>
                             <Box label='Increase Productivity and Collaboration' desc='Our software provides innovative solutions to somplex problems helping you achieve your goals faster and with greater precision' className=' flex flex-col gap-12' titleSize='text-4xl'></Box>
                             <div className='flex'>
@@ -86,9 +89,9 @@ return (
                         </ul>
                         </section>
                     </div>
-
+                    <Separator className='border-b-2 mx-5 md:mx-20'/>
                     {/* decription */}
-                    <div className='md:flex md:px-20 md:py-20'>
+                    <div className='md:flex md:px-20 md:py-20 px-5'>
                         <section className='text-6xl md:w-2/4 font-bold'>
                             Discover the power of Our Software
                         </section>
@@ -100,8 +103,8 @@ return (
                         </section>
                     </div>
                     {/* Three boxes 2*/}
-
-                    <div className='md:grid grid-cols-3 md:px-20 py-40 '>
+                    last box problem
+                    <div className='md:grid grid-cols-3 md:px-20 py-40 px-5'>
                         <section className='md:pr-10 pb-10'>
                             <Box label='Efficient and Effective Solutions' desc='Our software provides innovative solution to complex problems , helping yuo achieve your goals with great potential.' className='flex flex-col gap-5 mb-5' titleSize='text-5xl'></Box>
                             <div className='flex'>
@@ -128,7 +131,7 @@ return (
                         </ul>
                         </section>
                     </div>
-
+                    <Separator className='border-b-2 mx-5 md:mx-20'/>
                     {/* Three para */}
                     <section className='flex justify-center'>
                     <section className='pt-20 md:w-3/6 text-center'>
@@ -139,7 +142,7 @@ return (
                     </section>
 
                     {/* Three boxes 3*/}
-                    <div className='grid grid-cols-3 md:-20 my-36 '>
+                    <div className='grid grid-cols-3 md:-20 mt-20 '>
                         <section className='md:pr-10 '>
                             <Box label='Custom development. ' desc='Our experienced developers can create tailored solutions to address your specific requirement ' className=' gap-5 flex flex-col justify-center items-center text-center' titleSize='text-4xl'></Box>
                             <div className='flex'>
@@ -170,9 +173,10 @@ return (
 
                     </div>
         </div>
+        <Separator className='border-b-2 mx-5 md:mx-20'/>
         {/* Third */}
         <div></div>
-        <div className='md:flex justify-center gap-20 md:px-20 px-5'>
+        <div className='md:flex justify-center gap-20 md:px-20 px-5 py-40'>
             <section className='md:w-2/4'>
                 <h1 className='text-5xl font-bold pb-10'>Discover the Power of Our Reliable and Successful Software</h1>
             </section>
@@ -221,13 +225,14 @@ return (
                             </div>
                         </div>
                     </SwiperSlide>
-                    <SwiperSlide><div className='grid grid-cols-2 items-center h-96'>
-                            <div className='flex justify-center'><img src="https://images.unsplash.com/photo-1595956553259-1e2dce209bf4?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                            className='h-96 rounded-xl' alt="" /></div>
+                    <SwiperSlide className=''>
+                        <div className='md:grid grid-cols-2 items-center md:h-96'>
+                            <div className='flex justify-center '><img src="https://images.unsplash.com/photo-1595956553259-1e2dce209bf4?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                            className='md:h-96 rounded-xl my-10' alt="" /></div>
                             <div>
                             <div className=' flex flex-col gap-7'>
                                 <p className='flex'><FaStar></FaStar><FaStar></FaStar><FaStar></FaStar><FaStar></FaStar><FaStar></FaStar></p>
-                                <h1 className='text-xl font-bold'>Our software has completely turned the way is does business. It's Efficient, user-friendly, and has increased our productivity ten-folds.</h1>
+                                <h1 className='text-xl font-bold '>Our software has completely turned the way is does business. It's Efficient, user-friendly, and has increased our productivity ten-folds.</h1>
                                     <div className='flex'>
                                         <div className='font-semibold text-gray-500'>
                                             <p>Suresh Raima</p>
@@ -238,14 +243,16 @@ return (
                                     </div>
                             </div>
                             </div>
-                        </div></SwiperSlide>
-                    <SwiperSlide><div className='grid grid-cols-2 items-center h-96'>
-                            <div className='flex justify-center'><img src="https://images.unsplash.com/photo-1595956553259-1e2dce209bf4?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                            className='h-96 rounded-xl' alt="" /></div>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide className=''>
+                        <div className='md:grid grid-cols-2 items-center md:h-96'>
+                            <div className='flex justify-center '><img src="https://images.unsplash.com/photo-1595956553259-1e2dce209bf4?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                            className='md:h-96 rounded-xl my-10' alt="" /></div>
                             <div>
                             <div className=' flex flex-col gap-7'>
                                 <p className='flex'><FaStar></FaStar><FaStar></FaStar><FaStar></FaStar><FaStar></FaStar><FaStar></FaStar></p>
-                                <h1 className='text-xl font-bold'>Our software has completely turned the way is does business. It's Efficient, user-friendly, and has increased our productivity ten-folds.</h1>
+                                <h1 className='text-xl font-bold '>Our software has completely turned the way is does business. It's Efficient, user-friendly, and has increased our productivity ten-folds.</h1>
                                     <div className='flex'>
                                         <div className='font-semibold text-gray-500'>
                                             <p>Suresh Raima</p>
@@ -256,14 +263,16 @@ return (
                                     </div>
                             </div>
                             </div>
-                        </div></SwiperSlide>
-                    <SwiperSlide><div className='grid grid-cols-2 items-center h-96'>
-                            <div className='flex justify-center'><img src="https://images.unsplash.com/photo-1595956553259-1e2dce209bf4?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                            className= 'h-96 rounded-xl' alt="" /></div>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide className=''>
+                        <div className='md:grid grid-cols-2 items-center md:h-96'>
+                            <div className='flex justify-center '><img src="https://images.unsplash.com/photo-1595956553259-1e2dce209bf4?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                            className='md:h-96 rounded-xl my-10' alt="" /></div>
                             <div>
                             <div className=' flex flex-col gap-7'>
                                 <p className='flex'><FaStar></FaStar><FaStar></FaStar><FaStar></FaStar><FaStar></FaStar><FaStar></FaStar></p>
-                                <h1 className='text-xl font-bold'>Our software has completely turned the way is does business. It's Efficient, user-friendly, and has increased our productivity ten-folds.</h1>
+                                <h1 className='text-xl font-bold '>Our software has completely turned the way is does business. It's Efficient, user-friendly, and has increased our productivity ten-folds.</h1>
                                     <div className='flex'>
                                         <div className='font-semibold text-gray-500'>
                                             <p>Suresh Raima</p>
@@ -274,7 +283,9 @@ return (
                                     </div>
                             </div>
                             </div>
-                        </div></SwiperSlide>
+                        </div>
+                    </SwiperSlide>
+                    
                 </Swiper>
             </section>
         </div>
@@ -291,7 +302,7 @@ return (
                 <Member name='John Doe' designation='Front End Developer' desc='With knowlege of 10 to 15 front end frameworks and languages.' className='md:p-20'/>
             </section>
         </div>
-        unlock potential
+        {/* add buttons and a image */}
         <section className='flex items-center min-h-96 m-20 p-10 border-4'>
             <div className='w-2/4 ali'>
                 <h1 className='text-5xl font-bold pb-10'>Unlock your potential</h1>
