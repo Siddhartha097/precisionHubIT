@@ -28,7 +28,7 @@ const HeroBox: React.FC<HeroBoxProps> = ({
             <h1 className="text-5xl max-md:text-3xl font-bold">
                 {title}
             </h1>
-            <p className="font-medium w-1/2 max-md:text-sm p-7">
+            <p className="font-medium md:w-1/2 max-md:text-sm p-7">
                 {subTitle}
             </p>
             <MoreBtn link={link} variant="default" label={btnName} className="p-5" />

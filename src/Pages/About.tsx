@@ -2,6 +2,7 @@ import Box from "@/components/Box";
 import HeroBox from "@/components/HeroBox";
 import MoreBtn from "@/components/MoreBtn";
 import PercentBox from "@/components/PercentBox";
+import Pricing from "@/components/Pricing";
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 
@@ -317,13 +318,14 @@ const About = () => {
 
             <Separator className="my-10" />
 
-            <section className="flex max-md:flex-col items-center justify-between gap-10">
+            <section className="flex max-md:flex-col items-center justify-center gap-10">
 
                 <div className="flex items-center justify-center md:w-2/3">
                     <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="rounded-lg shadow-md scale-90 hover:scale-95 transition-all" alt="" />
                 </div>
 
-                <div className="flex flex-col items-center justify-center gap-5 md:w-1/3 space-y-4">
+                <div className="flex flex-col items-center justify-center gap-5 md:w-1/2 space-y-4">
+
                     <div className="flex space-x-2 mb-5 items-center justify-center">
                         <FaStar />
                         <FaStar />
@@ -331,13 +333,24 @@ const About = () => {
                         <FaStar />
                         <FaStar />
                     </div>
-                    <h1 className="font-semibold">Our experience with the software has been nothing short of amazing. It has greatly improved our productivity and efficiency.</h1>
+
+                    <h1 className="font-semibold">
+                        Our experience with the software has been nothing short of amazing. It has greatly improved our productivity and efficiency.
+                    </h1>
+
                     <div className="text-center flex items-center justify-center space-x-8">
                       <p className="text-gray-700 max-md:text-sm"> <b>Rick Dawson, CEO,</b><br /> XYZ Corp</p>
                       <p className="text-3xl  font-bold">|</p>
                       <p className="font-bold">WorkFlow</p>
                     </div>
+
                 </div>
+            </section>
+
+            <Separator className="my-10" />
+
+            <section>
+                <Pricing />
             </section>
 
         </main>
