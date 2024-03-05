@@ -59,7 +59,7 @@ const About = () => {
                     <p className="text-sm md:text-base font-medium text-slate-600">
                         Founded in September 2023, PrecisionHub IT Industries Private Limited embarked on a transformative journey with a mission to redefine B2B IT solutions. From our humble beginnings, we have been dedicated to harnessing the power of cutting-edge technologies to drive innovation and efficiency for businesses across diverse industries. We are a leading software company that specializes in developing cutting-edge solutions to help businesses thrive in the digital age.
                     </p>
-                    <MoreBtn link="/learn" />
+                    <MoreBtn className="mt-6" link="/learn" />
                 </div>
             </section>
 
@@ -296,7 +296,7 @@ const About = () => {
                         </div>
                     </div>
 
-                    <MoreBtn link="/learn" />
+                    <MoreBtn className="mt-5" link="/learn" />
                 </div>
 
                 <div className="">

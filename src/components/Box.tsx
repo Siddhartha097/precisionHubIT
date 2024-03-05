@@ -1,7 +1,7 @@
 // import { IconType } from "react-icons";
 import { BsBoxFill } from "react-icons/bs";
-import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
+import MoreBtn from "./MoreBtn";
 
 interface BoxProps {
     label: string;
@@ -25,7 +25,7 @@ const Box : React.FC<BoxProps>= ({
             <p className={`${descSize ? descSize : 'text-sm'} text-neutral-500 font-medium max-md:text-xs`}>{desc}</p>
             {isBtn && (
                 <div className="flex items-center justify-center gap-7">
-                    <Button className="rounded-none border-2 font-semibold border-black hover:bg-green-600 hover:border-green-600 hover:text-white" variant={'outline'}>Get started</Button>
+                    <MoreBtn label="Get Started" />
                     <Link className="font-semibold hover:text-green-600 underline" to={'#'}>Learn More</Link>
                 </div>
             )}
