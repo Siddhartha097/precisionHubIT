@@ -21,7 +21,7 @@ const HeroBox: React.FC<HeroBoxProps> = ({
     white
 }) => {
     return (
-        <div className={` h-screen rounded-md bg-slate-600/50 p-6 ${!white ? '' : 'text-white'}  w-full relative text-center flex flex-col justify-center items-center`}>
+        <div className={` h-screen rounded-md bg-slate-600/40 p-6 ${!white ? '' : 'text-white'}  w-full relative text-center flex flex-col justify-center items-center`}>
             <Label htmlFor="text" className={`${!isLabel ? 'hidden' : 'block'}`}>
                 {label}
             </Label>

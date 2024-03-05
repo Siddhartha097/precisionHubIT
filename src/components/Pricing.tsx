@@ -1,10 +1,12 @@
+import BasicPlan from "./BasicPlan";
+import BusinessPlan from "./BusinessPlan";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "./ui/tabs";
 
 
 const Pricing = () => {
     return (
         <div className="flex items-center justify-center">
-            <Tabs defaultValue="monthly" className="flex w-1/2 flex-col items-center justify-center gap-16">
+            <Tabs defaultValue="monthly" className=" w-full  gap-6 flex flex-col items-center">
 
                 <TabsList className=" bg-slate-600 text-white">
                     <TabsTrigger value="monthly">Monthly</TabsTrigger>
@@ -12,13 +14,37 @@ const Pricing = () => {
                 </TabsList>
 
                 {/* Monthly */}
-                <TabsContent value="monthly">
-                    Make changes to your account here.
+                <TabsContent className="w-full flex items-center justify-center gap-10" value="monthly">
+                    
+                    {/* basic */}
+                    <BasicPlan 
+                        price={19}
+                        time="mo"
+                    />
+
+                    {/* business */}
+                    <BusinessPlan 
+                        price={29}
+                        time="mo"
+                    />
+
                 </TabsContent>
 
                 {/* Yearly */}
-                <TabsContent value="yearly">
-                    Change your password here.
+                <TabsContent className="w-full flex items-center justify-center gap-10"  value="yearly">
+
+                    {/* basic */}
+                    <BasicPlan 
+                        price={190}
+                        time="yr"
+                    />
+
+                    {/* business */}
+                    <BusinessPlan 
+                        price={286}
+                        time="yr"
+                    />
+
                 </TabsContent>
 
             </Tabs>
