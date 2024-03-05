@@ -1,5 +1,7 @@
 import Box from "@/components/Box";
+import HeroBox from "@/components/HeroBox";
 import MoreBtn from "@/components/MoreBtn";
+import PercentBox from "@/components/PercentBox";
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 
@@ -59,7 +61,7 @@ const About = () => {
                     <p className="text-sm md:text-base font-medium text-slate-600">
                         Founded in September 2023, PrecisionHub IT Industries Private Limited embarked on a transformative journey with a mission to redefine B2B IT solutions. From our humble beginnings, we have been dedicated to harnessing the power of cutting-edge technologies to drive innovation and efficiency for businesses across diverse industries. We are a leading software company that specializes in developing cutting-edge solutions to help businesses thrive in the digital age.
                     </p>
-                    <MoreBtn link="/learn" />
+                    <MoreBtn className="mt-6" link="/learn" />
                 </div>
             </section>
 
@@ -134,7 +136,7 @@ const About = () => {
 
             <section className="relative h-[60vh] rounded-md flex flex-col justify-center space-y-6 bg-cover bg-[url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]">
                 
-                <div className=" h-screen rounded-md space-y-6 text-white bg-slate-600/50 relative flex flex-col max-md:text-center justify-center items-center">
+                {/* <div className=" h-screen rounded-md space-y-6 text-white bg-slate-600/50 relative flex flex-col max-md:text-center justify-center items-center">
                     <Label>Tagline</Label>
                     <h1 className="text-5xl max-md:text-3xl font-bold">
                         Our Department
@@ -143,8 +145,17 @@ const About = () => {
                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti iure cupiditate nisi, porro consequuntur expedita delectus laborum ipsam aut deserunt?
                     </p>
                     <MoreBtn label="View More" variant="default" />
-                </div>
+                </div> */}
+                <HeroBox 
+                    title="Our Department"
+                    subTitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti iure cupiditate nisi, porro consequuntur expedita delectus laborum ipsam aut deserunt?"
+                    isLabel
+                    label="Tagline"
+                    btnName="Learn more"
+                    white
+                />
             </section>
+            
 
             <Separator className="my-10" />
 
@@ -196,7 +207,7 @@ const About = () => {
                     <h1 className="text-5xl font-bold max-md:text-3xl">
                         Streamline Your Workflow with Our Software Solution
                     </h1>
-                    <MoreBtn link="/learn" />
+                    <MoreBtn className="mt-6" link="/learn" />
                 </div>
 
                 <div className="flex gap-8">
@@ -282,21 +293,15 @@ const About = () => {
                         Our company has achieved remarkable growth and success, backed by compelling statistics that demonstrate our impact in the industry. We are proud to be at the forefront of innovation, delivering cutting-edge solutions to our clients.
                     </p>
                     <div className="flex *:w-1/2 items-center justify-between space-x-7 *:space-y-5">
-                        <div>
-                            <h1 className="text-4xl font-bold max-md:text-3xl">
-                                50%
-                            </h1>
-                            <p className="font-medium text-neutral-500 text-sm max-md:text-xs">Increase in Revenue Year Over Year</p>
-                        </div>
-                        <div>
-                            <h1 className="text-4xl font-bold max-md:text-3xl">
-                                50%
-                            </h1>
-                            <p className="font-medium text-neutral-500 text-sm max-md:text-xs">Reduction in Customer Churn Rate</p>
-                        </div>
+                        <PercentBox 
+                            text="Increase in Revenue Year Over Year"
+                        />
+                        <PercentBox 
+                            text="Reduction in Customer Churn Rate"
+                        />
                     </div>
 
-                    <MoreBtn link="/learn" />
+                    <MoreBtn className="mt-5" link="/learn" />
                 </div>
 
                 <div className="">
@@ -310,6 +315,8 @@ const About = () => {
             </section>  
 
             <Separator className="my-10" />
+
+            
 
         </main>
     )

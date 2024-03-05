@@ -1,4 +1,5 @@
-import { Button } from "@/components/ui/button"
+import HeroBox from "@/components/HeroBox"
+import PercentBox from "@/components/PercentBox"
 import { Separator } from "@/components/ui/separator"
 
 
@@ -6,15 +7,20 @@ const Researches = () => {
     return (
         <main className="p-16 max-md:px-8 space-y-14 w-full h-full">
            <section className="relative h-[90vh] max-md:h-[60vh] rounded-md flex flex-col justify-center items-center space-y-6 bg-cover bg-[url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]">
-                <div className=" h-screen rounded-md bg-gray-400/30 p-6  w-full relative text-center max-md: flex flex-col justify-center items-center">
+                {/* <div className=" h-screen rounded-md bg-gray-400/30 p-6  w-full relative text-center max-md: flex flex-col justify-center items-center">
                     <h1 className="text-5xl max-md:text-2xl font-bold">
                         Empowering Researchers with Innovative Software Solutions
                     </h1>
                     <p className="font-medium max-md:text-sm p-7 ">
                         Our software provides researchers with advanced tools and insights to drive groundbreaking discoveries in their fields.
                     </p>
-                    <Button className="rounded-none max-md:p-4 border p-6 tracking-wide border-black hover:bg-green-600 hover:border-green-600 hover:text-white" >Learn More</Button>
-                </div>
+                    <MoreBtn link="/learn" variant="default" className="p-5" />
+                </div> */}
+                <HeroBox 
+                    title="Empowering Researchers with Innovative Software Solutions"
+                    subTitle="Our software provides researchers with advanced tools and insights to drive groundbreaking discoveries in their fields."
+                    btnName="Learn More"
+                />
             </section>
 
             <Separator className="my-14 " />
@@ -25,18 +31,12 @@ const Researches = () => {
                     <h1 className="font-bold text-4xl max-md:text-2xl">Simplify Your Research Process with Our Long Heading Feature</h1>
                     <p className="font-medium text-neutral-600 max-md:text-sm">Our software is designed to streamline the research process, making it easier and more efficient for researchers.</p>
                     <div className="flex *:w-1/2 items-center justify-between space-x-7 *:space-y-5">
-                        <div>
-                            <h1 className="text-4xl font-bold max-md:text-3xl">
-                                50%
-                            </h1>
-                            <p className="font-medium text-neutral-500 text-sm max-md:text-xs">Save time and effort with our powerful research tools.</p>
-                        </div>
-                        <div>
-                            <h1 className="text-4xl font-bold max-md:text-3xl">
-                                50%
-                            </h1>
-                            <p className="font-medium text-neutral-500 text-sm max-md:text-xs">Access valuable insights and make informed decisions.</p>
-                        </div>
+                        <PercentBox 
+                            text="Save time and effort with our powerful research tools."
+                        />
+                        <PercentBox 
+                            text="Access valuable insights and make informed decisions."
+                        />
                     </div>
                 </div>
 

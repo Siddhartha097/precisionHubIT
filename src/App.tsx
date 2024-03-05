@@ -13,6 +13,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "./components/ui/collapsible";
 import { useState } from "react";
 import MoreBtn from "./components/MoreBtn";
+import PercentBox from "./components/PercentBox";
 
 const FormSchema = z.object({
   email: z.string(),
@@ -307,20 +308,16 @@ const App = () => {
 
             <div className="flex justify-between items-center max-md:space-x-5">
 
-              <div className="space-y-3">
-                <h1 className="text-5xl font-bold max-md:text-4xl">50%</h1>
-                <p className="text-neutral-600 font-medium max-md:text-xs">
-                  Increase in productivity for our clients
-                </p>
-              </div>
-              <Separator orientation="vertical" className="max-md:hidden" />
-              <div className="space-y-3">
-                <h1 className="text-5xl font-bold max-md:text-4xl">50%</h1>
-                <p className="text-neutral-600 font-medium max-md:text-xs">
-                  Reduction in operational costs for our clients
-                </p>
-              </div>
+              <PercentBox
+                text="Increase in productivity for our clients"
+              />
 
+              <Separator orientation="vertical" className="max-md:hidden" />
+
+              <PercentBox
+                text="Reduction in operational costs for our clients"
+              />
+              
             </div>
 
             <div className="font-medium space-x-5 flex items-center max-md:justify-evenly">
