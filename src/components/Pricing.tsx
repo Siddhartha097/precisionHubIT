@@ -7,13 +7,13 @@ const Pricing = () => {
         <div className="flex items-center justify-center">
             <Tabs defaultValue="monthly" className=" w-full flex flex-col items-center gap-2">
 
-                <TabsList className=" bg-black h-12 text-white *:w-full w-1/2 *:h-full *:text-lg *:font-semibold rounded-none *:rounded-none">
+                <TabsList className="bg-black h-12 text-white *:w-full w-full md:w-1/2 *:h-full *:text-lg max-md:*:text-base *:font-semibold rounded-none *:rounded-none">
                     <TabsTrigger value="monthly">Monthly</TabsTrigger>
                     <TabsTrigger value="yearly">Yearly</TabsTrigger>
                 </TabsList>
 
                 {/* Monthly */}
-                <TabsContent className="w-full flex items-center justify-center gap-10" value="monthly">
+                <TabsContent className="w-full flex items-center justify-center gap-10 max-md:gap-5" value="monthly">
                     
                     {/* basic */}
                     <Plan 
@@ -32,7 +32,7 @@ const Pricing = () => {
                 </TabsContent>
 
                 {/* Yearly */}
-                <TabsContent className="w-full flex items-center justify-center gap-10"  value="yearly">
+                <TabsContent className="w-full flex items-center justify-center gap-10 max-md:gap-5"  value="yearly">
 
                     {/* basic */}
                     <Plan 

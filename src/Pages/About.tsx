@@ -359,6 +359,8 @@ const About = () => {
                 <Pricing />
             </section>
 
+            <Separator className="my-10" />
+
         </main>
     )
 }
