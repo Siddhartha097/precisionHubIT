@@ -382,7 +382,7 @@ const About = () => {
 
             <Separator className="my-10" />
 
-            <section className="flex items-center justify-center *:w-1/3 max-md:*:w-full max-md:flex-col gap-10 p-10">
+            <section className="flex items-center justify-center *:w-1/3 max-md:*:w-full max-md:flex-wrap gap-12 p-10">
                 <ContactBox 
                     label="Email"
                     icon={MdOutlineMail}

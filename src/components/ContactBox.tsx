@@ -21,13 +21,13 @@ const ContactBox : React.FC<ContactBoxProps> = ({
     return (
         <div className={`flex flex-col space-y-5 ${!center ? '' : 'max-md:text-center max-md:items-center max-md:justify-center'}`}>
             <Icon className="text-5xl max-md:text-3xl" />
-            <h1 className="font-bold text-4xl max-md:text-2xl">
+            <h1 className="font-bold text-3xl max-md:text-xl">
                 {label}
             </h1>
-            <p className="max-md:text-sm text-slate-700">
+            <p className="max-md:text-xs text-slate-700 text-sm">
                 {desc}
             </p>
-            <Link className="underline max-md:text-sm" to={href}>
+            <Link className="underline text-sm max-md:text-xs" to={href}>
                 {link}
             </Link>
         </div>

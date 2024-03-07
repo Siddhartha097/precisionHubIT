@@ -15,7 +15,7 @@ const Services = [
     },
     {
         label: 'Contact',
-        link: '#',
+        link: '/contact',
     },
     {
         label: 'FAQ',
