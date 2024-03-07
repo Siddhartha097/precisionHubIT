@@ -1,6 +1,8 @@
 import Box from "@/components/Box";
+import ContactBox from "@/components/ContactBox";
 import HeroBox from "@/components/HeroBox";
 import MoreBtn from "@/components/MoreBtn";
+import Newsletter from "@/components/Newsletter";
 import PercentBox from "@/components/PercentBox";
 import Pricing from "@/components/Pricing";
 import { Label } from "@/components/ui/label";
@@ -9,7 +11,9 @@ import { Separator } from "@/components/ui/separator";
 import { techVid } from "@/images";
 
 import { BsBoxFill } from "react-icons/bs";
+import { MdOutlineMail, MdOutlineLocationOn, MdOutlinePhoneAndroid } from "react-icons/md";
 import { FaStar } from "react-icons/fa";
+
 
 
 const WorkFlow = [
@@ -360,6 +364,47 @@ const About = () => {
             </section>
 
             <Separator className="my-10" />
+
+            <section className="relative h-[60vh] rounded-md flex flex-col justify-center space-y-5 bg-cover bg-[url('https://images.unsplash.com/photo-1605379399642-870262d3d051?q=80&w=1812&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]">
+                <HeroBox 
+                    title="Take Action and Get Started"
+                    subTitle="Discover the power of our software and transform your business today."
+                    btnName="Request Demo"
+                    white
+                />
+            </section>
+
+            <Separator className="my-10" />
+
+            <section className="flex items-center justify-center">
+                <Newsletter />
+            </section>
+
+            <Separator className="my-10" />
+
+            <section className="flex items-center justify-center *:w-1/3 max-md:*:w-full max-md:flex-col gap-10 p-10">
+                <ContactBox 
+                    label="Email"
+                    icon={MdOutlineMail}
+                    desc="Feel free to reach out to us with any questions or support needs."
+                    link="precisionhub@mail.com"
+                    center
+                />
+                <ContactBox 
+                    label="Phone"
+                    icon={MdOutlinePhoneAndroid}
+                    desc="You can contact us at any time for assistance."
+                    link="+91-1234567890"
+                    center
+                />
+                <ContactBox 
+                    label="Office"
+                    icon={MdOutlineLocationOn}
+                    desc="Visit our office during business hours."
+                    link="123 Sample St, Kolkata, WestBengal, India"
+                    center
+                />
+            </section>
 
         </main>
     )

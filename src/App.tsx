@@ -1,23 +1,14 @@
 import { Link } from "react-router-dom";
 
 import Box from "./components/Box";
-import { Button } from "./components/ui/button";
 import { Label } from "./components/ui/label";
 import { Separator } from "./components/ui/separator";
-import { z } from 'zod';
-import { zodResolver } from '@hookform/resolvers/zod';
-import { useForm } from "react-hook-form";
-import { Form, FormControl, FormField, FormItem, FormMessage } from "./components/ui/form";
-import { Input } from "./components/ui/input";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious} from "./components/ui/carousel";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "./components/ui/collapsible";
 import { useState } from "react";
 import MoreBtn from "./components/MoreBtn";
 import PercentBox from "./components/PercentBox";
-
-const FormSchema = z.object({
-  email: z.string(),
-});
+import Newsletter from "./components/Newsletter";
 
 const Locations = [
   {
@@ -101,18 +92,6 @@ const Supports = [
 ]
 
 const App = () => {
-
-  const newsletter = useForm<z.infer<typeof FormSchema>>({
-    resolver: zodResolver(FormSchema),
-    defaultValues: {
-      email: "",
-    }
-  });
-
-  const onSubmit = (values: z.infer<typeof FormSchema>) => {
-    console.log(values);
-    
-  };
 
   const [sign, setSign] = useState(false);
 
@@ -391,6 +370,7 @@ const App = () => {
 
         {/* 12th */}
         <section className="space-y-8 flex flex-col h-[80vh] items-center justify-between text-center">
+
           <div className="space-y-6">
             <h1 className="text-5xl font-bold max-md:text-3xl">Take Your Business Further</h1>
             <p className=" font-medium max-md:text-sm">Discover our innovative solutions and boost your productivity today.</p>
@@ -399,27 +379,8 @@ const App = () => {
             </div>
           </div>
 
-          <div className="space-y-6 text-center">
-            <h1 className="text-5xl font-bold max-md:text-3xl">Stay Informed with Our Newsletter</h1>
-            <p className="font-medium text-neutral-600 max-md:text-sm">Subscribe to recieve updates, insights and industry news.</p>
-            <Form {...newsletter}>
-              <form onSubmit={newsletter.handleSubmit(onSubmit)} className="space-y-4">
-                <FormField 
-                  control={newsletter.control}
-                  name="email"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormControl>
-                        <Input className="rounded-none p-6 max-md:p-4 max-md:text-sm" placeholder="Your email address" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <Button className="rounded-none p-5" type="submit">Subscribe</Button>
-              </form>
-            </Form>
-          </div>
+          <Newsletter />
+
         </section>
     </main>
   )
