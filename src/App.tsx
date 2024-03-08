@@ -149,7 +149,7 @@ const App = () => {
             {/* buttons */}
             <div className="space-x-4 flex items-center max-md:justify-center ">
               <MoreBtn link="/learn" />
-              <Link to={'#'} className="p-6 rounded-none border-transparent hover:text-green-600 font-semibold">Contact Us </Link>
+              <Link to={'contact'} className="p-6 rounded-none border-transparent hover:text-green-600 font-semibold">Contact Us </Link>
             </div>
 
           </div>
@@ -301,7 +301,7 @@ const App = () => {
 
             <div className="font-medium space-x-5 flex items-center max-md:justify-evenly">
               <MoreBtn link="/learn" />
-              <Link className="hover:text-green-600" to={'#'}>Contact Us</Link>
+              <Link className="hover:text-green-600" to={'contact'}>Contact Us</Link>
             </div>
           </div>
 
@@ -375,7 +375,7 @@ const App = () => {
             <h1 className="text-5xl font-bold max-md:text-3xl">Take Your Business Further</h1>
             <p className=" font-medium max-md:text-sm">Discover our innovative solutions and boost your productivity today.</p>
             <div className="flex items-center justify-center space-x-4">
-              <MoreBtn label="Contact Sales" />
+              <MoreBtn link="contact" label="Contact Sales" />
             </div>
           </div>
 
