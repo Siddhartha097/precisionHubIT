@@ -7,7 +7,7 @@ import { Button } from './ui/button';
 
 const FormSchema = z.object({
     email: z.string(),
-  });
+});
 
 const Newsletter = () => {
 
