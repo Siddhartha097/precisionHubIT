@@ -13,6 +13,7 @@ import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Separator } from "@/components/ui/separator";
+import { Checkbox } from "@/components/ui/checkbox";
 
 const FormSchema = z.object({
   name: z.string(),
@@ -117,9 +118,20 @@ const Contact = () => {
                   )}
                 />
 
+                <div className="flex items-center space-x-2">
+                  <Checkbox id="terms" />
+                  <label
+                    htmlFor="terms"
+                    className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                  >
+                    Accept terms and conditions
+                  </label>
+                </div>
+
                 <Button
                   className="rounded-none px-8 py-6 underline hover:bg-green-600"
                   type="submit"
+                
                 >
                   Submit
                 </Button>
