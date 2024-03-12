@@ -8,13 +8,14 @@ import App from "./App.tsx";
 
 import Navbar from "./components/Navbar.tsx";
 import Footer from "./components/Footer.tsx";
+import ScrollToTopButton from "./components/ScrollToTop.tsx";
 
 import Solutions from "./Pages/Solutions.tsx";
 import Researches from "./Pages/Researches.tsx";
 import Learn from "./Pages/Learn.tsx";
 import About from "./Pages/About.tsx";
 import Contact from "./Pages/Contact.tsx";
-import ScrollToTopButton from "./components/ScrollToTop.tsx";
+
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
