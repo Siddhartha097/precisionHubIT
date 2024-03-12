@@ -19,6 +19,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "./components/ui/accordion";
+import { city } from "./images";
 
 const Locations = [
   {
@@ -132,9 +133,11 @@ const App = () => {
       <section className="w-full scale-90 flex items-center justify-center">
         <img
           className="object-contain shadow-md rounded-lg"
-          src="https://images.unsplash.com/photo-1604328698692-f76ea9498e76?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          src={city}
           alt="hero"
         />
+
+        {/* https://images.unsplash.com/photo-1604328698692-f76ea9498e76?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D */}
       </section>
 
       <Separator className="my-10 max-md:my-6" />
