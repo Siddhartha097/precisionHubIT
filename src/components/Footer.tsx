@@ -64,10 +64,12 @@ const Footer = () => {
         <div className="">
           <Link to={"/"} className="flex items-center justify-center">
             <img src={Logo} className="w-14" alt="Logo" />
-            {/* <div className="space-y-1">
+            <div className="space-y-1">
               <h1 className="font-bold text-3xl">PreciSync</h1>
-              <p className="text-xs tracking-widest font-semibold">Precision Hub Pvt. Ltd.</p>
-            </div> */}
+              <p className="text-xs tracking-widest font-semibold">
+                Precision Hub Pvt. Ltd.
+              </p>
+            </div>
           </Link>
         </div>
 
