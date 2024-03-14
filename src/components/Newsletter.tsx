@@ -51,7 +51,7 @@ const Newsletter = () => {
             )}
           />
           <Button
-            className="rounded-none p-5 bg-gradient hover:opacity-85"
+            className="rounded-none p-5 celestial border-celestial transition-all hover:opacity-80"
             type="submit"
           >
             Subscribe
