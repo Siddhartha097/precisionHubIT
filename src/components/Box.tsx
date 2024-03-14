@@ -14,6 +14,8 @@ interface BoxProps {
   iconSize?: number;
   descSize?: string;
   iconDisabled?: boolean;
+  bgColor?: string;
+  border?: string;
 }
 
 const Box: React.FC<BoxProps> = ({
@@ -25,6 +27,8 @@ const Box: React.FC<BoxProps> = ({
   descSize = "",
   iconSize,
   iconDisabled,
+  bgColor,
+  border ,
   icon: Icon = BsBoxFill,
 }) => {
   return (
@@ -49,9 +53,9 @@ const Box: React.FC<BoxProps> = ({
       </p>
       {isBtn && (
         <div className="flex items-center justify-center gap-7">
-          <MoreBtn variant="default" label="Get Started" />
+          <MoreBtn variant="default" bgColor={bgColor} border={border} label="Get Started" />
           <Link
-            className="font-semibold hover:text-[#c31432] underline"
+            className={`font-semibold hover:text-[#c31432] underline`}
             to={"#"}
           >
             Learn More

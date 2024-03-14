@@ -5,11 +5,15 @@ interface MoreBtnProps {
   label?: string;
   link?: string;
   className?: string;
+  bgColor?: string;
+  border?: string;
   variant?: "outline" | "secondary" | "destructive" | "ghost" | "default";
 }
 
 const MoreBtn = ({
   label = "Learn More",
+  bgColor = "celestial",
+  border = "border-celestial",
   link = "#",
   className,
   variant = "outline",
@@ -19,8 +23,8 @@ const MoreBtn = ({
       <Button
         className={`${className} rounded-none border-2 ${
           variant === "default"
-            ? "bg-gradient border-gradient hover:opacity-80"
-            : "border-black hover:bg-gradient hover:border-gradient hover:text-white"
+            ? `${bgColor} ${border} hover:opacity-80`
+            : "border-black hover:celestial hover:border-celestial hover:text-white"
         } transition-all text-sm`}
         variant={variant}
       >

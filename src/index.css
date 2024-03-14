@@ -59,16 +59,33 @@
 }
 
 @layer utilities {
-  .border-gradient {
+  .border-celestial {
     border-image: linear-gradient(to right, #c33764, #1d2671);
     border-image-slice: 1;
   }
+  .border-unknown {
+    border-image: linear-gradient(to left, #3e26d7, #7b40da, #47b8e5);
+    border-image-slice: 1;
+  }
+  .border-meridian {
+    border-image: linear-gradient(to right, #283c86, #45a247);
+    border-image-slice: 1;
+  }
 
-  .bg-gradient {
+  .celestial {
     background-image: linear-gradient(to right, #c33764, #1d2671);
   }
 
+  .meridian {
+    background-image: linear-gradient(to right, #283c86, #45a247);
+  }
+
+  .unknown {
+    background-image: linear-gradient(to left, #3e26d7, #7b40da, #47b8e5);
+  }
+
   .text-gradient {
+    
     color: linear-gradient(to right, #c33764, #1d2671);
   }
 }

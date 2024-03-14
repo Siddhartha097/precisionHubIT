@@ -262,6 +262,8 @@ const App = () => {
           iconSize={40}
           descSize="text-base"
           isBtn
+          bgColor="meridian"
+          border="border-meridian"
         />
         <Separator orientation="vertical" />
         <Box
@@ -272,6 +274,8 @@ const App = () => {
           iconSize={40}
           descSize="text-base"
           isBtn
+          bgColor="unknown"
+          border="border-unknown"
         />
         <Separator orientation="vertical" />
         <Box
