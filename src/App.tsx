@@ -124,7 +124,7 @@ const App = () => {
           solutions to help businesses <div className="p-1" /> thrive in the
           digital age.
         </p>
-        <MoreBtn link="/learn" />
+        <MoreBtn variant="default" link="/learn" />
       </section>
 
       <Separator className="my-10 max-md:my-6" />
@@ -175,10 +175,10 @@ const App = () => {
 
           {/* buttons */}
           <div className="space-x-4 flex items-center max-md:justify-center ">
-            <MoreBtn link="/learn" />
+            <MoreBtn variant="default" link="/learn" />
             <Link
               to={"contact"}
-              className="p-6 rounded-none border-transparent hover:text-green-600 font-semibold"
+              className="p-6 rounded-none border-transparent hover:text-[#c31432] font-semibold"
             >
               Contact Us{" "}
             </Link>
@@ -344,8 +344,8 @@ const App = () => {
           </div>
 
           <div className="font-medium space-x-5 flex items-center max-md:justify-evenly">
-            <MoreBtn link="/learn" />
-            <Link className="hover:text-green-600" to={"contact"}>
+            <MoreBtn variant="default" link="/learn" />
+            <Link className="hover:text-[#c31432]" to={"contact"}>
               Contact Us
             </Link>
           </div>
@@ -450,7 +450,7 @@ const App = () => {
             Discover our innovative solutions and boost your productivity today.
           </p>
           <div className="flex items-center justify-center space-x-4">
-            <MoreBtn link="contact" label="Contact Sales" />
+            <MoreBtn variant="default" link="contact" label="Contact Sales" />
           </div>
         </div>
 

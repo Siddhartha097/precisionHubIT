@@ -22,11 +22,11 @@ const Navbar = () => {
 
             <header className="flex items-center justify-between space-x-8 max-md:hidden">
                 <ul className="flex text-lg items-center justify-between space-x-8 font-semibold ">
-                    <Link className="hover:text-green-600 transition-all" to={'/'}><li>Home</li></Link>
-                    <Link className="hover:text-green-600 transition-all" to={'/solutions'}><li>Solutions</li></Link>
-                    <Link className="hover:text-green-600 transition-all" to={'/research'}><li>Research</li></Link>
-                    <Link className="hover:text-green-600 transition-all" to={'#'}><li>Portfolio</li></Link>
-                    <Link className="hover:text-green-600 transition-all" to={'/about'}><li>About Us</li></Link>
+                    <Link className="hover:text-[#c31432] transition-all" to={'/'}><li>Home</li></Link>
+                    <Link className="hover:text-[#c31432] transition-all" to={'/solutions'}><li>Solutions</li></Link>
+                    <Link className="hover:text-[#c31432] transition-all" to={'/research'}><li>Research</li></Link>
+                    <Link className="hover:text-[#c31432] transition-all" to={'#'}><li>Portfolio</li></Link>
+                    <Link className="hover:text-[#c31432] transition-all" to={'/about'}><li>About Us</li></Link>
                 </ul>
                 <MoreBtn link="/learn" />
             </header>

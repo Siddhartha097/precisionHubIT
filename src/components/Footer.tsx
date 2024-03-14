@@ -30,12 +30,12 @@ const Services = [
 const Socials = [
   {
     label: "Facebook",
-    icon: <FaFacebook />,
+    icon: <FaFacebook className="text-[#302b63]" />,
     link: "#",
   },
   {
     label: "Twitter",
-    icon: <FaXTwitter />,
+    icon: <FaXTwitter className="text-[#302b63]" />,
     link: "#",
   },
   // {
@@ -45,7 +45,7 @@ const Socials = [
   // },
   {
     label: "LinkedIn",
-    icon: <FaLinkedin />,
+    icon: <FaLinkedin className="text-[linear-gradient(to right, #5a3f37, #2c7744)]" />,
     link: "#",
   },
   // {

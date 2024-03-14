@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
 
 @layer base {
   :root {
@@ -49,12 +48,27 @@
     --ring: 240 4.9% 83.9%;
   }
 }
- 
+
 @layer base {
   * {
     @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .border-gradient {
+    border-image: linear-gradient(to right, #c33764, #1d2671);
+    border-image-slice: 1;
+  }
+
+  .bg-gradient {
+    background-image: linear-gradient(to right, #c33764, #1d2671);
+  }
+
+  .text-gradient {
+    color: linear-gradient(to right, #c33764, #1d2671);
   }
 }

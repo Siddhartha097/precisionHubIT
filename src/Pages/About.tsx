@@ -82,7 +82,7 @@ const About = () => {
             developing cutting-edge solutions to help businesses thrive in the
             digital age.
           </p>
-          <MoreBtn className="mt-6" link="/learn" />
+          <MoreBtn className="mt-6" variant="default" link="/learn" />
         </div>
       </section>
 
@@ -164,22 +164,12 @@ const About = () => {
           />
         </div>
 
-        <MoreBtn link="/learn" />
+        <MoreBtn variant="default" link="/learn" />
       </section>
 
       <Separator className="my-10" />
 
       <section className="relative h-[60vh] rounded-md flex flex-col justify-center space-y-6 bg-cover bg-[url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]">
-        {/* <div className=" h-screen rounded-md space-y-6 text-white bg-slate-600/50 relative flex flex-col max-md:text-center justify-center items-center">
-                    <Label>Tagline</Label>
-                    <h1 className="text-5xl max-md:text-3xl font-bold">
-                        Our Department
-                    </h1>
-                    <p className="font-medium w-1/2 text-center max-md:text-sm">
-                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti iure cupiditate nisi, porro consequuntur expedita delectus laborum ipsam aut deserunt?
-                    </p>
-                    <MoreBtn label="View More" variant="default" />
-                </div> */}
         <HeroBox
           title="Our Department"
           subTitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti iure cupiditate nisi, porro consequuntur expedita delectus laborum ipsam aut deserunt?"
@@ -338,7 +328,7 @@ const About = () => {
             <PercentBox text="Reduction in Customer Churn Rate" />
           </div>
 
-          <MoreBtn className="mt-5" link="/learn" />
+          <MoreBtn className="mt-5" variant="default" link="/learn" />
         </div>
 
         <div className="">
