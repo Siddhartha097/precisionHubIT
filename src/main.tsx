@@ -15,6 +15,7 @@ import Researches from "./Pages/Researches.tsx";
 import Learn from "./Pages/Learn.tsx";
 import About from "./Pages/About.tsx";
 import Contact from "./Pages/Contact.tsx";
+import Blogs from "./Pages/Blogs.tsx";
 
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
@@ -29,6 +30,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path="/learn" element={<Learn />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/blogs" element={<Blogs />} />
       </Routes>
       <Footer />
     </BrowserRouter>
