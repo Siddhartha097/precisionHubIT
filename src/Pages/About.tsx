@@ -62,9 +62,9 @@ const Services = [
 const About = () => {
   return (
     <main className="py-14 px-8 space-y-12 md:p-16 w-full h-full relative">
-      <section className="flex gap-6 md:*:w-1/2 md:flex-row flex-col justify-center items-center md:justify-center">
+      <section className="flex gap- md:*:w-1/2 md:flex-row flex-col justify-center items-center md:justify-center">
         <div className="flex items-center justify-center text-center md:text-left">
-          <h1 className="font-bold text-3xl md:text-5xl">
+          <h1 className="font-bold text-4xl md:text-6xl tracking-wide">
             Our Journey: <br /> PrecisionHub IT Industries Private Limited
           </h1>
         </div>
@@ -72,7 +72,7 @@ const About = () => {
         <Separator className=" md:hidden" />
 
         <div className=" text-center md:text-right">
-          <p className="text-sm md:text-base font-medium text-slate-600">
+          <p className="text-base tracking-wide md:text-lg font-medium text-slate-600">
             Founded in September 2023, PrecisionHub IT Industries Private
             Limited embarked on a transformative journey with a mission to
             redefine B2B IT solutions. From our humble beginnings, we have been

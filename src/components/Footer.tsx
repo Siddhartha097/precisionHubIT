@@ -22,8 +22,8 @@ const Services = [
     link: "#",
   },
   {
-    label: "Blog",
-    link: "#",
+    label: "Insights",
+    link: "/insights",
   },
 ];
 
@@ -45,7 +45,9 @@ const Socials = [
   // },
   {
     label: "LinkedIn",
-    icon: <FaLinkedin className="text-[linear-gradient(to right, #5a3f37, #2c7744)]" />,
+    icon: (
+      <FaLinkedin className="text-[linear-gradient(to right, #5a3f37, #2c7744)]" />
+    ),
     link: "#",
   },
   // {

@@ -17,7 +17,6 @@ import About from "./Pages/About.tsx";
 import Contact from "./Pages/Contact.tsx";
 import Blogs from "./Pages/Blogs.tsx";
 
-
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
@@ -30,7 +29,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path="/learn" element={<Learn />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/insights" element={<Blogs />} />
       </Routes>
       <Footer />
     </BrowserRouter>
