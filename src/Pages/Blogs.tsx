@@ -1,10 +1,11 @@
 import MoreBtn from "@/components/MoreBtn";
+import PercentBox from "@/components/PercentBox";
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 
 const Blogs = () => {
   return (
-    <main className="flex flex-col w-full h-full gap-10 px-10 pb-10">
+    <main className="flex flex-col w-full h-full gap-10 px-16 max-md:px-8 pb-10">
       <section className="w-full h-full flex items-center justify-center relative">
         <img
           className="scale-90 rounded-lg shadow-md "
@@ -13,7 +14,7 @@ const Blogs = () => {
         />
       </section>
 
-      <Separator className="my-10" />
+      <Separator className="my-5 md:my-10" />
 
       <section className="flex max-md:flex-col md:*:w-1/2  items-center justify-between max-md:text-center gap-10">
         <div>
@@ -34,7 +35,7 @@ const Blogs = () => {
         </div>
       </section>
 
-      <Separator className="my-10" />
+      <Separator className="my-5 md:my-10" />
 
       <section className="flex max-md:flex-col items-center justify-center gap-6">
         <div className="flex flex-col max-md:items-center justify-between gap-6 max-md:text-center tracking-wide lg:w-1/3">
@@ -67,7 +68,39 @@ const Blogs = () => {
         </div>
       </section>
 
-      <Separator className="my-10" />
+      <Separator className="my-5 md:my-10" />
+
+      <section className="flex justify-between max-md:flex-col max-md:text-center gap-12 max-md:gap-0 *:md:w-1/2">
+        <div className="flex flex-col max-md:items-center gap-6 ">
+          <Label htmlFor="text">Discover</Label>
+          <h1 className="text-5xl font-bold max-md:text-4xl">
+            Stay Informed with Our Latest Blog Posts
+          </h1>
+        </div>
+
+        <Separator className="my-7 md:hidden" />
+
+        <div className="flex flex-col gap-8">
+          <h4 className="max-md: font-medium text-slate-600">
+            Get the latest insights, tips, and trends from our blog. Stay ahead
+            of the curve and enhance your knowledge.
+          </h4>
+          <div className="flex items-center gap-10 justify-between">
+            <PercentBox
+              text="Increase your productivity with our expert advice."
+              textStyle="text-sm font-medium"
+            />
+            <Separator orientation="vertical" />
+            <PercentBox
+              text="Unlock your full potential with our actionable tips."
+              textStyle="text-sm font-medium"
+            />
+          </div>
+          <MoreBtn link="/learn" />
+        </div>
+      </section>
+
+      <Separator className="my-5 md:my-10" />
 
       <section></section>
     </main>
