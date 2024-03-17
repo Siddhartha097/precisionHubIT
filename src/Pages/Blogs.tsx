@@ -1,3 +1,4 @@
+import ImageBox from "@/components/ImageBox";
 import MoreBtn from "@/components/MoreBtn";
 import PercentBox from "@/components/PercentBox";
 import { Label } from "@/components/ui/label";
@@ -6,14 +7,15 @@ import { Separator } from "@/components/ui/separator";
 const Blogs = () => {
   return (
     <main className="flex flex-col w-full h-full gap-10 px-16 max-md:px-8 pb-10">
-      <section className="w-full h-full flex items-center justify-center relative">
-        <img
-          className="scale-90 rounded-lg shadow-md "
-          src="https://images.unsplash.com/photo-1485988412941-77a35537dae4?q=80&w=1796&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      <section>
+        <ImageBox 
+          imgSrc="https://images.unsplash.com/photo-1485988412941-77a35537dae4?q=80&w=1796&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          imgClassName="scale-90 rounded-lg shadow-md"
           alt="hero"
+          className="w-full h-full flex items-center justify-center relative"
         />
       </section>
-
+    
       <Separator className="my-5 md:my-10" />
 
       <section className="flex max-md:flex-col md:*:w-1/2  items-center justify-between max-md:text-center gap-10">

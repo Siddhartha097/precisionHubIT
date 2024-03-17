@@ -12,9 +12,9 @@ const ImageBox: React.FC<ImageBoxProps> = ({
   className,
 }) => {
   return (
-    <section className={`className"w-full h-full flex items-center justify-center relative ${className}`}>
+    <section className={`${className}`}>
       <img
-        className={`scale-90 rounded-lg shadow-md ${imgClassName}`}
+        className={`${imgClassName}`}
         src={imgSrc}
         alt={alt}
       />
