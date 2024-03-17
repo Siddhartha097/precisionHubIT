@@ -461,6 +461,14 @@ const App = () => {
               descSize=""
               className=""
             />
+            <Box
+              label="Product Launch"
+              desc="Introducing our new software solution that streamlines your workflow and boosts productivity."
+              iconDisabled
+              titleSize=""
+              descSize=""
+              className=""
+            />
           </div>
         </div>
         <div>
