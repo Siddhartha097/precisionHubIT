@@ -3,15 +3,7 @@ import { Link } from "react-router-dom";
 import Box from "./components/Box";
 import { Label } from "./components/ui/label";
 import { Separator } from "./components/ui/separator";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "./components/ui/carousel";
 import MoreBtn from "./components/MoreBtn";
-import PercentBox from "./components/PercentBox";
 import Newsletter from "./components/Newsletter";
 import {
   Accordion,
@@ -22,32 +14,35 @@ import {
 import { city } from "./images";
 import ImageBox from "./components/ImageBox";
 
-const Locations = [
-  {
-    label: "Sydney",
-    imgSrc:
-      "https://images.unsplash.com/photo-1558329228-bebb840e134f?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    address: "123 sample st, Sydney NSW 2000 AU",
-  },
-  {
-    label: "New York",
-    imgSrc:
-      "https://images.unsplash.com/photo-1599374172782-2abc889e78ce?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    address: "123 sample st, New York NY 10000 USA",
-  },
-  {
-    label: "Kolkata",
-    imgSrc:
-      "https://images.unsplash.com/photo-1667208210604-3a4c452317bc?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    address: "123 sample st, Kolkata WB 70000 IN",
-  },
-  {
-    label: "Bengaluru",
-    imgSrc:
-      "https://images.unsplash.com/photo-1651991372794-b1fcaaf4d634?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    address: "123 sample st, Bengaluru KN 80000 IN",
-  },
-];
+import { RxBackpack, RxSketchLogo } from "react-icons/rx";
+import { MdAddModerator, MdAppSettingsAlt, MdAutoMode } from "react-icons/md";
+
+// const Locations = [
+//   {
+//     label: "Sydney",
+//     imgSrc:
+//       "https://images.unsplash.com/photo-1558329228-bebb840e134f?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+//     address: "123 sample st, Sydney NSW 2000 AU",
+//   },
+//   {
+//     label: "New York",
+//     imgSrc:
+//       "https://images.unsplash.com/photo-1599374172782-2abc889e78ce?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+//     address: "123 sample st, New York NY 10000 USA",
+//   },
+//   {
+//     label: "Kolkata",
+//     imgSrc:
+//       "https://images.unsplash.com/photo-1667208210604-3a4c452317bc?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+//     address: "123 sample st, Kolkata WB 70000 IN",
+//   },
+//   {
+//     label: "Bengaluru",
+//     imgSrc:
+//       "https://images.unsplash.com/photo-1651991372794-b1fcaaf4d634?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+//     address: "123 sample st, Bengaluru KN 80000 IN",
+//   },
+// ];
 
 const FAQs = [
   {
@@ -165,11 +160,13 @@ const App = () => {
               className="space-y-4 max-md:flex max-md:text-center flex-col items-center justify-center"
               label="Experience"
               desc="Over 10 years of industry experience delivering top-notch software solutions."
+              icon={RxBackpack}
             />
             <Box
               className="space-y-4 max-md:flex max-md:text-center flex-col items-center justify-center"
               label="Quality"
               desc="We are committed to delivering high-quality software solutions that exceed client expectations."
+              icon={RxSketchLogo}
             />
           </div>
 
@@ -230,6 +227,7 @@ const App = () => {
           iconSize={40}
           descSize="text-base"
           isBtn
+          icon={MdAddModerator}
           bgColor="meridian"
           border="border-meridian"
         />
@@ -244,6 +242,7 @@ const App = () => {
           isBtn
           bgColor="unknown"
           border="border-unknown"
+          icon={MdAppSettingsAlt}
         />
         <Separator orientation="vertical" />
         <Box
@@ -252,6 +251,7 @@ const App = () => {
           className="flex flex-col items-center justify-center space-y-5 text-center basis-1/3"
           titleSize="text-3xl"
           iconSize={40}
+          icon={MdAutoMode}
           descSize="text-base"
           isBtn
         />
@@ -318,9 +318,77 @@ const App = () => {
 
       <Separator className="my-10 max-md:my-6" />
 
+      <section className="flex flex-col justify-between gap-20">
+        <section className="flex max-md:flex-col items-center justify-between gap-16">
+          <div className="flex flex-col gap-14 max-md:gap-8 max-md:text-center">
+            <h1 className="font-semibold text-3xl md:text-5xl">
+              Stay Updated with the Latest News and Updates from Our Software
+              Company
+            </h1>
+            <hr />
+            <p className="font-medium max-md:text-sm text-slate-600">
+              Discover the latest developments, product releases, and industry
+              insights in the world of software.
+            </p>
+            <div className="flex md:*:w-1/2 gap-10">
+              <Box
+                label="Product Launch"
+                desc="Introducing our new software solution that streamlines your workflow and boosts productivity."
+                iconDisabled
+                className="flex flex-col max-md:text-center gap-6"
+              />
+              <Box
+                label="Industry"
+                desc="Explore the latest trends and innovations shaping the software industry."
+                iconDisabled
+                className="flex flex-col max-md:text-center gap-6"
+              />
+            </div>
+          </div>
+          <div>
+            <ImageBox
+              imgSrc="https://images.unsplash.com/photo-1532522750741-628fde798c73?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              className=""
+              imgClassName="rounded-lg shadow-md"
+            />
+          </div>
+        </section>
+
+        {/* 12th */}
+        <section className="space-y-8 flex flex-col h-[80vh] max-md:h-[70vh] items-center justify-between text-center">
+          <div className="space-y-6">
+            <h1 className="text-5xl font-bold max-md:text-3xl">
+              Take Your Business Further
+            </h1>
+            <p className=" font-medium max-md:text-sm">
+              Discover our innovative solutions and boost your productivity
+              today.
+            </p>
+            <div className="flex items-center justify-center space-x-4">
+              <MoreBtn variant="default" link="contact" label="Contact Sales" />
+            </div>
+          </div>
+
+          <Newsletter />
+        </section>
+      </section>
+
+      <Separator className="my-10 max-md:my-6" />
+
+      <section className="flex flex-col max-md:text-center max-md:gap-8 items-center justify-center gap-14">
+        <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
+          Transforming Software Solutions For You
+        </h1>
+        <p className="text-lg max-md:text-sm font-medium text-slate-600">
+          Discover innovative software solutions that streamline your business
+          operations.
+        </p>
+        <MoreBtn label="Learn More" link="/learn" />
+      </section>
+
       {/* 8th */}
-      <section className="flex items-center max-md:*:w-full justify-between space-x-7 max-md:space-x-0 max-md:space-y-6 max-md:flex-col">
-        {/* left */}
+      {/* <section className="flex items-center max-md:*:w-full justify-between space-x-7 max-md:space-x-0 max-md:space-y-6 max-md:flex-col">
+
         <div className="w-1/2 space-y-4 max-md:text-center">
           <Label htmlFor="text">Innovative</Label>
           <h1 className="text-5xl max-md:text-3xl font-bold">
@@ -328,7 +396,7 @@ const App = () => {
           </h1>
         </div>
 
-        {/* right */}
+
         <div className="w-1/2 space-y-8 max-md:text-center">
           <h3 className="font-medium max-md:text-sm text-neutral-600">
             With over a decade of experience, we have successfully delivered
@@ -352,23 +420,23 @@ const App = () => {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <Separator className="my-10 max-md:my-6" />
+      {/* <Separator className="my-10 max-md:my-6" /> */}
 
       {/* 9th */}
-      <section>
+      {/* <section>
         <img
           className="rounded-lg scale-90 shadow-md transition-all"
           src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt=""
         />
-      </section>
+      </section> */}
 
-      <Separator className="my-10 max-md:my-6" />
+      {/* <Separator className="my-10 max-md:my-6" /> */}
 
       {/* 10th  */}
-      <section className="space-y-8">
+      {/* <section className="space-y-8">
         <div className="space-y-5 text-center">
           <Label htmlFor="text">Innovative</Label>
           <h1 className="text-5xl font-bold max-md:text-4xl">Locations</h1>
@@ -410,7 +478,9 @@ const App = () => {
             <CarouselPrevious className="md:hidden" />
           </Carousel>
         </div>
-      </section>
+      </section> */}
+
+      <Separator className="my-10" />
 
       {/* 11th */}
       <section className="flex flex-col items-center space-y-6 justify-between">
@@ -426,71 +496,18 @@ const App = () => {
         <Accordion collapsible type="single" className="space-y-6">
           {FAQs.map((faq) => (
             <AccordionItem
-              className="transition-all space-y-5 relative w-[60vw] border-2 p-5 border-black"
+              className="transition-all space-y-5 relative w-[70vw] border-2 rounded-lg p-5 border-black"
               value={faq.id}
             >
               <AccordionTrigger className="text-xl font-semibold max-md:text-lg">
                 {faq.title}
               </AccordionTrigger>
-              <AccordionContent className="font-medium transition-all text-neutral-500 max-md:text-sm">
+              <AccordionContent className="font-medium transition-all text-slate-700">
                 {faq.content}
               </AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>
-      </section>
-
-      <Separator className="my-10 bg-neutral-300" />
-
-      <section className="flex max-md:flex-col items-center justify-between">
-        <div className="flex flex-col gap-10">
-          <h1>
-            Stay Updated with the Latest News and Updates from Our Software
-            Company
-          </h1>
-          <p>
-            Discover the latest developments, product releases, and industry
-            insights in the world of software.
-          </p>
-          <div>
-            <Box
-              label="Product Launch"
-              desc="Introducing our new software solution that streamlines your workflow and boosts productivity."
-              iconDisabled
-              titleSize=""
-              descSize=""
-              className=""
-            />
-            <Box
-              label="Product Launch"
-              desc="Introducing our new software solution that streamlines your workflow and boosts productivity."
-              iconDisabled
-              titleSize=""
-              descSize=""
-              className=""
-            />
-          </div>
-        </div>
-        <div>
-          <ImageBox imgSrc="https://images.unsplash.com/photo-1532522750741-628fde798c73?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="" />
-        </div>
-      </section>
-
-      {/* 12th */}
-      <section className="space-y-8 flex flex-col h-[80vh] items-center justify-between text-center">
-        <div className="space-y-6">
-          <h1 className="text-5xl font-bold max-md:text-3xl">
-            Take Your Business Further
-          </h1>
-          <p className=" font-medium max-md:text-sm">
-            Discover our innovative solutions and boost your productivity today.
-          </p>
-          <div className="flex items-center justify-center space-x-4">
-            <MoreBtn variant="default" link="contact" label="Contact Sales" />
-          </div>
-        </div>
-
-        <Newsletter />
       </section>
     </main>
   );

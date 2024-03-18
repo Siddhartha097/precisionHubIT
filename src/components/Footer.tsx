@@ -35,7 +35,7 @@ const Socials = [
   },
   {
     label: "Twitter",
-    icon: <FaXTwitter className="text-[#302b63]" />,
+    icon: <FaXTwitter color="#302b63" />,
     link: "#",
   },
   // {
@@ -45,9 +45,7 @@ const Socials = [
   // },
   {
     label: "LinkedIn",
-    icon: (
-      <FaLinkedin className="text-[linear-gradient(to right, #5a3f37, #2c7744)]" />
-    ),
+    icon: <FaLinkedin color="#302b63" />,
     link: "#",
   },
   // {
