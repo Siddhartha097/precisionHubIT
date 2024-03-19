@@ -5,19 +5,15 @@ import { Label } from "./components/ui/label";
 import { Separator } from "./components/ui/separator";
 import MoreBtn from "./components/MoreBtn";
 import Newsletter from "./components/Newsletter";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "./components/ui/accordion";
-import { city } from "./images";
 import ImageBox from "./components/ImageBox";
+import Faq from "./components/Faq";
+import Transforming from "./components/Transforming";
+
+import { city } from "./images";
 
 import { RxBackpack, RxSketchLogo } from "react-icons/rx";
 import { MdAddModerator, MdAppSettingsAlt, MdAutoMode } from "react-icons/md";
 
-// const Locations = [
 //   {
 //     label: "Sydney",
 //     imgSrc:
@@ -43,39 +39,6 @@ import { MdAddModerator, MdAppSettingsAlt, MdAutoMode } from "react-icons/md";
 //     address: "123 sample st, Bengaluru KN 80000 IN",
 //   },
 // ];
-
-const FAQs = [
-  {
-    id: "item-1",
-    title: "How does it work?",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, aspernatur animi sit dolores labore dolor odio ad iste qui vero.",
-  },
-  {
-    id: "item-2",
-    title: "What are the benefits?",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, aspernatur animi sit dolores labore dolor odio ad iste qui vero.",
-  },
-  {
-    id: "item-3",
-    title: "Is it customizable?",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, aspernatur animi sit dolores labore dolor odio ad iste qui vero.",
-  },
-  {
-    id: "item-4",
-    title: "How can I get support?",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, aspernatur animi sit dolores labore dolor odio ad iste qui vero.",
-  },
-  {
-    id: "item-5",
-    title: "Is there a free trial?",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, aspernatur animi sit dolores labore dolor odio ad iste qui vero.",
-  },
-];
 
 const Features = [
   {
@@ -375,18 +338,21 @@ const App = () => {
 
       <Separator className="my-10 max-md:my-6" />
 
-      <section className="flex flex-col max-md:text-center max-md:gap-8 items-center justify-center gap-14">
-        <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-          Transforming Software Solutions For You
-        </h1>
-        <p className="text-lg max-md:text-sm font-medium text-slate-600">
-          Discover innovative software solutions that streamline your business
-          operations.
-        </p>
-        <MoreBtn label="Learn More" link="/learn" />
-      </section>
+      <Transforming />
 
-      {/* 8th */}
+      <Separator className="my-10" />
+
+      <Faq />
+
+    </main>
+  );
+};
+
+export default App;
+
+
+// const Locations = [
+{/* 8th */}
       {/* <section className="flex items-center max-md:*:w-full justify-between space-x-7 max-md:space-x-0 max-md:space-y-6 max-md:flex-col">
 
         <div className="w-1/2 space-y-4 max-md:text-center">
@@ -479,38 +445,3 @@ const App = () => {
           </Carousel>
         </div>
       </section> */}
-
-      <Separator className="my-10" />
-
-      {/* 11th */}
-      <section className="flex flex-col items-center space-y-6 justify-between">
-        <div className="space-y-6 text-center">
-          <h1 className="text-5xl font-bold max-md:text-3xl">
-            Frquently Asked Questions
-          </h1>
-          <p className="font-medium text-neutral-500 max-md:text-sm">
-            Find answers to common questions about our company and solutions.
-          </p>
-        </div>
-
-        <Accordion collapsible type="single" className="space-y-6">
-          {FAQs.map((faq) => (
-            <AccordionItem
-              className="transition-all space-y-5 relative w-[70vw] border-2 rounded-lg p-5 border-black"
-              value={faq.id}
-            >
-              <AccordionTrigger className="text-xl font-semibold max-md:text-lg">
-                {faq.title}
-              </AccordionTrigger>
-              <AccordionContent className="font-medium transition-all text-slate-700">
-                {faq.content}
-              </AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
-      </section>
-    </main>
-  );
-};
-
-export default App;

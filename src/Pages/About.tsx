@@ -1,10 +1,10 @@
 import Box from "@/components/Box";
 import ContactBox from "@/components/ContactBox";
-import HeroBox from "@/components/HeroBox";
+
 import MoreBtn from "@/components/MoreBtn";
 import Newsletter from "@/components/Newsletter";
 import PercentBox from "@/components/PercentBox";
-import Pricing from "@/components/Pricing";
+
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 
@@ -17,6 +17,9 @@ import {
   MdOutlinePhoneAndroid,
 } from "react-icons/md";
 import { FaStar } from "react-icons/fa";
+import ImageBox from "@/components/ImageBox";
+import Transforming from "@/components/Transforming";
+import Faq from "@/components/Faq";
 
 const WorkFlow = [
   {
@@ -62,9 +65,9 @@ const Services = [
 const About = () => {
   return (
     <main className="py-14 px-8 space-y-12 md:p-16 w-full h-full relative">
-      <section className="flex gap- md:*:w-1/2 md:flex-row flex-col justify-center items-center md:justify-center">
+      <section className="flex gap-6 md:*:w-1/2 md:flex-row flex-col justify-center items-center md:justify-center">
         <div className="flex items-center justify-center text-center md:text-left">
-          <h1 className="font-bold text-4xl md:text-6xl tracking-wide">
+          <h1 className="font-bold text-4xl md:text-6xl tracking-tight">
             Our Journey: <br /> PrecisionHub IT Industries Private Limited
           </h1>
         </div>
@@ -72,7 +75,7 @@ const About = () => {
         <Separator className=" md:hidden" />
 
         <div className=" text-center md:text-right">
-          <p className="text-base tracking-wide md:text-lg font-medium text-slate-600">
+          <p className="text-base tracking-tight font-medium text-slate-600">
             Founded in September 2023, PrecisionHub IT Industries Private
             Limited embarked on a transformative journey with a mission to
             redefine B2B IT solutions. From our humble beginnings, we have been
@@ -86,8 +89,6 @@ const About = () => {
         </div>
       </section>
 
-      <Separator className="my-10" />
-
       <section className="flex items-center justify-center md:p-14">
         <img
           className="rounded-lg shadow-md "
@@ -95,8 +96,6 @@ const About = () => {
           alt=""
         />
       </section>
-
-      <Separator className="my-10" />
 
       <section className="flex flex-col p-10 max-md:p-5 items-center justify-center md:flex-row gap-5 md:gap-12 md:*:w-1/2">
         <div>
@@ -109,13 +108,11 @@ const About = () => {
             iconSize={35}
           />
         </div>
-        <div className="p-5">
-          <img
-            className="rounded-md shadow-md"
-            src="https://images.unsplash.com/photo-1504805572947-34fad45aed93?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt=""
-          />
-        </div>
+        <ImageBox
+          imgSrc="https://images.unsplash.com/photo-1504805572947-34fad45aed93?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          imgClassName="rounded-md shadow-md"
+          className="flex flex-col items-center justify-center"
+        />
       </section>
 
       <Separator className="my-10" />
@@ -169,63 +166,6 @@ const About = () => {
 
       <Separator className="my-10" />
 
-      <section className="relative h-[60vh] rounded-md flex flex-col justify-center space-y-6 bg-cover bg-[url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]">
-        <HeroBox
-          title="Our Department"
-          subTitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti iure cupiditate nisi, porro consequuntur expedita delectus laborum ipsam aut deserunt?"
-          isLabel
-          label="Tagline"
-          btnName="Learn more"
-          white
-        />
-      </section>
-
-      <Separator className="my-10" />
-
-      <section className="flex pt-6 max-md:flex-col-reverse max-md:space-x-0 max-md:space-y-7 items-center justify-between space-x-8">
-        {/* non-image */}
-        <div className="space-y-10 md:w-1/2 w-full">
-          {/* title and description */}
-          <h1 className="text-5xl max-md:text-3xl font-bold tracking-wide max-md:text-center ">
-            Discover the Power of Our Revolutionary Software Solution
-          </h1>
-          <p className=" font-medium text-slate-600 max-md:text-sm max-md:text-center">
-            Experience a seamless workflow and increased productivity with our
-            cutting-edge software. Say goodbye to manual processes and hello to
-            efficiency.
-          </p>
-
-          {/* boxes */}
-          <div className="flex items-center justify-between space-x-5">
-            <Box
-              className="space-y-4 max-md:flex max-md:text-center flex-col items-center justify-center"
-              descSize="text-base"
-              titleSize="text-2xl"
-              label="Efficiency"
-              desc="Streamline your operations and save time with our intuitive and user-friendly software."
-            />
-            <Box
-              className="space-y-4 max-md:flex max-md:text-center flex-col items-center justify-center"
-              descSize="text-base"
-              titleSize="text-2xl"
-              label="Productivity"
-              desc="Boost your team's productivity and achieve more with our powerful software solution."
-            />
-          </div>
-        </div>
-
-        {/* image */}
-        <div className="w-1/2 max-md:w-full">
-          <img
-            className="rounded-md shadow-md scale-90 hover:scale-95 transition-all "
-            src="https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="hero"
-          />
-        </div>
-      </section>
-
-      <Separator className="my-10" />
-
       <section className="flex items-center p-6 justify-between gap-16 max-md:gap-10 flex-col md:flex-row">
         <div className="space-y-5">
           <Label htmlFor="text">Innovative</Label>
@@ -269,8 +209,6 @@ const About = () => {
         </div>
       </section>
 
-      <Separator className="my-10" />
-
       <section className="flex p-6 max-md:flex-col items-center justify-between gap-10">
         {Services.map((service) => (
           <Box
@@ -287,25 +225,10 @@ const About = () => {
 
       <Separator className="my-10" />
 
-      <section className="flex max-md:flex-col items-center gap-8 justify-evenly">
-        {/* image */}
-        <div className="md:w-2/3">
-          <img
-            className="rounded-lg shadow-md scale-90 hover:scale-95 transition-all"
-            src="https://images.unsplash.com/photo-1598520106830-8c45c2035460?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="room"
-          />
-        </div>
-
-        {/* non-image */}
-        <div className=" space-y-5 md:w-1/2">
-          <h1 className="text-4xl font-bold max-md:text-3xl">
-            Welcome to our company, where innovation meets excellence.
-          </h1>
-          <p className="text-slate-500 font-medium max-md:text-sm max-md:text-right">
-            At our company, we are dedicated to providing cutting-edge solutions
-            that empower businesses to thrive in the digital age.
-          </p>
+      <section>
+        <div>
+          <h1></h1>
+          <p></p>
         </div>
       </section>
 
@@ -332,7 +255,13 @@ const About = () => {
         </div>
 
         <div className="">
-          <video loop muted autoPlay className="rounded-md scale-100">
+          <video
+            loop
+            muted
+            controlsList="nodownload"
+            autoPlay
+            className="rounded-md scale-100"
+          >
             <source src={techVid} type="video/mp4" />
           </video>
         </div>
@@ -377,34 +306,6 @@ const About = () => {
 
       <Separator className="my-10" />
 
-      <section className="flex items-center flex-col justify-center gap-10 md:gap-20 w-full *:w-full">
-        <div className="flex flex-col items-center justify-center gap-6">
-          <Label htmlFor="text">Affordable</Label>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-            Flexible Pricing
-          </h1>
-          <p className="text-sm font-medium text-slate-600">
-            Choose the pricing plan that suits your needs!
-          </p>
-        </div>
-
-        <Pricing />
-      </section>
-
-      <Separator className="my-10" />
-
-      <section className="relative h-[60vh] rounded-md flex flex-col justify-center space-y-5 bg-cover bg-[url('https://images.unsplash.com/photo-1605379399642-870262d3d051?q=80&w=1812&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]">
-        <HeroBox
-          title="Take Action and Get Started"
-          subTitle="Discover the power of our software and transform your business today."
-          btnName="Request Demo"
-          white
-          link="/contact"
-        />
-      </section>
-
-      <Separator className="my-10" />
-
       <section className="flex items-center justify-center">
         <Newsletter />
       </section>
@@ -434,6 +335,14 @@ const About = () => {
           center
         />
       </section>
+
+      <Separator className="my-10" />
+
+      <Transforming />
+
+      <Separator className="my-10" />
+
+      <Faq />
     </main>
   );
 };
