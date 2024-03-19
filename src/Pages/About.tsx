@@ -20,6 +20,7 @@ import { FaStar } from "react-icons/fa";
 import ImageBox from "@/components/ImageBox";
 import Transforming from "@/components/Transforming";
 import Faq from "@/components/Faq";
+import Branches from "@/components/Branches";
 
 const WorkFlow = [
   {
@@ -64,7 +65,7 @@ const Services = [
 
 const About = () => {
   return (
-    <main className="py-14 px-8 space-y-12 md:p-16 w-full h-full relative">
+    <main className="py-14 px-8 space-y-12 md:p-16 w-full h-full relative tracking-tight">
       <section className="flex gap-6 md:*:w-1/2 md:flex-row flex-col justify-center items-center md:justify-center">
         <div className="flex items-center justify-center text-center md:text-left">
           <h1 className="font-bold text-4xl md:text-6xl tracking-tight">
@@ -225,10 +226,34 @@ const About = () => {
 
       <Separator className="my-10" />
 
-      <section>
-        <div>
-          <h1></h1>
-          <p></p>
+      <section className="flex flex-col justify-between gap-14 max-md:gap-8">
+        <div className="flex flex-col items-center justify-center text-center gap-10 px-10 max-md:px-5">
+          <h1 className="text-6xl font-bold max-md:text-5xl tracking-tight">
+            Our Stack Of Services
+          </h1>
+          <p className="font-medium tracking-tighter text-slate-600 max-md:text-sm">
+            The motto is "Your Vision is our Mission" and we are confident that
+            we will give you exactly what you need. Whether you are a start-up
+            looking for the latest trends and professional developers to bring
+            your fantastic idea to life, or a prominent entity in the world of
+            business looking to expand, evolve and bring your A-game to the
+            table, we are here with you and for you, with the finest ideas and
+            apt solutions. Team PrecisionHub IT will undoubtedly make your tasks
+            easier by providing the correct guidance, designs, and seamless user
+            experience with the use of cutting-edge technology, perfect code,
+            expert development, and the works! We will not leave you at just
+            that. Our competent team members will go through an in-depth market
+            analysis of your project, catering to it with the vast knowledge of
+            the industry's best practices.
+          </p>
+        </div>
+
+        <br />
+
+        <div className="flex items-center max-md:flex-col justify-between gap-14">
+          <Branches title="Full Stack Web Developement" className="basis-1/3" />
+          <Branches title="Full Stack Data Science" className="basis-1/3" />
+          <Branches title="App Developement" className="basis-1/3" />
         </div>
       </section>
 
