@@ -182,9 +182,8 @@ const App = () => {
       {/* 6th */}
       <section className="flex max-md:flex-col items-center justify-between gap-10">
         <Box
-          label="Streamline your workflow
-            with our software"
-          desc="Our software provides a step-by-step guide on how to integrate it into your workflow, easy to implement and use."
+          label="Seamless Integration"
+          desc="Our Software Comes with a Hassle-Free, Step-by-Step Integration Guide!"
           className="flex flex-col items-center justify-center space-y-5 text-center basis-1/3"
           titleSize="text-3xl"
           iconSize={40}
@@ -196,8 +195,8 @@ const App = () => {
         />
         <Separator orientation="vertical" />
         <Box
-          label="Increase productivity with our intuitive software"
-          desc="Our software is designed to simplify complex tasks, allowing you to focus on what matters most."
+          label="Simplify to Amplify"
+          desc="Let Our Software Handle Complexity, While You Focus on Success!"
           className="flex flex-col items-center justify-center space-y-5 text-center basis-1/3"
           titleSize="text-3xl"
           iconSize={40}
@@ -209,8 +208,8 @@ const App = () => {
         />
         <Separator orientation="vertical" />
         <Box
-          label="Optimize your workflow with our powerful software"
-          desc="Our software offers advanced features and tools to streamline your processes and boost efficiency."
+          label="Elevate Efficiency"
+          desc="Unleash the Power of Our Advanced Software Tools for Streamlined Processes!"
           className="flex flex-col items-center justify-center space-y-5 text-center basis-1/3"
           titleSize="text-3xl"
           iconSize={40}
@@ -229,15 +228,23 @@ const App = () => {
           </h1>
           <hr />
           <p className="text-neutral-600 max-md:text-sm font-medium tracking-tight">
-            At our company, we believe that every business has a unique story to
-            tell. We specialize in creating stunning website designs that
-            capture the essence of your brand and effectively communicate your
-            message to your target audience. Our team of talented designers and
-            developers work closely with you to understand your vision and bring
-            it to life. Whether you need a simple and elegant website or a
-            complex and interactive web application, we have the expertise to
-            deliver exceptional results. Contact us today to discuss your
-            project and let us help you make a lasting impression online.
+            Hey there! At our company, we're all about helping businesses like
+            yours shine online. We believe that every business has a unique
+            story to tell, and we're here to help you tell it. Our team
+            specializes in creating stunning website designs that capture the
+            essence of your brand and effectively communicate your message to
+            your target audience.
+            <br />
+            <br />
+            Whether you're looking for a simple and elegant website or a complex
+            and interactive web application, we've got you covered. Our talented
+            designers and developers work closely with you to understand your
+            vision and bring it to life. We're all about making sure you make a
+            lasting impression online.
+            <br />
+            <br />
+            So, what are you waiting for? Get in touch with us today to discuss
+            your project and let's create something amazing together!
           </p>
         </div>
 
@@ -343,17 +350,18 @@ const App = () => {
       <Separator className="my-10" />
 
       <Faq />
-
     </main>
   );
 };
 
 export default App;
 
-
 // const Locations = [
-{/* 8th */}
-      {/* <section className="flex items-center max-md:*:w-full justify-between space-x-7 max-md:space-x-0 max-md:space-y-6 max-md:flex-col">
+{
+  /* 8th */
+}
+{
+  /* <section className="flex items-center max-md:*:w-full justify-between space-x-7 max-md:space-x-0 max-md:space-y-6 max-md:flex-col">
 
         <div className="w-1/2 space-y-4 max-md:text-center">
           <Label htmlFor="text">Innovative</Label>
@@ -386,23 +394,35 @@ export default App;
             </Link>
           </div>
         </div>
-      </section> */}
+      </section> */
+}
 
-      {/* <Separator className="my-10 max-md:my-6" /> */}
+{
+  /* <Separator className="my-10 max-md:my-6" /> */
+}
 
-      {/* 9th */}
-      {/* <section>
+{
+  /* 9th */
+}
+{
+  /* <section>
         <img
           className="rounded-lg scale-90 shadow-md transition-all"
           src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt=""
         />
-      </section> */}
+      </section> */
+}
 
-      {/* <Separator className="my-10 max-md:my-6" /> */}
+{
+  /* <Separator className="my-10 max-md:my-6" /> */
+}
 
-      {/* 10th  */}
-      {/* <section className="space-y-8">
+{
+  /* 10th  */
+}
+{
+  /* <section className="space-y-8">
         <div className="space-y-5 text-center">
           <Label htmlFor="text">Innovative</Label>
           <h1 className="text-5xl font-bold max-md:text-4xl">Locations</h1>
@@ -444,4 +464,5 @@ export default App;
             <CarouselPrevious className="md:hidden" />
           </Carousel>
         </div>
-      </section> */}
+      </section> */
+}
