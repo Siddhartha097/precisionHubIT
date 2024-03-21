@@ -39,36 +39,7 @@ import { MdAddModerator, MdAppSettingsAlt, MdAutoMode } from "react-icons/md";
 //     address: "123 sample st, Bengaluru KN 80000 IN",
 //   },
 // ];
-
-const Features = [
-  {
-    label: "Powerful Software Solutions",
-    para: "Our software provides advanced features and benefits to help you streamline your workflow and achieve your goals.",
-  },
-  {
-    label: "User-Friendly Interface",
-    para: "Our software is designed with a user-friendly interface, making it easy for anyone to navigate and use.",
-  },
-  {
-    label: "Seamless Integration",
-    para: "Our software seamlessly integrates with other tools and systems, allowing you to work efficiently and effectively.",
-  },
-];
-
-const Supports = [
-  {
-    label: "Customization, Support, Training",
-    desc: "We offer additional services such as customization, support, and training to meet your specific needs. Our team of experts is here to assist you every step of the way.",
-  },
-  {
-    label: "Customization Options",
-    desc: "We provide a wide range of customization options to tailor our software solutions to your unique requirements. Our team will work closely with you to ensure that the final product meets your expectations.",
-  },
-  {
-    label: "24/7 Support",
-    desc: "Our dedicated support team is available 24/7 to assist you with any technical issues or questions you may have. We are committed to providing prompt and reliable support to ensure your satisfaction.",
-  },
-];
+import { Features, Supports } from "./Data";
 
 const App = () => {
   return (

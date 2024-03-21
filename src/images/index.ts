@@ -3,6 +3,8 @@ import techVid from './vid1.mp4';
 import techvid from './vid2.mp4';
 import city from './city.jpeg'
 import avatar from './avatar.jpg';
+import webdev from './webdev.png'
+
 
 export {
     city,
@@ -10,4 +12,6 @@ export {
     techVid,
     techvid,
     avatar,
+    webdev,
+
 };

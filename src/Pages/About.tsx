@@ -22,46 +22,9 @@ import Transforming from "@/components/Transforming";
 import Faq from "@/components/Faq";
 import Branches from "@/components/Branches";
 
-const WorkFlow = [
-  {
-    label: "Efficiency Boost",
-    content:
-      "Our software seamlessly integrates into your existing systems, optimizing your operations.",
-  },
-  {
-    label: "Cost Savings",
-    content:
-      "Reduce expenses and maximize your budget with our software's cost-effective features.",
-  },
-  {
-    label: "User-Friendly",
-    content:
-      "Experience a smooth learning curve with our intuitive software interface and comprehensive support.",
-  },
-  {
-    label: "Customizable Solutions",
-    content:
-      "Tailor our software to meet your specific needs and achieve your business goals.",
-  },
-];
+import { Services, WorkFlow } from "@/Data";
 
-const Services = [
-  {
-    label: "Comprehensive Support and Training",
-    content:
-      "Our software comes with a range of support and training options to ensure your success.",
-  },
-  {
-    label: "24/7 Customer Support",
-    content:
-      "Our dedicated team is available around the clock to assist you with any questions or issues.",
-  },
-  {
-    label: "Personalized Training Programs",
-    content:
-      "We offer customized training programs tailored to your specific needs and goals.",
-  },
-];
+
 
 const About = () => {
   return (
@@ -251,9 +214,21 @@ const About = () => {
         <br />
 
         <div className="flex items-center max-md:flex-col justify-between gap-14">
-          <Branches title="Full Stack Web Developement" className="basis-1/3" />
-          <Branches title="Full Stack Data Science" className="basis-1/3" />
-          <Branches title="App Developement" className="basis-1/3" />
+          <Branches
+            title="Full Stack Web Developement"
+            className="basis-1/3"
+            link="/web-developement"
+          />
+          <Branches
+            title="Full Stack Data Science"
+            className="basis-1/3"
+            link="#"
+          />
+          <Branches
+            title="App Developement"
+            className="basis-1/3"
+            link="app-developement"
+          />
         </div>
       </section>
 
