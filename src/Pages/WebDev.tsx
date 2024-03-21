@@ -1,6 +1,7 @@
 import { WorkingStyle } from "@/Data";
 import { Separator } from "@/components/ui/separator";
-import { webdev } from "@/images";
+import { chart1, webdev } from "@/images";
+
 
 const WebDev = () => {
   return (
@@ -43,7 +44,9 @@ const WebDev = () => {
 
       <Separator className="my-10 max-md:my-6" />
 
-      <section></section>
+      <section>
+        <img src={chart1} alt="" />
+      </section>
     </main>
   );
 };

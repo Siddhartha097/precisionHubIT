@@ -4,7 +4,7 @@ import techvid from './vid2.mp4';
 import city from './city.jpeg'
 import avatar from './avatar.jpg';
 import webdev from './webdev.png'
-
+import chart1 from './chart1.jpeg'
 
 export {
     city,
@@ -13,5 +13,5 @@ export {
     techvid,
     avatar,
     webdev,
-
+    chart1,
 };
