@@ -35,7 +35,7 @@ const WebDev = () => {
         <div className="text-6xl max-md:text-4xl tracking-tighter font-bold">
           <h1>OUR WORKING STYLE</h1>
         </div>
-        <div className="font-medium w-[80vw] md:text-lg tracking-wide max-md:text-sm text-neutral-600 gap-8 flex flex-col">
+        <div className="font-medium w-[67vw] md:text-lg tracking-wide max-md:text-sm text-neutral-600 gap-8 flex flex-col">
           {WorkingStyle.map((work) => (
             <p className="leading-relaxed" key={work.key}>
               {work.content}
