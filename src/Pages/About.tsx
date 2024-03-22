@@ -24,8 +24,6 @@ import Branches from "@/components/Branches";
 
 import { Services, WorkFlow } from "@/Data";
 
-
-
 const About = () => {
   return (
     <main className="py-14 px-8 space-y-12 md:p-16 w-full h-full relative tracking-tight">
@@ -227,7 +225,7 @@ const About = () => {
           <Branches
             title="App Developement"
             className="basis-1/3"
-            link="app-developement"
+            link="/app-developement"
           />
         </div>
       </section>
