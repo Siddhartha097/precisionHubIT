@@ -83,7 +83,7 @@ const WebDev = () => {
       </section>
 
       <section className="flex mt-10 items-center justify-center">
-        <h1 className="text-lg font-medium text-neutral-600 max-md:text-base text-center tracking-tight max-md:tracking-wide">
+        <h1 className="text-lg font-medium text-neutral-600 max-md:text-sm text-center tracking-tight max-md:tracking-wide">
           Our Working Process is a step by step traversing from one point to
           another following a trail of thoughts and implementation tools where
           our services stand out from the rest in the world of website
