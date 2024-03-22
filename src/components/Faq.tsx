@@ -1,37 +1,8 @@
+import { FAQs } from "@/Data";
+
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "./ui/accordion";
 
-const FAQs = [
-    {
-      id: "item-1",
-      title: "How does it work?",
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, aspernatur animi sit dolores labore dolor odio ad iste qui vero.",
-    },
-    {
-      id: "item-2",
-      title: "What are the benefits?",
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, aspernatur animi sit dolores labore dolor odio ad iste qui vero.",
-    },
-    {
-      id: "item-3",
-      title: "Is it customizable?",
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, aspernatur animi sit dolores labore dolor odio ad iste qui vero.",
-    },
-    {
-      id: "item-4",
-      title: "How can I get support?",
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, aspernatur animi sit dolores labore dolor odio ad iste qui vero.",
-    },
-    {
-      id: "item-5",
-      title: "Is there a free trial?",
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, aspernatur animi sit dolores labore dolor odio ad iste qui vero.",
-    },
-];
+
 
 const Faq = () => {
   return (

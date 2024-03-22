@@ -136,4 +136,126 @@ const WorkingStyle = [
   },
 ];
 
-export { Features, Supports, WorkFlow, Services, WorkingStyle };
+const FAQs = [
+  {
+    id: "item-1",
+    title: "How does it work?",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, aspernatur animi sit dolores labore dolor odio ad iste qui vero.",
+  },
+  {
+    id: "item-2",
+    title: "What are the benefits?",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, aspernatur animi sit dolores labore dolor odio ad iste qui vero.",
+  },
+  {
+    id: "item-3",
+    title: "Is it customizable?",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, aspernatur animi sit dolores labore dolor odio ad iste qui vero.",
+  },
+  {
+    id: "item-4",
+    title: "How can I get support?",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, aspernatur animi sit dolores labore dolor odio ad iste qui vero.",
+  },
+  {
+    id: "item-5",
+    title: "Is there a free trial?",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, aspernatur animi sit dolores labore dolor odio ad iste qui vero.",
+  },
+];
+
+const BasicPlans = [
+  {
+    content: "Powerful features for your business",
+  },
+  {
+    content: "Secure data storage and backup",
+  },
+  {
+    content: "24/7 customer support is available",
+  },
+];
+
+const BusinessPlans = [
+  {
+    content: "Advanced features for your business",
+  },
+  {
+    content: "Increased storage capacity",
+  },
+  {
+    content: "Priority customer support",
+  },
+  {
+    content: "Customizable branding options",
+  },
+  {
+    content: "Integration with third-party apps",
+  },
+];
+
+const WebDevChartsLeft = [
+  {
+    label: "DISCOVERY",
+    content:
+      "It is the initial phase where we gather all the necessary data, statistics, layout and templates matching the Business Profile.",
+    color: "text-[#D8540A]",
+    number: 1,
+  },
+  {
+    label: "DOCUMENTATION",
+    content:
+      "A to Z information, Client Agreement, Domain Registration, Security Certificates and anything that includes the horizon of Website Development is right there for client's records",
+    color: "text-[#BDA00A]",
+    number: 2,
+  },
+  {
+    label: "DESIGN",
+    content:
+      "According to UI & UX Designs and algorithms, our team will map a layout that suits the Business niche perfectly.",
+    color: "text-[#63C006]",
+    number: 3,
+  },
+];
+
+const WebDevChartsRight = [
+  {
+    label: "LAUNCH",
+    content:
+      "The final step is the Launch of the Website! We believe in going Live with a Bang! All Social Media Channel will be hit right from the very moment.",
+    color: "text-[#0CC6D2]",
+    number: 4,
+  },
+  {
+    label: "BUG TESTING",
+    content:
+      "Our Developers gets the job done like spreading butter on a toast! Bug Testing is the way to ensure smooth functioning of the website.",
+    color: "text-[#5703E0]",
+    number: 5,
+  },
+  {
+    label: "DEVELOPMENT",
+    content:
+      "When all is up and running, then comes the construction of the Website. Our Web Developers will chalk out the plan and ensure speedy delivery.",
+    color: "text-[#F2055B]",
+    number: 6,
+  },
+];
+
+export {
+  Features,
+  Supports,
+  WorkFlow,
+  Services,
+  WorkingStyle,
+  FAQs,
+  BasicPlans,
+  BusinessPlans,
+  WebDevChartsLeft,
+  WebDevChartsRight,
+};

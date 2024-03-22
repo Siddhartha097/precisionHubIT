@@ -1,7 +1,7 @@
-import { WorkingStyle } from "@/Data";
+import { WebDevChartsLeft, WebDevChartsRight, WorkingStyle } from "@/Data";
+import ChartSection from "@/components/ChartSection";
 import { Separator } from "@/components/ui/separator";
-import { chart1, webdev } from "@/images";
-
+import { circle, webdev } from "@/images";
 
 const WebDev = () => {
   return (
@@ -44,8 +44,53 @@ const WebDev = () => {
 
       <Separator className="my-10 max-md:my-6" />
 
-      <section>
-        <img src={chart1} alt="" />
+      <section className="flex items-center justify-center gap-16 max-md:gap-10 max-md:flex-col p-10 max-md:p-0">
+        {/* <img src={chart1} alt="" /> */}
+        <div className="flex flex-col md:w-1/3 items-center justify-center gap-20 max-md:gap-8">
+          {WebDevChartsLeft.map((charts) => (
+            <div>
+              <ChartSection
+                label={charts.label}
+                content={charts.content}
+                color={charts.color}
+                number={charts.number}
+                key={charts.number}
+                align="left"
+                reverse
+              />
+            </div>
+          ))}
+        </div>
+
+        <div className="flex items-center justify-center w-full">
+          <img className="max-md:w-3/4" src={circle} alt="circle" />
+        </div>
+
+        <div className="flex flex-col items-center justify-center gap-20 max-md:gap-8 md:w-1/3">
+          {WebDevChartsRight.map((charts) => (
+            <div>
+              <ChartSection
+                label={charts.label}
+                content={charts.content}
+                color={charts.color}
+                number={charts.number}
+                key={charts.number}
+                align="right"
+              />
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="flex mt-10 items-center justify-center">
+        <h1 className="text-lg font-medium text-neutral-600 max-md:text-base text-center tracking-tight max-md:tracking-wide">
+          Our Working Process is a step by step traversing from one point to
+          another following a trail of thoughts and implementation tools where
+          our services stand out from the rest in the world of website
+          application development. When you sign up with PrecisionHub IT it is
+          not just a Business Deal that we make but, an affair we form that will
+          adhere to benefits aiming at creating perdurable relationships.
+        </h1>
       </section>
     </main>
   );

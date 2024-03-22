@@ -1,3 +1,5 @@
+import { BasicPlans, BusinessPlans } from "@/Data";
+
 import { Button } from "./ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "./ui/card";
 
@@ -6,36 +8,6 @@ export interface PlanProps {
     price?: number;
     time?: 'mo'| 'yr';
 }
-
-
-const BasicPlans = [
-    {
-        content: 'Powerful features for your business'
-    },
-    {
-        content: 'Secure data storage and backup'
-    },
-    {
-        content: '24/7 customer support is available'
-    },
-];
-const BusinessPlans = [
-    {
-        content: 'Advanced features for your business'
-    },
-    {
-        content: 'Increased storage capacity'
-    },
-    {
-        content: 'Priority customer support'
-    },
-    {
-        content: 'Customizable branding options'
-    },
-    {
-        content: 'Integration with third-party apps'
-    },
-];
 
 const Plan : React.FC<PlanProps> = ({
     title,
