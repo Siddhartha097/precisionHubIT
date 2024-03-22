@@ -94,8 +94,7 @@ const WorkingStyle = [
       complexity with unwavering resolve. Each member brings a wealth of
       experience and a commitment to craftsmanship, blending artistry with
       technical prowess to deliver solutions that not only meet but
-      surpass industry standards.
-    </p>`,
+      surpass industry standards.`,
   },
   {
     key: 4,

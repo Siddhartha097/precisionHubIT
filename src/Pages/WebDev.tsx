@@ -1,14 +1,14 @@
 import { WebDevChartsLeft, WebDevChartsRight, WorkingStyle } from "@/Data";
 import ChartSection from "@/components/ChartSection";
 import { Separator } from "@/components/ui/separator";
-import { circle, webdev } from "@/images";
+import { man, webdev } from "@/images";
 
 const WebDev = () => {
   return (
     <main className="flex flex-col items-center justify-between gap-16 max-md:gap-8 p-16 max-md:px-8">
       <section className="flex max-md:flex-col-reverse items-center justify-evenly gap-8">
         <div className="flex items-center justify-center tracking-tight text-sm md:w-1/3 md:text-lg max-md:text-center">
-          <p>
+          <p className="leading-relaxed">
             A website is the first impression of the Brand that one is trying to
             promote. It is a gateway to the online world and your Virtual
             Office. Today, people before visiting your physical space would
@@ -32,12 +32,14 @@ const WebDev = () => {
       <Separator className="my-10 max-md:my-6" />
 
       <section className="flex flex-col items-center justify-center gap-14 max-md:gap-10 text-center tracking-tight">
-        <div className="text-6xl max-md:text-4xl  font-bold">
+        <div className="text-6xl max-md:text-4xl tracking-tighter font-bold">
           <h1>OUR WORKING STYLE</h1>
         </div>
-        <div className="font-medium w-[70vw] md:text-lg max-md:text-sm text-neutral-600 gap-8 flex flex-col">
+        <div className="font-medium w-[80vw] md:text-lg tracking-wide max-md:text-sm text-neutral-600 gap-8 flex flex-col">
           {WorkingStyle.map((work) => (
-            <p key={work.key}>{work.content}</p>
+            <p className="leading-relaxed" key={work.key}>
+              {work.content}
+            </p>
           ))}
         </div>
       </section>
@@ -63,7 +65,11 @@ const WebDev = () => {
         </div>
 
         <div className="flex items-center justify-center w-full">
-          <img className="max-md:w-3/4" src={circle} alt="circle" />
+          <img
+            className=" rounded-full shadow-sm border"
+            src={man}
+            alt="circle"
+          />
         </div>
 
         <div className="flex flex-col items-center justify-center gap-20 max-md:gap-8 md:w-1/3">

@@ -44,7 +44,7 @@ const ChartSection: React.FC<ChartSectionProps> = ({
 
       {/* <Separator orientation="vertical" className="my-6 md:hidden" /> */}
 
-      <div className="rounded-full w-1/3 bg-slate-200 flex flex-col items-center justify-center gap-2 border-2 border-slate-300 py-10 max-md:py shadow-inner">
+      <div className="rounded-full w-1/3 bg-slate-200 flex flex-col items-center justify-center gap-2 border border-slate-300 py-10 max-md:py shadow-inner">
         <img
           className={`${!img ? "hidden" : ""} rounded-full`}
           src={img}
