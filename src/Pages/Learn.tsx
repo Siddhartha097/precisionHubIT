@@ -8,7 +8,7 @@ import { Pagination } from "swiper/modules";
 import { FaStar } from "react-icons/fa";
 import { Separator } from "@radix-ui/react-separator";
 import MoreBtn from "@/components/MoreBtn";
-import Faq2 from "@/components/FA";
+import Faq from "@/components/Faq";
 
 const Learn = () => {
   return (
@@ -352,7 +352,7 @@ const Learn = () => {
         <h1></h1>
         <p></p>
         <div>
-          <Faq2></Faq2>
+          <Faq />
         </div>
       </div>
       {/* add buttons and a image */}
