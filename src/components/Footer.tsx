@@ -1,36 +1,20 @@
-import { FaFacebook, FaLinkedin } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
 import { Separator } from "./ui/separator";
 import { Link } from "react-router-dom";
 import { Logo } from "@/images";
+import { FaFacebook, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import { workServices } from "@/Data";
 
-const Services = [
-  {
-    label: "About Us",
-    link: "/about",
-  },
-  {
-    label: "Services",
-    link: "#",
-  },
-  {
-    label: "Contact",
-    link: "/contact",
-  },
-  {
-    label: "FAQ",
-    link: "#",
-  },
-  {
-    label: "Insights",
-    link: "/insights",
-  },
-];
+<svg width="0" height="0">
+  <linearGradient id="blue-gradient" x1="100%" y1="100%" x2="0%" y2="0%">
+    <stop stopColor="#7a6ded" offset="0%" />
+    <stop stopColor="#591885" offset="100%" />
+  </linearGradient>
+</svg>;
 
 const Socials = [
   {
     label: "Facebook",
-    icon: <FaFacebook className="text-[#302b63]" />,
+    icon: <FaFacebook style={{ stroke: "url(#blue-gradient)" }} />,
     link: "#",
   },
   {
@@ -76,7 +60,7 @@ const Footer = () => {
         {/* Services */}
         <div>
           <ul className="flex items-center justify-between space-x-8 max-md:space-x-4 font-semibold max-md:text-sm text-lg">
-            {Services.map((service) => (
+            {workServices.map((service) => (
               <Link to={service.link}>{service.label}</Link>
             ))}
           </ul>
