@@ -15,10 +15,10 @@ const Learn = () => {
     // Container
     <main className="LearnMore-container ">
       {/* First Page */}
-      <div className=" justify-center md:h-30 py-20">
+      <div className=" justify-center md:h-30 py-20 px-2">
         {/* left */}
         <div className="flex md:pt-2 justify-center h-30 bg-white md:px-20  px-5">
-          <h1 className="text-8xl font-bold text-gray-800 mb-8 text-center bg-gradient-to-r from-[#ff5356] to-[#2d326c] bg-clip-text text-transparent">
+          <h1 className="md:text-8xl text-6xl font-bold text-gray-800 mb-8 text-center bg-gradient-to-r from-[#ff5356] to-[#2d326c] bg-clip-text text-transparent">
             Powerful Software Solutions for Your Business
           </h1>
         </div>
@@ -39,8 +39,8 @@ const Learn = () => {
       <br />
       <Separator className="border-b-2 mx-5 md:mx-20" />
       {/* Second page */}
-      <p className="ml-20 font-semibold md:px-0 pt-32">Innovative</p>
-      <div className="learn-page2 pb-20 ">
+      {/* <p className="ml-20 font-semibold md:px-0 pt-32 ">Innovative</p> */}
+      <div className="learn-page2 pb-20 px-5">
         {/* description and right image */}
 
         <div className=" md:grid grid-cols-2 pb-20">
@@ -77,7 +77,7 @@ const Learn = () => {
         </div>
 
         {/* three box */}
-        <div className="md:grid grid-cols-3 gap-10 md:px-20 px-5 py-40 ">
+        <div className="md:grid grid-cols-3 gap-10 md:px-20 px-5 md:py-40 ">
           <section>
             <Box
               label="Increase Productivity and Collaboration"
@@ -164,7 +164,7 @@ const Learn = () => {
         {/* Three para */}
         <section className="flex justify-center">
           <section className="pt-20 md:w-3/6 text-center">
-            <p className="font-bold text-center text-gray-400">Innovate</p>
+            {/* <p className="font-bold text-center text-gray-400">Innovate</p> */}
             <h1 className="text-6xl font-bold text-center py-9">
               Unlock potential Through Custom Development and
             </h1>
@@ -258,8 +258,8 @@ const Learn = () => {
           <Swiper
             cssMode={true}
             navigation={true}
-            pagination={true}
-            modules={[Navigation, Pagination]}
+            pagination={false}
+            modules={[Navigation]}
             className="mySwiper"
           >
             <SwiperSlide className="">
@@ -267,7 +267,7 @@ const Learn = () => {
                 <div className="flex justify-center ">
                   <img
                     src="https://images.unsplash.com/photo-1595956553259-1e2dce209bf4?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    className="md:h-96 rounded-xl my-10"
+                    className="md:h-96 rounded-full my-10 "
                     alt=""
                   />
                 </div>
@@ -285,14 +285,6 @@ const Learn = () => {
                       business. It's Efficient, user-friendly, and has increased
                       our productivity ten-folds.
                     </h1>
-                    <div className="flex">
-                      <div className="font-semibold text-gray-500">
-                        <p>Suresh Raima</p>
-                        <p className="font-mono">CEO, COMPANY NAME</p>
-                      </div>
-                      <h1 className="text-5xl pl-2">|</h1>
-                      <h1 className="font-bold text-xl cen">Webflow</h1>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -302,7 +294,7 @@ const Learn = () => {
                 <div className="flex justify-center ">
                   <img
                     src="https://images.unsplash.com/photo-1595956553259-1e2dce209bf4?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    className="md:h-96 rounded-xl my-10"
+                    className="md:h-96 rounded-full my-10 "
                     alt=""
                   />
                 </div>
@@ -320,14 +312,6 @@ const Learn = () => {
                       business. It's Efficient, user-friendly, and has increased
                       our productivity ten-folds.
                     </h1>
-                    <div className="flex">
-                      <div className="font-semibold text-gray-500">
-                        <p>Suresh Raima</p>
-                        <p className="font-mono">CEO, COMPANY NAME</p>
-                      </div>
-                      <h1 className="text-5xl pl-2">|</h1>
-                      <h1 className="font-bold text-xl cen">Webflow</h1>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -337,7 +321,7 @@ const Learn = () => {
                 <div className="flex justify-center ">
                   <img
                     src="https://images.unsplash.com/photo-1595956553259-1e2dce209bf4?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    className="md:h-96 rounded-xl my-10"
+                    className="md:h-96 rounded-full my-10 "
                     alt=""
                   />
                 </div>
@@ -355,49 +339,6 @@ const Learn = () => {
                       business. It's Efficient, user-friendly, and has increased
                       our productivity ten-folds.
                     </h1>
-                    <div className="flex">
-                      <div className="font-semibold text-gray-500">
-                        <p>Suresh Raima</p>
-                        <p className="font-mono">CEO, COMPANY NAME</p>
-                      </div>
-                      <h1 className="text-5xl pl-2">|</h1>
-                      <h1 className="font-bold text-xl cen">Webflow</h1>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="">
-              <div className="md:grid grid-cols-2 items-center md:h-96">
-                <div className="flex justify-center ">
-                  <img
-                    src="https://images.unsplash.com/photo-1595956553259-1e2dce209bf4?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    className="md:h-96 rounded-xl my-10"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <div className=" flex flex-col gap-7">
-                    <p className="flex">
-                      <FaStar></FaStar>
-                      <FaStar></FaStar>
-                      <FaStar></FaStar>
-                      <FaStar></FaStar>
-                      <FaStar></FaStar>
-                    </p>
-                    <h1 className="text-xl font-bold ">
-                      Our software has completely turned the way is does
-                      business. It's Efficient, user-friendly, and has increased
-                      our productivity ten-folds.
-                    </h1>
-                    <div className="flex">
-                      <div className="font-semibold text-gray-500">
-                        <p>Suresh Raima</p>
-                        <p className="font-mono">CEO, COMPANY NAME</p>
-                      </div>
-                      <h1 className="text-5xl pl-2">|</h1>
-                      <h1 className="font-bold text-xl cen">Webflow</h1>
-                    </div>
                   </div>
                 </div>
               </div>
