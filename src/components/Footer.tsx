@@ -4,17 +4,10 @@ import { Logo } from "@/images";
 import { FaFacebook, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import { workServices } from "@/Data";
 
-<svg width="0" height="0">
-  <linearGradient id="blue-gradient" x1="100%" y1="100%" x2="0%" y2="0%">
-    <stop stopColor="#7a6ded" offset="0%" />
-    <stop stopColor="#591885" offset="100%" />
-  </linearGradient>
-</svg>;
-
 const Socials = [
   {
     label: "Facebook",
-    icon: <FaFacebook style={{ stroke: "url(#blue-gradient)" }} />,
+    icon: <FaFacebook className="text-[#302b63]" />,
     link: "#",
   },
   {
