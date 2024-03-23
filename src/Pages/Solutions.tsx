@@ -11,6 +11,7 @@ import { Navigation } from "swiper/modules";
 import HeroBox from "@/components/HeroBox";
 
 import { Sols } from "@/Data";
+import Faq from "@/components/Faq";
 
 const Solutions = () => {
   return (
@@ -217,6 +218,7 @@ const Solutions = () => {
 
       <Separator className="my-20" />
 
+      {/* swiper */}
       <section className="py-8">
         <Swiper
           pagination={{
@@ -281,6 +283,12 @@ const Solutions = () => {
             </div>
           </SwiperSlide>
         </Swiper>
+      </section>
+
+      <Separator className="my-20" />
+
+      <section className="flex items-center justify-center p-8">
+        <Faq />
       </section>
     </main>
   );
