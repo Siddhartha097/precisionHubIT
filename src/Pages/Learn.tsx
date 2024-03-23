@@ -4,7 +4,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation } from "swiper/modules";
-import { Pagination } from "swiper/modules";
 import { FaStar } from "react-icons/fa";
 import { Separator } from "@radix-ui/react-separator";
 import MoreBtn from "@/components/MoreBtn";
