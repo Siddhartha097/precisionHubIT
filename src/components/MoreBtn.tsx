@@ -23,7 +23,7 @@ const MoreBtn = ({
       <Button
         className={`${className} rounded-none border-2 ${
           variant === "default"
-            ? `${bgColor} ${border} hover:opacity-80`
+            ? `${bgColor} ${border} hover:opacity-90`
             : "border-black hover:celestial hover:border-celestial hover:text-white"
         } transition-all text-sm`}
         variant={variant}

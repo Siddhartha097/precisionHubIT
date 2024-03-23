@@ -84,8 +84,13 @@
     background-image: linear-gradient(to left, #3e26d7, #7b40da, #47b8e5);
   }
 
-  .text-gradient {
-    
-    color: linear-gradient(to right, #c33764, #1d2671);
+  .shadow-text {
+    text-shadow: 2px 4px 4px black;
+  }
+
+  .gradiant-text {
+    background: -webkit-linear-gradient( #c33764, #1d2671);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
