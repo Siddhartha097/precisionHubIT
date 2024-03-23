@@ -198,6 +198,39 @@ const FAQs = [
   },
 ];
 
+const FAQ2s = [
+  {
+    id: "item-1",
+    title: "What is this website?",
+    content:
+      " This website is designed to provide users with information about our products and services, as well as answer any questions they may have",
+  },
+  {
+    id: "item-2",
+    title: "How do I get started?",
+    content:
+      " To get started, simply navigate to the homepage and explore the various sections and features available",
+  },
+  {
+    id: "item-3",
+    title: " Can I contact support?",
+    content:
+      " Yes, if you have any further questions or need assistance, you can contact our support team through the provided contact information",
+  },
+  {
+    id: "item-4",
+    title: " Are there any fees?",
+    content:
+      " There may be fees associated with certain products or services. Please refer to the specific product or service page for more information",
+  },
+  {
+    id: "item-5",
+    title: " How can I provide feedback?",
+    content:
+      " We value your feedback! You can provide feedback by filling out the feedback form on our website or contacting our support team",
+  },
+];
+
 const BasicPlans = [
   {
     content: "Powerful features for your business",
@@ -288,4 +321,5 @@ export {
   BusinessPlans,
   WebDevChartsLeft,
   WebDevChartsRight,
+  FAQ2s
 };
