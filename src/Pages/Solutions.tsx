@@ -239,28 +239,15 @@ const Solutions = () => {
                   <FaStar />
                 </div>
                 <h1 className="text-3xl max-md:text-xl font-bold text-center mb-6">
-                  Our Experience with the Company
+                  The Data Science department's work
                 </h1>
                 <div className="text-gray-700">
                   <p className="mb-4 font-medium max-md:text-xs text-neutral-500">
-                    Our experience with the company has been nothing short of
-                    exceptional. Their solutions have helped us streamline our
-                    processes and increase productivity.Their solutions have
-                    been instrumental in helping us achieve our business goals
-                    and improve our bottom line. We highly recommend their
-                    services to any organization looking to streamline their
-                    processes and increase productivity.
+                    The data science department's work has been truly
+                    transformative. Their insights and analysis have helped us
+                    make data-driven decisions that have significantly improved
+                    our business outcomes.
                   </p>
-                  <Separator className="my-6" />
-                  <div className="text-center flex items-center justify-center space-x-8">
-                    <p className="text-gray-700 max-md:text-sm">
-                      {" "}
-                      <b>Rick Dawson, CEO,</b>
-                      <br /> XYZ Corp
-                    </p>
-                    <p className="text-3xl  font-bold">|</p>
-                    <p className="font-bold">WorkFlow</p>
-                  </div>
                 </div>
               </div>
             </div>
@@ -289,16 +276,6 @@ const Solutions = () => {
                     services to any organization looking to streamline their
                     processes and increase productivity.
                   </p>
-                  <Separator className="my-6" />
-                  <div className="text-center flex items-center justify-center space-x-8">
-                    <p className="text-gray-700 max-md:text-sm">
-                      {" "}
-                      <b>John Doe, CEO,</b>
-                      <br /> ABC Corp
-                    </p>
-                    <p className="text-3xl font-bold">|</p>
-                    <p className="font-bold">WorkFlow</p>
-                  </div>
                 </div>
               </div>
             </div>
