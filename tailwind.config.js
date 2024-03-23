@@ -21,6 +21,9 @@ module.exports = {
       linearGradientColors: {
         celestial: ["#c33764", "#1d2671"],
       },
+      textColor: {
+        celestial: ["#c33764", "#1d2671"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

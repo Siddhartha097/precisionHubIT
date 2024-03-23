@@ -20,7 +20,7 @@ return (
         <div className=' justify-center md:h-30 py-20'>
             {/* left */}
             <div className="flex md:pt-2 justify-center h-30 bg-white md:px-20  px-5">
-                <h1 className="text-8xl font-bold text-gray-800 mb-8 text-center">
+                    <h1 className="text-8xl font-bold text-gray-800 mb-8 text-center bg-gradient-to-r from-[#ff5356] to-[#2d326c] bg-clip-text text-transparent">
                     Powerful Software Solutions for Your Business
                 </h1>
             </div>
@@ -69,7 +69,9 @@ return (
 
 
                         <section>
-                            <Box label='Powerful Solutions for Your Business' desc='Our software affers a wide range of features and benefits to help your business succeed.' className='flex flex-col gap-12 items-center text-center' titleSize='text-4xl'></Box>
+                            <Box label='Optimize your 
+                                workflow with our 
+                                powerful software' desc='Our software affers a wide range of features and benefits to help your business succeed.' className='flex flex-col gap-12 items-center text-center' titleSize='text-4xl'></Box>
                             <div className='flex'>
                             
                             
@@ -286,18 +288,9 @@ return (
                 </Swiper>
             </section>
         </div>
+
         <div className='md:pl-20 px-5'>
-            <p>innovative</p>
-            <h1 className='text-4xl'>Get to know our team</h1>
-            <p className='text-gray-400 pb-10'>Get to know the experts behind our softwares</p>
-            <section className='grid grid-cols-4 gap-10 '>
-                <Member name='John Doe' designation='Front End Developer' desc='With knowlege of 10 to 15 front end frameworks and languages.' className='md:p-20'/>
-                <Member name='John Doe' designation='Front End Developer' desc='With knowlege of 10 to 15 front end frameworks and languages.' className='md:p-20'/>
-                <Member name='John Doe' designation='Front End Developer' desc='With knowlege of 10 to 15 front end frameworks and languages.' className='md:p-20'/>
-                <Member name='John Doe' designation='Front End Developer' desc='With knowlege of 10 to 15 front end frameworks and languages.' className='md:p-20'/>
-                <Member name='John Doe' designation='Front End Developer' desc='With knowlege of 10 to 15 front end frameworks and languages.' className='md:p-20'/>
-                <Member name='John Doe' designation='Front End Developer' desc='With knowlege of 10 to 15 front end frameworks and languages.' className='md:p-20'/>
-            </section>
+            
         </div>
         <div>
             <h1></h1>
@@ -307,18 +300,6 @@ return (
             </div>
         </div>
         {/* add buttons and a image */}
-        <section className='flex items-center min-h-96 m-20 p-10 border-4'>
-            <div className='w-1/2 space-y-5'>
-                <h1 className='text-5xl font-bold'>Unlock your potential</h1>
-                <p> Discover how our software can revolutionize your business operations.</p>
-                <section>
-                    <MoreBtn label='Request Demo' />
-                </section>
-            </div>
-            <div className='w-2/4'>
-                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-            </div>
-        </section>
 
     </main>
 )
