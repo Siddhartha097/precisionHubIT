@@ -10,28 +10,26 @@ import { FaStar } from 'react-icons/fa';
 import Member from '@/components/Member';
 import { Separator } from '@radix-ui/react-separator';
 import MoreBtn from '@/components/MoreBtn';
+import Faq2 from '@/components/FA';
 
 const Learn = () => {
 return (
     // Container
     <main className='LearnMore-container '>
         {/* First Page */}
-        <div className='md:flex justify-center md:h-30 py-20'>
+        <div className=' justify-center md:h-30 py-20'>
             {/* left */}
-            <div className="flex md:pt-56 justify-center h-30 bg-white md:px-20 md:w-3/5 px-5">
-                <h1 className="text-6xl font-bold text-gray-800 mb-8">
+            <div className="flex md:pt-2 justify-center h-30 bg-white md:px-20  px-5">
+                <h1 className="text-8xl font-bold text-gray-800 mb-8 text-center">
                     Powerful Software Solutions for Your Business
                 </h1>
             </div>
             {/* right */}
-            <div className=' md:pt-56 md:pr-20 text-center md:text-left'>
-                <p className="text-xl text-gray-700 mb-8 ">
+            <div className=' md:pt-5 md:pr-20 text-center md:text-center'>
+                <p className="text-3xl text-gray-700 mb-8 ">
                     Transform your business with our innovative software solutions. Increase efficiency, streamline processes, and drive growth.
                 </p>
-                <div>
-                <Button className="rounded-none border border-black hover:bg-white text-white hover:text-black bg-black " variant={'outline'}>Learn More</Button>
-                {/* <Button className="rounded-none border border-black hover:bg-green-600 hover:border-green-600 hover:text-white ml-5" variant={'outline'}>Sign Up</Button> */}
-                </div>
+                
             </div>
         </div>
         <section className='mx-20'>
@@ -56,44 +54,41 @@ return (
                         </div>
 
                         <div><img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className=' md:px-20 h-full py-10 md:py-0'/></div>
-                        <div className='px-20  flex '>
-                        <Button className="rounded-none border border-black hover:bg-pink-600 hover:border-pink-600 hover:text-white" variant={'outline'}>Learn More</Button>
-                            
-                        </div>
+                        
                     </div>
-                    <Separator className='border-b-2 mx-5 md:mx-20'/>
+                    
                     {/* three box */}
                     <div className='md:grid grid-cols-3 gap-10 md:px-20 px-5 py-40 '>
                         <section>
-                            <Box label='Increase Productivity and Collaboration' desc='Our software provides innovative solutions to somplex problems helping you achieve your goals faster and with greater precision' className=' flex flex-col gap-12' titleSize='text-4xl'></Box>
+                            <Box label='Increase Productivity and Collaboration' desc='Our software provides innovative solutions to somplex problems helping you achieve your goals faster and with greater precision' className=' flex flex-col gap-12 items-center text-center' titleSize='text-4xl'></Box>
                             <div className='flex'>
-                            <Button className="rounded-none border border-black hover:bg-pink-600 hover:border-pink-600 hover:text-white mt-5 mb-5" variant={'outline'}>Learn More</Button>
+                           
                             
                         </div>
                         </section>
 
 
                         <section>
-                            <Box label='Powerful Solutions for Your Business' desc='Our software affers a wide range of features and benefits to help your business succeed.' className='flex flex-col gap-12 ' titleSize='text-4xl'></Box>
+                            <Box label='Powerful Solutions for Your Business' desc='Our software affers a wide range of features and benefits to help your business succeed.' className='flex flex-col gap-12 items-center text-center' titleSize='text-4xl'></Box>
                             <div className='flex'>
-                            <Button className="rounded-none border border-black hover:bg-pink-600 hover:border-pink-600 hover:text-white mt-10" variant={'outline'}>Learn More</Button>
+                            
                             
                         </div>
                         </section>
 
 
                         <section>
-                            <Box label='Streamline Your Workflow with Ease' desc='Our software simplifies complex tasks and improves efficiency.' className='flex flex-col gap-12' titleSize='text-4xl'></Box>
+                            <Box label='Streamline Your Workflow with Ease' desc='Our software simplifies complex tasks and improves efficiency.' className='flex flex-col gap-12 items-center text-center' titleSize='text-4xl'></Box>
                             <div className='flex'>
-                            <Button className="rounded-none border border-black hover:bg-pink-600 hover:border-green-600 hover:text-white mt-10" variant={'outline'}>Learn More</Button>
+                            
                             
                         </div>
                         </section>
                     </div>
                     <Separator className='border-b-2 mx-5 md:mx-20'/>
                     {/* decription */}
-                    <div className='md:flex md:px-20 md:py-20 px-5'>
-                        <section className='text-6xl md:w-2/4 font-bold'>
+                    <div className='md:flex md:px-20 md:py-20 px-5 '>
+                        <section className='text-6xl md:w-2/4 font-bold pt-10'>
                             Discover the power of Our Software
                         </section>
 
@@ -104,28 +99,28 @@ return (
                         </section>
                     </div>
                     {/* Three boxes 2*/}
-                    last box problem
+                    
                     <div className='md:grid grid-cols-3 md:px-20 py-40 px-5'>
                         <section className='md:pr-10 pb-10'>
-                            <Box label='Efficient and Effective Solutions' desc='Our software provides innovative solution to complex problems , helping yuo achieve your goals with great potential.' className='flex flex-col gap-5 mb-5' titleSize='text-5xl'></Box>
+                            <Box label='Efficient and Effective Solutions' desc='Our software provides innovative solution to complex problems , helping yuo achieve your goals with great potential.' className='flex flex-col gap-10 mb-5 items-center text-center ' descSize='' titleSize='text-5xl'></Box>
                             <div className='flex'>
-                            <Button className="rounded-none border border-black hover:bg-pink-600 hover:border-pink-600 hover:text-white " variant={'outline'}>Learn More</Button>
+                            
                             
                         </div>
                         </section>
 
 
                         <section className='md:pr-10 pb-10'>
-                            <Box label='Seamless Intregation with Your Workflow' desc='Integrate our software. Seamlessly into your existing workflow and experience a boost in productivity and efficiency. ' className='flex flex-col gap-5 mb-5' titleSize='text-5xl'></Box>
+                            <Box label='Seamless Intregation with Your Workflow' desc='Integrate our software. Seamlessly into your existing workflow and experience a boost in productivity and efficiency. ' className='flex flex-col gap-10 mb- items-center text-center' titleSize='text-5xl'></Box>
                             <div className='flex'>
-                            <Button className="rounded-none border border-black hover:bg-pink-600 hover:border-pink-600 hover:text-white" variant={'outline'}>Learn More</Button>
+                            
                             
                         </div>
                         </section>
 
 
                         <section>
-                            <Box label='Stay organized and on track ' desc='Our software helps you stay organized, manage tasks efficiently and keep track of important deadlines ' className='md:*:h-40' titleSize='text-5xl'></Box>
+                            <Box label='Stay organized and on track ' desc='Our software helps you stay organized, manage tasks efficiently and keep track of important deadlines ' className='flex flex-col gap-10 items-center text-center' titleSize='text-5xl'></Box>
                             <ul className='flex'>
                             
                             
@@ -141,7 +136,7 @@ return (
                         <p className='font-bold text-gray-400'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores reprehenderit, odit tempore harum voluptatem, exercitationem nam expedita dignissimos unde nesciunt vero, qui voluptatum distinctio quas velit pariatur ea neque molestias.</p>
                     </section>
                     </section>
-
+                    
                     {/* Three boxes 3*/}
                     <div className='grid grid-cols-3 md:-20 mt-20 '>
                         <section className='md:pr-10 '>
@@ -196,6 +191,7 @@ return (
             </section>
             
         </div>
+        <Separator className='border-b-2 mx-5 md:mx-20'/>
         {/* review */}
         <div>
             
@@ -302,6 +298,13 @@ return (
                 <Member name='John Doe' designation='Front End Developer' desc='With knowlege of 10 to 15 front end frameworks and languages.' className='md:p-20'/>
                 <Member name='John Doe' designation='Front End Developer' desc='With knowlege of 10 to 15 front end frameworks and languages.' className='md:p-20'/>
             </section>
+        </div>
+        <div>
+            <h1></h1>
+            <p></p>
+            <div>
+                <Faq2></Faq2>
+            </div>
         </div>
         {/* add buttons and a image */}
         <section className='flex items-center min-h-96 m-20 p-10 border-4'>
