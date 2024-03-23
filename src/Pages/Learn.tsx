@@ -60,7 +60,7 @@ return (
                     {/* three box */}
                     <div className='md:grid grid-cols-3 gap-10 md:px-20 px-5 py-40 '>
                         <section>
-                            <Box label='Increase Productivity and Collaboration' desc='Our software provides innovative solutions to somplex problems helping you achieve your goals faster and with greater precision' className=' flex flex-col gap-12 items-center text-center' titleSize='text-4xl'></Box>
+                            <Box label='Increase Productivity and Collaboration' desc='' className=' flex flex-col gap-12 items-center text-center' titleSize='text-5xl'></Box>
                             <div className='flex'>
                            
                             
@@ -71,7 +71,7 @@ return (
                         <section>
                             <Box label='Optimize your 
                                 workflow with our 
-                                powerful software' desc='Our software affers a wide range of features and benefits to help your business succeed.' className='flex flex-col gap-12 items-center text-center' titleSize='text-4xl'></Box>
+                                powerful software' desc='' className='flex flex-col gap-12 items-center text-center' titleSize='text-5xl'></Box>
                             <div className='flex'>
                             
                             
@@ -80,7 +80,7 @@ return (
 
 
                         <section>
-                            <Box label='Streamline Your Workflow with Ease' desc='Our software simplifies complex tasks and improves efficiency.' className='flex flex-col gap-12 items-center text-center' titleSize='text-4xl'></Box>
+                            <Box label='Streamline Your Workflow with Ease' desc='' className='flex flex-col gap-12 items-center text-center' titleSize='text-5xl'></Box>
                             <div className='flex'>
                             
                             
