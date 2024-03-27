@@ -299,6 +299,108 @@ const WebDevChartsRight = [
   },
 ];
 
+const AppDevCharts = [
+  {
+    label: "Research & Planning",
+    content:
+      "full-fledged Blueprint; client's nature of business, target & interests, strategies, adroit ideas & innovation.",
+    img: "",
+    step: 1,
+    bgColor: "bg-orange-300",
+    textColor: "text-orange-600",
+  },
+  {
+    label: "Wireframe",
+    content:
+      "Visual Map! Wireframe is a platform where the designing of the app is carried out",
+    img: "",
+    step: 2,
+    bgColor: "bg-sky-300",
+    textColor: "text-sky-600",
+  },
+  {
+    label: "Prototype",
+    content:
+      "A construction of a model for the client to assess the app before introducing online",
+    img: "",
+    step: 3,
+    bgColor: "bg-purple-300",
+    textColor: "text-purple-600",
+  },
+  {
+    label: "Development",
+    content:
+      "Crucial step; Development & Coding of Android App to make it light, attractive and user-friendly",
+    img: "",
+    step: 4,
+    bgColor: "bg-green-300",
+    textColor: "text-green-600",
+  },
+  {
+    label: "Launch & Maintenance",
+    content:
+      "Once the Android App Development is ready to run online and be introduced under observation",
+    img: "",
+    step: 5,
+    bgColor: "bg-rose-300",
+    textColor: "text-rose-600",
+  },
+  {
+    label: "Quality Assurance",
+    content:
+      "A Testing Program to check, run and to ensure that the app stands bug free.",
+    img: "",
+    step: 6,
+    bgColor: "bg-slate-300",
+    textColor: "text-neutral-600",
+  },
+];
+
+const Technologies = [
+  {
+    label: "Java",
+    content:
+      "Mobile app programming is best facilitated with the use of the Java language as it is versatile and is robust. This means that it is likely to run on any device rendering cross platform mobile app development services. Java is highly in use for creating gaming apps as then one version works with all. It is seen that gaming apps respond well with Java Language and less chance of system hanging up. This saves much of the troubles in fixing errors and issue that may show-up with time. Not only this but also the performance of the language is such that the user experience becomes exciting. The impressive aspect of Java application is that it is simple, can target a large audience and because of the simple functionality that it offers, the purpose of the app is sure to fulfil.",
+    imgSrc: "",
+  },
+  {
+    label: "Kotlin",
+    content:
+      "It is another platform where cross platform mobile app development progresses and fetched fruitful results. Often tagged as the Programming language for the Next Generation , this language offers a little more than Java could. Kotlin programming language has no limitations whatsoever. It is easy to use, handle and bring out exciting features that can leave a user hooked to the app for hours. The unique aspect of this language is that it has got the support of Google which meaning launching an app on Google Play store will be successful as it will readily accept the type of app one is building. For the competitive world that we are in today, it is best to use software that will support the needs of the coming generation. Kotlin is one such mobile application development platforms which make that achievable.",
+    imgSrc: "",
+  },
+  {
+    label: "Flutter",
+    content:
+      "A platform which offers real time database, cloud computing and is a highly custom web application development language which can work in accordance with the client needs without any hassles. It stands vital that the mobile app should not only be functional but also provide comfort where the client is at ease of browsing and manoeuvring the app whichever way he wants. Today mobile app developers are working in close coordination with the programming language to bring out the best user experience. Firebase offers cloud storage which reduces the risk of smartphones hanging up which is a common problem with mobile apps. Also, because of the other feature which includes sending invitations, notifications, dynamic links that connect the user mode and the option for advertising through Google Ads and more makes this platform one of a kind. This way one can generate brand curiosity among the customers and keep them hooked.",
+    imgSrc: "",
+  },
+  {
+    label: "Firebase",
+    content:
+      "A platform which offers real time database, cloud computing and is a highly custom web application development language which can work in accordance with the client needs without any hassles. It stands vital that the mobile app should not only be functional but also provide comfort where the client is at ease of browsing and manoeuvring the app whichever way he wants. Today mobile app developers are working in close coordination with the programming language to bring out the best user experience. Firebase offers cloud storage which reduces the risk of smartphones hanging up which is a common problem with mobile apps. Also, because of the other feature which includes sending invitations, notifications, dynamic links that connect the user mode and the option for advertising through Google Ads and more makes this platform one of a kind. This way one can generate brand curiosity among the customers and keep them hooked.",
+    imgSrc: "",
+  },
+  {
+    label: "Swift",
+    content:
+      "An intuitive language as one may call because of the interactive nature that it offers and a platform where the coding is flexible, fun and concise. With Swift, iPhone application development becomes unique and expressive at the same time. This platform offers to work as a team as multiple people can work on one project where you get the chance to modify, share and overcome challenges as it becomes your very own playground. As the platform is said to be lightning fast iOS app development not only becomes quick to project and use but also the outcomes are crisp and smooth leaving no room for error. The language gives the advantage to track bugs, check on source codes, option for mailing lists and different ways for regular building and development where mobile app development becomes one of a kind making the app to stand out",
+    imgSrc: "",
+  },
+  {
+    label: "Objective C",
+    content:
+      "A language that helps in iOS app development where one requires the use of multiple objects. In other words, we can say, where there is a use of complex functions and a need to target dynamic audience, Objective C is the easiest language to proceed and work that will ensure a successful iOS mobile app development. The language is an object oriented platform which works with message passing which is a method to invoke command behaviour. This helps mobile app developers to work innovatively with their idea to construct an application. The platform works best with OS X and iOS operating systems with Cocoa and Cocoa Touch frameworks. It is frequently in use today by iPhone App Developers that help them to create interactive mobile applications.",
+    imgSrc: "",
+  },
+  {
+    label: "React Native",
+    content:
+      "A platform that helps mobile app developers to build apps with the medium of JavaScript. As it uses Java has its framework that allows cross platform mobile app development which benefits the user to be able to use the application on any operating system. As the framework it uses is Java that allows the developer to build mobile UI design without much modification which in other words ensures error-free application development offering better performance and user friendly exposure. When building apps the foremost thing that needs to be the focus is the interactive functionality and attractive design. React Native ensures both allowing iOS mobile app development compatible with the next generation. The major focus stands in the present times, is to target the young audiences and this platform helps in achieving exactly that in myriad ways to achieve the set goal.",
+    imgSrc: "",
+  },
+];
+
 export {
   Features,
   Supports,
@@ -312,4 +414,6 @@ export {
   WebDevChartsLeft,
   WebDevChartsRight,
   workServices,
+  AppDevCharts,
+  Technologies,
 };

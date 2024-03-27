@@ -225,7 +225,7 @@ const About = () => {
           <Branches
             title="App Developement"
             className="basis-1/3"
-            link="#"
+            link="/app-developement"
             // /app-developement
           />
         </div>
