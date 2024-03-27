@@ -299,7 +299,7 @@ const WebDevChartsRight = [
   },
 ];
 
-const AppDevCharts = [
+const AppDevChartsUp = [
   {
     label: "Research & Planning",
     content:
@@ -327,6 +327,9 @@ const AppDevCharts = [
     bgColor: "bg-purple-300",
     textColor: "text-purple-600",
   },
+];
+
+const AppDevChartsDown = [
   {
     label: "Development",
     content:
@@ -414,6 +417,7 @@ export {
   WebDevChartsLeft,
   WebDevChartsRight,
   workServices,
-  AppDevCharts,
+  AppDevChartsUp,
+  AppDevChartsDown,
   Technologies,
 };

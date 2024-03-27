@@ -1,5 +1,7 @@
-import { AppDevCharts } from "@/Data";
+import { AppDevChartsDown, AppDevChartsUp } from "@/Data";
 import StepBox from "@/components/StepBox";
+import { Separator } from "@/components/ui/separator";
+// import { ArrowBigDown, ArrowBigRight } from "lucide-react";
 
 const AppDev = () => {
   return (
@@ -31,21 +33,39 @@ const AppDev = () => {
         </div>
       </section>
 
-      <section className="flex flex-col gap-12 items-center justify-center ">
+      <section className="flex flex-col items-center justify-center gap-14">
         <h1 className="text-6xl max-md:text-4xl font-bold tracking-tight">
           What Makes Us Different?
         </h1>
-        <div className="flex">
-          {AppDevCharts.map((chart) => (
-            <StepBox
-              title={chart.label}
-              step={chart.step}
-              content={chart.content}
-              bgColor={chart.bgColor}
-              textColor={chart.textColor}
-              key={chart.step}
-            />
-          ))}
+        <Separator className="w-1/2 my-4" />
+        <div className="flex flex-col justify-center gap-20 max-lg:gap-10">
+          <div className="flex justify-between max-lg:flex-col gap-10 md:gap-0">
+            {AppDevChartsUp.map((chart) => (
+              <div className="flex  items-center justify-center">
+                <StepBox
+                  title={chart.label}
+                  step={chart.step}
+                  content={chart.content}
+                  bgColor={chart.bgColor}
+                  textColor={chart.textColor}
+                  key={chart.step}
+                />
+              </div>
+            ))}
+          </div>
+          <div className="flex flex-row-reverse max-md:flex-col gap-10 md:gap-0">
+            {AppDevChartsDown.map((chart) => (
+              <StepBox
+                title={chart.label}
+                step={chart.step}
+                content={chart.content}
+                bgColor={chart.bgColor}
+                textColor={chart.textColor}
+                key={chart.step}
+              />
+            ))}
+            a
+          </div>
         </div>
       </section>
     </main>

@@ -1,4 +1,4 @@
-import { Separator } from "./ui/separator";
+// import { Separator } from "./ui/separator";
 
 interface StepBoxProps {
   title: string;
@@ -20,8 +20,7 @@ const StepBox = ({
   return (
     <main className="flex flex-col items-center justify-center gap-7">
       <img
-        className="rounded-lg shadow-md"
-        width={275}
+        className="rounded-lg shadow-md w-1/2 max-lg:w-full"
         src={imgSrc}
         alt="steps"
       />
@@ -31,11 +30,9 @@ const StepBox = ({
         >
           0{step}
         </h1>
-        <h3 className="font-bold text-xl tracking-tighter max-lg:text-lg">
-          {title}
-        </h3>
-        <Separator className="w-1/3" />
-        <p className="w-1/3 font-medium text-neutral-600 text-center tracking-tight max-lg:text-sm">
+        <h3 className="font-bold lg:text-lg tracking-tighter">{title}</h3>
+        {/* <Separator className="w-1/3" /> */}
+        <p className="max-w-[15vw] text-sm max-lg:max-w-full font-medium text-neutral-600 text-center tracking-tight max-lg:text-xs">
           {content}
         </p>
       </div>
