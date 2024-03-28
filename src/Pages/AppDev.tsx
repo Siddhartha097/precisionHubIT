@@ -33,6 +33,8 @@ const AppDev = () => {
         </div>
       </section>
 
+      <Separator className="my-6" />
+
       <section className="flex flex-col items-center justify-center gap-14">
         <h1 className="text-6xl max-md:text-4xl font-bold tracking-tight">
           What Makes Us Different?
@@ -49,11 +51,12 @@ const AppDev = () => {
                   bgColor={chart.bgColor}
                   textColor={chart.textColor}
                   key={chart.step}
+                  imgSrc={chart.img}
                 />
               </div>
             ))}
           </div>
-          <div className="flex flex-row-reverse max-md:flex-col gap-10 md:gap-0">
+          <div className="flex justify-between flex-row-reverse max-lg:flex-col gap-10 md:gap-0">
             {AppDevChartsDown.map((chart) => (
               <StepBox
                 title={chart.label}
@@ -62,12 +65,14 @@ const AppDev = () => {
                 bgColor={chart.bgColor}
                 textColor={chart.textColor}
                 key={chart.step}
+                imgSrc={chart.img}
               />
             ))}
-            a
           </div>
         </div>
       </section>
+
+      <Separator className="my-6" />
     </main>
   );
 };

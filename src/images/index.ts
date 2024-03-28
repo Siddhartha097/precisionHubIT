@@ -6,6 +6,11 @@ import avatar from './avatar.jpg';
 import webdev from './webdev.png';
 import chart1 from './chart1.jpeg';
 import man from './man.jpg';
+import dev from './dev.jpg';
+import QA from './QA.jpg';
+import RD from './rd.jpg';
+import proto from './proto.jpg';
+import LM from './lmaint.jpg';
 
 export {
     city,
@@ -16,4 +21,9 @@ export {
     webdev,
     chart1,
     man,
+    RD,
+    proto,
+    LM,
+    QA,
+    dev,
 };

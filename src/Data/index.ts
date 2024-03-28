@@ -1,3 +1,5 @@
+import { LM, QA, RD, dev, proto } from "@/images";
+
 const Features = [
   {
     label: "Powerful Software Solutions",
@@ -304,7 +306,7 @@ const AppDevChartsUp = [
     label: "Research & Planning",
     content:
       "full-fledged Blueprint; client's nature of business, target & interests, strategies, adroit ideas & innovation.",
-    img: "",
+    img: RD,
     step: 1,
     bgColor: "bg-orange-300",
     textColor: "text-orange-600",
@@ -313,7 +315,7 @@ const AppDevChartsUp = [
     label: "Wireframe",
     content:
       "Visual Map! Wireframe is a platform where the designing of the app is carried out",
-    img: "",
+    img: "https://images.unsplash.com/photo-1597534458220-9fb4969f2df5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     step: 2,
     bgColor: "bg-sky-300",
     textColor: "text-sky-600",
@@ -322,7 +324,7 @@ const AppDevChartsUp = [
     label: "Prototype",
     content:
       "A construction of a model for the client to assess the app before introducing online",
-    img: "",
+    img: proto,
     step: 3,
     bgColor: "bg-purple-300",
     textColor: "text-purple-600",
@@ -334,7 +336,7 @@ const AppDevChartsDown = [
     label: "Development",
     content:
       "Crucial step; Development & Coding of Android App to make it light, attractive and user-friendly",
-    img: "",
+    img: dev,
     step: 4,
     bgColor: "bg-green-300",
     textColor: "text-green-600",
@@ -343,7 +345,7 @@ const AppDevChartsDown = [
     label: "Launch & Maintenance",
     content:
       "Once the Android App Development is ready to run online and be introduced under observation",
-    img: "",
+    img: LM,
     step: 5,
     bgColor: "bg-rose-300",
     textColor: "text-rose-600",
@@ -352,7 +354,7 @@ const AppDevChartsDown = [
     label: "Quality Assurance",
     content:
       "A Testing Program to check, run and to ensure that the app stands bug free.",
-    img: "",
+    img: QA,
     step: 6,
     bgColor: "bg-slate-300",
     textColor: "text-neutral-600",

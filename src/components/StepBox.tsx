@@ -18,12 +18,10 @@ const StepBox = ({
   imgSrc = "https://images.unsplash.com/photo-1711181138064-43c2e2239a45?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 }: StepBoxProps) => {
   return (
-    <main className="flex flex-col items-center justify-center gap-7">
-      <img
-        className="rounded-lg shadow-md w-1/2 max-lg:w-full"
-        src={imgSrc}
-        alt="steps"
-      />
+    <main className="flex flex-col items-center justify-center gap-7 max-lg:shadow-md max-lg:p-5">
+      <div className="w-2/3 flex items-center justify-center">
+        <img className="rounded-lg w-full" src={imgSrc} alt="steps" />
+      </div>
       <div className="flex flex-col items-center justify-between space-y-4">
         <h1
           className={`p-3 shadow-inner border-2 ${textColor} rounded-full font-bold ${bgColor}`}
