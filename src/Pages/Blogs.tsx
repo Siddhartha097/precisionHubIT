@@ -32,7 +32,7 @@ const Blogs = () => {
           </p>
 
           <div className="flex items-center gap-6 max-md:justify-center">
-            <MoreBtn label="Read More" variant="default" />
+            <MoreBtn label="Read More" variant="default" link="/InsightsLearn"/>
           </div>
         </div>
       </section>
