@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ResearchLearnMoreK =() =>{
+const Researchlearnmorek =() =>{
   return (
     <div>
         <top>
@@ -22,4 +22,4 @@ const ResearchLearnMoreK =() =>{
   )
 }
 
-export default ResearchLearnMoreK
+export default Researchlearnmorek
