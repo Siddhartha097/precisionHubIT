@@ -1,4 +1,4 @@
-import { LM, QA, RD, dev, proto } from "@/images";
+import { JAVA, LM, QA, RD, dev, kotlin, proto } from "@/images";
 
 const Features = [
   {
@@ -366,13 +366,13 @@ const Technologies = [
     label: "Java",
     content:
       "Mobile app programming is best facilitated with the use of the Java language as it is versatile and is robust. This means that it is likely to run on any device rendering cross platform mobile app development services. Java is highly in use for creating gaming apps as then one version works with all. It is seen that gaming apps respond well with Java Language and less chance of system hanging up. This saves much of the troubles in fixing errors and issue that may show-up with time. Not only this but also the performance of the language is such that the user experience becomes exciting. The impressive aspect of Java application is that it is simple, can target a large audience and because of the simple functionality that it offers, the purpose of the app is sure to fulfil.",
-    imgSrc: "",
+    imgSrc: JAVA,
   },
   {
     label: "Kotlin",
     content:
       "It is another platform where cross platform mobile app development progresses and fetched fruitful results. Often tagged as the Programming language for the Next Generation , this language offers a little more than Java could. Kotlin programming language has no limitations whatsoever. It is easy to use, handle and bring out exciting features that can leave a user hooked to the app for hours. The unique aspect of this language is that it has got the support of Google which meaning launching an app on Google Play store will be successful as it will readily accept the type of app one is building. For the competitive world that we are in today, it is best to use software that will support the needs of the coming generation. Kotlin is one such mobile application development platforms which make that achievable.",
-    imgSrc: "",
+    imgSrc: kotlin,
   },
   {
     label: "Flutter",

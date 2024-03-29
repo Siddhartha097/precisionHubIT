@@ -11,8 +11,12 @@ import QA from './QA.jpg';
 import RD from './rd.jpg';
 import proto from './proto.jpg';
 import LM from './lmaint.jpg';
+import JAVA from './Java-Logo.png';
+import kotlin from './kotlin.png';
 
 export {
+    kotlin,
+    JAVA,
     city,
     Logo,
     techVid,

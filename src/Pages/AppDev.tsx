@@ -1,5 +1,6 @@
-import { AppDevChartsDown, AppDevChartsUp } from "@/Data";
+import { AppDevChartsDown, AppDevChartsUp, Technologies } from "@/Data";
 import StepBox from "@/components/StepBox";
+import TechBox from "@/components/TechBox";
 import { Separator } from "@/components/ui/separator";
 // import { ArrowBigDown, ArrowBigRight } from "lucide-react";
 
@@ -73,6 +74,18 @@ const AppDev = () => {
       </section>
 
       <Separator className="my-6" />
+
+      <section className="flex flex-col gap-20 max-md:gap-14">
+        {Technologies.map((tech) => (
+          <div>
+            <TechBox
+              label={tech.label}
+              content={tech.content}
+              img={tech.imgSrc}
+            />
+          </div>
+        ))}
+      </section>
     </main>
   );
 };
