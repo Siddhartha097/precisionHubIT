@@ -18,6 +18,9 @@ import Contact from "./Pages/Contact.tsx";
 import Blogs from "./Pages/Blogs.tsx";
 import WebDev from "./Pages/WebDev.tsx";
 import AppDev from "./Pages/AppDev.tsx";
+import Researchlearnmorek from "./Pages/Researchlearnmorek.tsx";
+import ResearchLearnMoreLM from "./Pages/ResearchLearnMoreLM.tsx";
+import Insights from "./Pages/Insights.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -34,6 +37,9 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path="/insights" element={<Blogs />} />
         <Route path="/web-developement" element={<WebDev />} />
         <Route path="/app-developement" element={<AppDev />} />
+        <Route path="/ResearchLearnMore" element={<Researchlearnmorek />} />
+        <Route path="/ResearchLearnMoreLA" element={<ResearchLearnMoreLM/>} />
+        <Route path="/InsightsLearn" element={<Insights/>} />
       </Routes>
       <Footer />
     </BrowserRouter>

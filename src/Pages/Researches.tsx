@@ -21,6 +21,7 @@ const Researches = () => {
           title="Empowering Researchers with Innovative Software Solutions"
           subTitle="Our software provides researchers with advanced tools and insights to drive groundbreaking discoveries in their fields."
           btnName="Learn More"
+          link="/Researchlearnmore"
         />
       </section>
 
@@ -52,7 +53,7 @@ const Researches = () => {
 
       <Separator className="my-14" orientation="horizontal" />
 
-      <Transforming />
+      <Transforming  />
 
       <Separator className="my-14 " />
 
