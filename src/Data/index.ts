@@ -419,7 +419,26 @@ const Technologies = [
   },
 ];
 
+const DataScFeatures = [
+  {
+    label: "Expertise in Data Science",
+    content:
+      "Our team specializes in machine learning, AI, big data analysis, and predictive modeling. We have the knowledge and skills to tackle complex data challenges and deliver actionable insights.",
+  },
+  {
+    label: "Cutting-edge Technology Solutions",
+    content:
+      "We leverage the latest technologies and tools to develop innovative solutions that drive business growth. Our expertise in data science allows us to provide tailored solutions to meet your specific needs.",
+  },
+  {
+    label: "Data-driven Decision Making",
+    content:
+      "We help businesses make informed decisions by analyzing and interpreting  complex data sets. Our data-driven approach empowers organizations to  optimize processes, improve efficiency, and achieve strategic goals.",
+  },
+];
+
 export {
+  DataScFeatures,
   Features,
   Supports,
   WorkFlow,

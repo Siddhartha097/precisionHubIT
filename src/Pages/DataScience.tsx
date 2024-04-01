@@ -1,4 +1,4 @@
-import { Features, Supports } from "@/Data";
+import { DataScFeatures, Supports } from "@/Data";
 
 import Box from "@/components/Box";
 import Faq from "@/components/Faq";
@@ -6,35 +6,30 @@ import ImageBox from "@/components/ImageBox";
 import MoreBtn from "@/components/MoreBtn";
 import Newsletter from "@/components/Newsletter";
 import Transforming from "@/components/Transforming";
-import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
-
-import { city } from "@/images";
 
 import { MdAddModerator, MdAppSettingsAlt, MdAutoMode } from "react-icons/md";
 import { RxBackpack, RxSketchLogo } from "react-icons/rx";
 
-import { Link } from "react-router-dom";
-
 const DataScience = () => {
   return (
-    <main className="p-14 max-md:px-8 space-y-16 max-md:space-y-10 flex flex-col gap-10 max-md:gap-6">
+    <main className="p-14 max-md:px-8 space-y-12 flex flex-col gap-10 max-md:gap-6">
       {/* 1st */}
       <section className="flex flex-col items-center justify-center space-y-6">
         <h1 className="text-7xl max-md:text-4xl font-bold text-center">
-          Unleash the power of data science
+          Unleash the power of <br className="max-md:hidden" /> data science
         </h1>
         <p className="text-center text-lg max-md:text-base">
           Discover actionable insights and drive data-informed decisions.
         </p>
-        <MoreBtn variant="default" link="/learn" />
+        <MoreBtn className="mt-6" variant="default" link="/learn" />
       </section>
 
       {/* 2nd */}
       <section>
         <ImageBox
-          imgSrc={city}
-          imgClassName="object-contain shadow-md rounded-lg"
+          imgSrc="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          imgClassName="object-contain w-[80vw] shadow-md rounded-lg"
           className="w-full flex items-center justify-center"
           alt="hero"
         />
@@ -45,47 +40,44 @@ const DataScience = () => {
       <Separator className="my-10 max-md:my-6" />
 
       {/* 3rd */}
-      <section className="flex max-md:flex-col-reverse max-md:space-x-0 max-md:space-y-7 items-center justify-between space-x-8">
+      <section className="flex max-md:flex-col-reverse gap-10 items-center justify-between md:gap-16">
         {/* non-image */}
         <div className="space-y-10 max-md:space-y-6 md:w-1/2 w-full">
           {/* title and description */}
-          <Label className="hidden md:block" htmlFor="text">
-            Innovative
-          </Label>
-          <h1 className="text-5xl max-md:text-3xl font-bold tracking-wide max-md:text-center">
-            Transforming Ideas into Powerful Solutions
+          <h1 className="text-5xl max-md:text-3xl font-bold tracking-tight leading-snug max-md:text-center">
+            Unleash the Power of Data Science with Cutting-Edge Research and
+            Technologies
           </h1>
-          <p className="text- font-medium text-neutral-500 tracking-wide max-md:text-sm max-md:text-center">
-            We provide cutting-edge software solutions that drive innovation and
-            empower businesses to succeed. Our team of experts combines
-            creativity and technical expertise to deliver exceptional results.
+          <p className="text- font-medium text-neutral-500 max-md:text-sm max-md:text-center">
+            Our data science department is at the forefront of innovation,
+            leveraging the latest research and technologies to drive impactful
+            insights and solutions
           </p>
 
           {/* boxes */}
-          <div className="flex items-center justify-between space-x-5">
+          <div className="flex items-center justify-center space-x-5">
             <Box
               className="space-y-4 max-md:flex max-md:text-center flex-col items-center justify-center"
-              label="Experience"
-              desc="Over 10 years of industry experience delivering top-notch software solutions."
+              label="Innovative Approach"
+              desc="Stay ahead of the
+              curve with our
+              data-driven
+              solutions and
+              advanced
+              analytics
+              techniques."
               icon={RxBackpack}
             />
             <Box
               className="space-y-4 max-md:flex max-md:text-center flex-col items-center justify-center"
-              label="Quality"
-              desc="We are committed to delivering high-quality software solutions that exceed client expectations."
+              label="Cutting-Edge Research"
+              desc="Explore the latest
+              trends and
+              breakthroughs in
+              data science with
+              our expert team."
               icon={RxSketchLogo}
             />
-          </div>
-
-          {/* buttons */}
-          <div className="space-x-4 flex items-center max-md:justify-center ">
-            <MoreBtn variant="default" link="/learn" />
-            <Link
-              to={"contact"}
-              className="p-6 rounded-none border-transparent hover:text-[#c31432] font-semibold"
-            >
-              Contact Us{" "}
-            </Link>
           </div>
         </div>
 
@@ -93,7 +85,7 @@ const DataScience = () => {
         <div className="w-1/2 max-md:w-full">
           <img
             className="rounded-md shadow-md transition-all "
-            src="https://images.unsplash.com/photo-1708614896043-9ff9d03d641d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="hero"
           />
         </div>
@@ -104,20 +96,20 @@ const DataScience = () => {
         {/* Image */}
         <div className=" md:w-1/2">
           <img
-            className="rounded-md shadow-md scale-90 transition-all hover:scale-95"
-            src="https://images.unsplash.com/photo-1708556863286-16a9ada29871?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            className="rounded-md shadow-md scale-90 transition-all "
+            src="https://images.unsplash.com/photo-1558986377-c44f6a2b50f0?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="feature"
           />
         </div>
 
         {/* Features */}
-        <div className="md:w-1/2 space-y-10">
-          {Features.map((feature) => (
-            <div className="space-y-5 max-md:text-center" key={feature.label}>
-              <h1 className="text-3xl max-md:text-xl font-bold">
+        <div className="md:w-2/3 flex flex-col items-center justify-between gap-20 max-md:gap-10">
+          {DataScFeatures.map((feature) => (
+            <div className="space-y-6 max-md:text-center" key={feature.label}>
+              <h1 className="text-3xl max-md:text-2xl tracking-tighter font-bold">
                 {feature.label}
               </h1>
-              <p className="max-md:text-sm">{feature.para}</p>
+              <p className="max-md:text-sm tracking-tight">{feature.content}</p>
             </div>
           ))}
         </div>
