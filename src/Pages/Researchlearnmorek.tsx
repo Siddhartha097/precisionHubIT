@@ -1,7 +1,7 @@
-import React from 'react'
 
 
-const Researchlearnmorek =() =>{
+
+const Researchlearnmorek = () => {
   return (
     <div className='md:m-20 m-5'>
         <div>

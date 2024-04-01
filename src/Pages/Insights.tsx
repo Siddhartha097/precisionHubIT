@@ -1,6 +1,5 @@
-import React from 'react'
 
-function Insights() {
+const Insights = () => {
   return (
     <div className='md:p-10 p-2'>
          <div>

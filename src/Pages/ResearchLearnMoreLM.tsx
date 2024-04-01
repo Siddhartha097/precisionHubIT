@@ -1,6 +1,6 @@
-import React from 'react'
 
-function ResearchLearnMoreLM() {
+
+const ResearchLearnMoreLM = () => {
   return (
     <div>
         <div className='md:m-20 m-5'>
