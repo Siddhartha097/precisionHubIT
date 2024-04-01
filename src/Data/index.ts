@@ -1,4 +1,17 @@
-import { JAVA, LM, QA, RD, dev, kotlin, proto } from "@/images";
+import {
+  JAVA,
+  LM,
+  QA,
+  RD,
+  dev,
+  firebase,
+  flutter,
+  kotlin,
+  objC,
+  proto,
+  reactNative,
+  swift,
+} from "@/images";
 
 const Features = [
   {
@@ -378,31 +391,31 @@ const Technologies = [
     label: "Flutter",
     content:
       "A platform which offers real time database, cloud computing and is a highly custom web application development language which can work in accordance with the client needs without any hassles. It stands vital that the mobile app should not only be functional but also provide comfort where the client is at ease of browsing and manoeuvring the app whichever way he wants. Today mobile app developers are working in close coordination with the programming language to bring out the best user experience. Firebase offers cloud storage which reduces the risk of smartphones hanging up which is a common problem with mobile apps. Also, because of the other feature which includes sending invitations, notifications, dynamic links that connect the user mode and the option for advertising through Google Ads and more makes this platform one of a kind. This way one can generate brand curiosity among the customers and keep them hooked.",
-    imgSrc: "",
+    imgSrc: flutter,
   },
   {
     label: "Firebase",
     content:
       "A platform which offers real time database, cloud computing and is a highly custom web application development language which can work in accordance with the client needs without any hassles. It stands vital that the mobile app should not only be functional but also provide comfort where the client is at ease of browsing and manoeuvring the app whichever way he wants. Today mobile app developers are working in close coordination with the programming language to bring out the best user experience. Firebase offers cloud storage which reduces the risk of smartphones hanging up which is a common problem with mobile apps. Also, because of the other feature which includes sending invitations, notifications, dynamic links that connect the user mode and the option for advertising through Google Ads and more makes this platform one of a kind. This way one can generate brand curiosity among the customers and keep them hooked.",
-    imgSrc: "",
+    imgSrc: firebase,
   },
   {
     label: "Swift",
     content:
       "An intuitive language as one may call because of the interactive nature that it offers and a platform where the coding is flexible, fun and concise. With Swift, iPhone application development becomes unique and expressive at the same time. This platform offers to work as a team as multiple people can work on one project where you get the chance to modify, share and overcome challenges as it becomes your very own playground. As the platform is said to be lightning fast iOS app development not only becomes quick to project and use but also the outcomes are crisp and smooth leaving no room for error. The language gives the advantage to track bugs, check on source codes, option for mailing lists and different ways for regular building and development where mobile app development becomes one of a kind making the app to stand out",
-    imgSrc: "",
+    imgSrc: swift,
   },
   {
     label: "Objective C",
     content:
       "A language that helps in iOS app development where one requires the use of multiple objects. In other words, we can say, where there is a use of complex functions and a need to target dynamic audience, Objective C is the easiest language to proceed and work that will ensure a successful iOS mobile app development. The language is an object oriented platform which works with message passing which is a method to invoke command behaviour. This helps mobile app developers to work innovatively with their idea to construct an application. The platform works best with OS X and iOS operating systems with Cocoa and Cocoa Touch frameworks. It is frequently in use today by iPhone App Developers that help them to create interactive mobile applications.",
-    imgSrc: "",
+    imgSrc: objC,
   },
   {
     label: "React Native",
     content:
       "A platform that helps mobile app developers to build apps with the medium of JavaScript. As it uses Java has its framework that allows cross platform mobile app development which benefits the user to be able to use the application on any operating system. As the framework it uses is Java that allows the developer to build mobile UI design without much modification which in other words ensures error-free application development offering better performance and user friendly exposure. When building apps the foremost thing that needs to be the focus is the interactive functionality and attractive design. React Native ensures both allowing iOS mobile app development compatible with the next generation. The major focus stands in the present times, is to target the young audiences and this platform helps in achieving exactly that in myriad ways to achieve the set goal.",
-    imgSrc: "",
+    imgSrc: reactNative,
   },
 ];
 
