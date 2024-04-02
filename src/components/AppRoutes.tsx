@@ -6,7 +6,7 @@ import Solutions from "@/Pages/Solutions";
 import Researches from "@/Pages/Researches";
 import Learn from "@/Pages/Learn";
 import About from "@/Pages/About";
-import { Contact } from "lucide-react";
+
 import Blogs from "@/Pages/Blogs";
 import WebDev from "@/Pages/WebDev";
 import AppDev from "@/Pages/AppDev";
@@ -15,6 +15,7 @@ import ResearchLearnMoreLM from "@/Pages/ResearchLearnMoreLM";
 import Insights from "@/Pages/Insights";
 import Footer from "./Footer";
 import DataScience from "@/Pages/DataScience";
+import Contact from "@/Pages/Contact";
 
 const AppRoutes = () => {
   return (
