@@ -27,9 +27,9 @@ const Page1 = () => {
              <AboutPara name="Optimize your workflow with our intuitive interface" desc="Our software's intuitive interface makes it easy for you to manage and streamline 
      your workflow."></AboutPara>
            </div>
-           <div className="w-1/2">
+           <div className="w-1/2 p-20">
              
-             <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="p-20" alt="" />
+             <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className=" rounded-2xl" alt="" />
            </div>
          </section>
 
