@@ -1,5 +1,6 @@
-import React from 'react'
+
 import AboutPara from "@/components/AboutPara";
+import { Input } from "@/components/ui/input";
 const Page1 = () => {
   return (
     <div>
@@ -34,6 +35,20 @@ const Page1 = () => {
 
          {/* part 2 */}
 
+//     <div className="w-1/2 py-20">
+//       <h1 className="text-5xl font-bold pb-10">Streamline your Company's Processes with our latest software</h1>
+//         <h3 className="text-red-600 text-2xl font-bold">Increase Efficiency</h3>
+//         <p className="pl-6 border-l-2 font-semibold h-40">Our software provides a step-by-step guide to help you streamline your 
+//           company's processes.
+//         </p>
+//         <h3 className="text-red-600 text-2xl font-bold"> Save Time</h3>
+//         <p className="pl-6 border-l-2 font-semibold h-40">With our software, you can automate repetitive tasks, saving you valuable time</p>
+//         <h3 className="text-red-600 text-2xl font-bold"> Improve Accuracy</h3>
+//         <p className="pl-6 border-l-2 font-semibold h-40"> Eliminate human errors and ensure accuracy in your company's processes</p>
+//         <h3 className="text-red-600 text-2xl font-bold"> Enhance Collaboration</h3>
+//         <p className="pl-6 border-l-2 font-semibold h-20"> Our software promotes seamless collaboration among team members, 
+// improving productivity.</p>
+//     </div>
          <div className="w-1/2 py-20">
            <h1 className="text-5xl font-bold pb-10">Streamline your Company's Processes with our latest software</h1>
              <li className="text-red-600 text-2xl font-bold">Increase Efficiency</li>
@@ -52,6 +67,20 @@ const Page1 = () => {
          {/* part 3 */}
          <div>
 
+//       <form action="">
+//         <div>
+//           <Input type="text" name="name" value={'NAME'}/>
+//           <Input type="email" name="email" value={'EMAIL'}/>
+//         </div>
+//         <div>
+//           <Input type="number" name="" value={'PHONENUMBER'} className="text-black" />
+//           <Input type="number" name="number" value={'BUDGET'}/>
+//         </div>
+//         <div>
+//           INP
+//         </div>
+//         <div></div>
+//         <div></div>
            <form action="">
              <div>
             <label htmlFor="">

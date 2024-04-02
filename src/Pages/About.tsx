@@ -1,9 +1,12 @@
 import Box from "@/components/Box";
 import ContactBox from "@/components/ContactBox";
-
 import MoreBtn from "@/components/MoreBtn";
 import Newsletter from "@/components/Newsletter";
 import PercentBox from "@/components/PercentBox";
+import ImageBox from "@/components/ImageBox";
+import Transforming from "@/components/Transforming";
+import Faq from "@/components/Faq";
+import Branches from "@/components/Branches";
 
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
@@ -17,13 +20,8 @@ import {
   MdOutlinePhoneAndroid,
 } from "react-icons/md";
 import { FaStar } from "react-icons/fa";
-import ImageBox from "@/components/ImageBox";
-import Transforming from "@/components/Transforming";
-import Faq from "@/components/Faq";
-import Branches from "@/components/Branches";
 
 import { Services, WorkFlow } from "@/Data";
-
 
 const About = () => {
   return (
@@ -181,7 +179,6 @@ const About = () => {
             iconSize={35}
             titleSize="text-3xl max-md:text-2xl"
             descSize="text-base"
-            isBtn
           />
         ))}
       </section>
@@ -221,7 +218,7 @@ const About = () => {
           <Branches
             title="Full Stack Data Science"
             className="basis-1/3"
-            link="#"
+            link="/data-science"
           />
           <Branches
             title="App Developement"
@@ -251,7 +248,6 @@ const About = () => {
             <PercentBox text="Reduction in Customer Churn Rate" />
           </div>
 
-          <MoreBtn className="mt-5" variant="default" link="/learn" />
         </div>
 
         <div className="">
@@ -345,74 +341,74 @@ const About = () => {
       <Faq />
     </main>
   );
-//   return(
-//   <div>
-//     <section className="flex ">
-//       <div className="w-1/2 ">
-//         left
-//         <h1 className="text-5xl">
+  //   return(
+  //   <div>
+  //     <section className="flex ">
+  //       <div className="w-1/2 ">
+  //         left
+  //         <h1 className="text-5xl">
 
-//           Streamline and enhance your 
-//           business processes using our 
-//           software.
-          
-//         </h1>
-//         <p className="pb-10">
-//           Our software features are designed to streamline your processes and increase 
-//           efficiency. With intuitive interfaces and powerful automation tools, you can 
-//           save time and focus on what matters most.
-//         </p>
-//         <AboutPara name="Streamline your processes with our software" desc="Our software helps you simplify and automate your business processes, saving 
-// you time and effort."></AboutPara>
-//         <AboutPara name="Increase efficiency with our powerful features" desc="Our software offers a range of powerful features designed to streamline your 
-// processes and boost productivity."></AboutPara>
-//         <AboutPara name="Optimize your workflow with our intuitive interface" desc="Our software's intuitive interface makes it easy for you to manage and streamline 
-// your workflow."></AboutPara>
-//       </div>
-//       <div className="w-1/2">
-//         right
-//         <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="p-20" alt="" />
-//       </div>
-//     </section>
+  //           Streamline and enhance your
+  //           business processes using our
+  //           software.
 
-//     {/* part 2 */}
+  //         </h1>
+  //         <p className="pb-10">
+  //           Our software features are designed to streamline your processes and increase
+  //           efficiency. With intuitive interfaces and powerful automation tools, you can
+  //           save time and focus on what matters most.
+  //         </p>
+  //         <AboutPara name="Streamline your processes with our software" desc="Our software helps you simplify and automate your business processes, saving
+  // you time and effort."></AboutPara>
+  //         <AboutPara name="Increase efficiency with our powerful features" desc="Our software offers a range of powerful features designed to streamline your
+  // processes and boost productivity."></AboutPara>
+  //         <AboutPara name="Optimize your workflow with our intuitive interface" desc="Our software's intuitive interface makes it easy for you to manage and streamline
+  // your workflow."></AboutPara>
+  //       </div>
+  //       <div className="w-1/2">
+  //         right
+  //         <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="p-20" alt="" />
+  //       </div>
+  //     </section>
 
-//     <div className="w-1/2 py-20">
-//       <h1 className="text-5xl font-bold pb-10">Streamline your Company's Processes with our latest software</h1>
-//         <li className="text-red-600 text-2xl font-bold">Increase Efficiency</li>
-//         <p className="pl-6 border-l-2 font-semibold h-40">Our software provides a step-by-step guide to help you streamline your 
-//           company's processes.
-//         </p>
-//         <li className="text-red-600 text-2xl font-bold"> Save Time</li>
-//         <p className="pl-6 border-l-2 font-semibold h-40">With our software, you can automate repetitive tasks, saving you valuable time</p>
-//         <li className="text-red-600 text-2xl font-bold"> Improve Accuracy</li>
-//         <p className="pl-6 border-l-2 font-semibold h-40"> Eliminate human errors and ensure accuracy in your company's processes</p>
-//         <li className="text-red-600 text-2xl font-bold"> Enhance Collaboration</li>
-//         <p className="pl-6 border-l-2 font-semibold h-20"> Our software promotes seamless collaboration among team members, 
-// improving productivity.</p>
-//     </div>
+  //     {/* part 2 */}
 
-//     {/* part 3 */}
-//     <div>
+  //     <div className="w-1/2 py-20">
+  //       <h1 className="text-5xl font-bold pb-10">Streamline your Company's Processes with our latest software</h1>
+  //         <li className="text-red-600 text-2xl font-bold">Increase Efficiency</li>
+  //         <p className="pl-6 border-l-2 font-semibold h-40">Our software provides a step-by-step guide to help you streamline your
+  //           company's processes.
+  //         </p>
+  //         <li className="text-red-600 text-2xl font-bold"> Save Time</li>
+  //         <p className="pl-6 border-l-2 font-semibold h-40">With our software, you can automate repetitive tasks, saving you valuable time</p>
+  //         <li className="text-red-600 text-2xl font-bold"> Improve Accuracy</li>
+  //         <p className="pl-6 border-l-2 font-semibold h-40"> Eliminate human errors and ensure accuracy in your company's processes</p>
+  //         <li className="text-red-600 text-2xl font-bold"> Enhance Collaboration</li>
+  //         <p className="pl-6 border-l-2 font-semibold h-20"> Our software promotes seamless collaboration among team members,
+  // improving productivity.</p>
+  //     </div>
 
-//       <form action="">
-//         <div>
-//           <input type="text" name="name" value={'NAME'}/>
-//           <input type="email" name="email" value={'EMAIL'}/>
-//         </div>
-//         <div>
-//           <input type="number" name="" value={'PHONENUMBER'} className="text-black" />
-//           <input type="number" name="number" value={'BUDGET'}/>
-//         </div>
-//         <div>
-//           INP
-//         </div>
-//         <div></div>
-//         <div></div>
+  //     {/* part 3 */}
+  //     <div>
 
-//       </form>
-//     </div>
-//   </div>)
+  //       <form action="">
+  //         <div>
+  //           <input type="text" name="name" value={'NAME'}/>
+  //           <input type="email" name="email" value={'EMAIL'}/>
+  //         </div>
+  //         <div>
+  //           <input type="number" name="" value={'PHONENUMBER'} className="text-black" />
+  //           <input type="number" name="number" value={'BUDGET'}/>
+  //         </div>
+  //         <div>
+  //           INP
+  //         </div>
+  //         <div></div>
+  //         <div></div>
+
+  //       </form>
+  //     </div>
+  //   </div>)
 };
 
 export default About;
