@@ -15,7 +15,6 @@ import ResearchLearnMoreLM from "@/Pages/ResearchLearnMoreLM";
 import Insights from "@/Pages/Insights";
 import Footer from "./Footer";
 import DataScience from "@/Pages/DataScience";
-import Contact from "@/Pages/Contact";
 
 const AppRoutes = () => {
   return (
@@ -27,7 +26,10 @@ const AppRoutes = () => {
         <Route path="/solutions" element={<Solutions />} />
         <Route path="/research" element={<Researches />} />
         <Route path="/learn" element={<Learn />} />
-        <Route path="/about" element={<About />} />
+        
+          <Route path="/about" element={<About />} ></Route>
+          <Route path="/about/page1" element={<Page1></Page1>} />
+        
         <Route path="/contact" element={<Contact />} />
         <Route path="/insights" element={<Blogs />} />
         <Route path="/web-developement" element={<WebDev />} />
