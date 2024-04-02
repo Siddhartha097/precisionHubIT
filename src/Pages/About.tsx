@@ -248,7 +248,6 @@ const About = () => {
             <PercentBox text="Reduction in Customer Churn Rate" />
           </div>
 
-          <MoreBtn className="mt-5" variant="default" link="/learn" />
         </div>
 
         <div className="">
