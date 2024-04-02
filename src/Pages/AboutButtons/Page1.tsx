@@ -1,6 +1,8 @@
 import AboutPara from "@/components/AboutPara";
+import { Input } from "@/components/ui/input";
 const Page1 = () => {
   return (
+    <>
     <div>
        <div>
          <section className="flex ">
@@ -73,8 +75,8 @@ const Page1 = () => {
          </div>
        </div>
        </div>
-  )
-}
+
+    <div>
       <div>
         <section className="flex ">
           <div className="w-1/2 ">
@@ -233,6 +235,7 @@ const Page1 = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
