@@ -4,11 +4,11 @@ const Page1 = () => {
   return (
     <>
     <div>
-       <div>
+       <div className="p-10">
          <section className="flex ">
            <div className="w-1/2 ">
-             left
-             <h1 className="text-5xl">
+             
+             <h1 className="text-5xl pb-5">
 
                Streamline and enhance your 
                business processes using our 
@@ -28,7 +28,7 @@ const Page1 = () => {
      your workflow."></AboutPara>
            </div>
            <div className="w-1/2">
-             right
+             
              <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="p-20" alt="" />
            </div>
          </section>
@@ -50,7 +50,7 @@ const Page1 = () => {
          </div>
 
          {/* part 3 */}
-         <div>
+         {/* <div>
 
             <form action="">
              <div>
@@ -72,50 +72,11 @@ const Page1 = () => {
              <div></div>
 
            </form>
-         </div>
-       </div>
-       </div>
+         </div> */}
+       
 
-    <div>
-      <div>
-        <section className="flex ">
-          <div className="w-1/2 ">
-            left
-            <h1 className="text-5xl">
-              Streamline and enhance your business processes using our software.
-            </h1>
-            <p className="pb-10">
-              Our software features are designed to streamline your processes
-              and increase efficiency. With intuitive interfaces and powerful
-              automation tools, you can save time and focus on what matters
-              most.
-            </p>
-            <AboutPara
-              name="Streamline your processes with our software"
-              desc="Our software helps you simplify and automate your business processes, saving 
-     you time and effort."
-            ></AboutPara>
-            <AboutPara
-              name="Increase efficiency with our powerful features"
-              desc="Our software offers a range of powerful features designed to streamline your 
-     processes and boost productivity."
-            ></AboutPara>
-            <AboutPara
-              name="Optimize your workflow with our intuitive interface"
-              desc="Our software's intuitive interface makes it easy for you to manage and streamline 
-     your workflow."
-            ></AboutPara>
-          </div>
-          <div className="w-1/2">
-            right
-            <img
-              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              className="p-20"
-              alt=""
-            />
-          </div>
-        </section>
-        {/* part 2 */}
+    {/*  */}
+        {/* part 2
         //{" "}
         <div className="w-1/2 py-20">
           //{" "}
@@ -157,8 +118,8 @@ const Page1 = () => {
             improving productivity.
           </p>
           //{" "}
-        </div>
-        <div className="w-1/2 py-20">
+        </div> */}
+        {/* <div className="w-1/2 py-20">
           <h1 className="text-5xl font-bold pb-10">
             Streamline your Company's Processes with our latest software
           </h1>
@@ -189,7 +150,7 @@ const Page1 = () => {
             Our software promotes seamless collaboration among team members,
             improving productivity.
           </p>
-        </div>
+        </div> */}
         {/* part 3 */}
         <div>
           <form action="">
@@ -209,28 +170,7 @@ const Page1 = () => {
             <div>INP</div>
             <div></div>
             <div></div>
-            <form action="">
-              <div>
-                <label htmlFor="">
-                  Name:
-                  <input type="text" name="name" />
-                </label>
-                <label htmlFor=""></label>
-                <input type="email" name="email" value={"EMAIL"} />
-              </div>
-              <div>
-                <input
-                  type="number"
-                  name=""
-                  value={"PHONENUMBER"}
-                  className="text-black"
-                />
-                <input type="number" name="number" value={"BUDGET"} />
-              </div>
-              <div>INP</div>
-              <div></div>
-              <div></div>
-            </form>
+            
           </form>
         </div>
       </div>

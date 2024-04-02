@@ -46,7 +46,7 @@ const About = () => {
             developing cutting-edge solutions to help businesses thrive in the
             digital age.
           </p>
-          <MoreBtn className="mt-6" variant="default" link="/learn" />
+          
         </div>
       </section>
 
@@ -122,7 +122,7 @@ const About = () => {
           />
         </div>
 
-        <MoreBtn variant="default" link="/learn" />
+        
       </section>
 
       <Separator className="my-10" />
