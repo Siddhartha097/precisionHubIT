@@ -35,7 +35,7 @@ const Page1 = () => {
 
          {/* part 2 */}
 
-         <div className="w-1/2 py-20">
+         {/* <div className="w-1/2 py-20">
            <h1 className="text-5xl font-bold pb-10">Streamline your Company's Processes with our latest software</h1>
              <li className="text-red-600 text-2xl font-bold">Increase Efficiency</li>
              <p className="pl-6 border-l-2 font-semibold h-40">Our software provides a step-by-step guide to help you streamline your 
@@ -47,7 +47,7 @@ const Page1 = () => {
              <p className="pl-6 border-l-2 font-semibold h-40"> Eliminate human errors and ensure accuracy in your company's processes</p>
              <li className="text-red-600 text-2xl font-bold"> Enhance Collaboration</li>
              <p className="pl-6 border-l-2 font-semibold h-20"> Our software promotes seamless collaboration among team members, improving productivity.</p>
-         </div>
+         </div> */}
 
          {/* part 3 */}
          {/* <div>
