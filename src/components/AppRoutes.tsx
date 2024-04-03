@@ -18,6 +18,7 @@ import DataScience from "@/Pages/DataScience";
 import Contact from "@/Pages/Contact";
 import Page1 from "@/Pages/AboutButtons/Page1";
 import Solutions2 from "@/Pages/Solutions2";
+// import NewContact from "@/Pages/AboutButtons/NewContact";
 
 const AppRoutes = () => {
   return (

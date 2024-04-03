@@ -133,7 +133,7 @@ const About = () => {
           <h1 className="text-5xl font-bold max-md:text-3xl">
             Streamline Your Workflow with Our Software Solution
           </h1>
-          <MoreBtn className="mt-6" link="/learn" />
+          <MoreBtn className="mt-6" link="/about/page1" />
         </div>
 
         <div className="flex gap-8">
