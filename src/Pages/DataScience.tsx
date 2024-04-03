@@ -1,4 +1,4 @@
-import { DataScFeatures, Supports } from "@/Data";
+import { DataScFeatures, DataScSupports, DataScWorkFlow } from "@/Data";
 
 import Box from "@/components/Box";
 import Faq from "@/components/Faq";
@@ -7,8 +7,11 @@ import MoreBtn from "@/components/MoreBtn";
 import Newsletter from "@/components/Newsletter";
 import Transforming from "@/components/Transforming";
 import { Separator } from "@/components/ui/separator";
+import { DS } from "@/images";
+import { BsBox2Fill } from "react-icons/bs";
+import { FaArrowTrendUp, FaGripLinesVertical } from "react-icons/fa6";
+import { MdAutoFixHigh } from "react-icons/md";
 
-import { MdAddModerator, MdAppSettingsAlt, MdAutoMode } from "react-icons/md";
 import { RxBackpack, RxSketchLogo } from "react-icons/rx";
 
 const DataScience = () => {
@@ -42,7 +45,7 @@ const DataScience = () => {
       {/* 3rd */}
       <section className="flex max-md:flex-col-reverse gap-10 items-center justify-between md:gap-16">
         {/* non-image */}
-        <div className="space-y-10 max-md:space-y-6 md:w-1/2 w-full">
+        <div className="gap-20 flex flex-col max-md:gap-10 md:w-1/2 w-full">
           {/* title and description */}
           <h1 className="text-5xl max-md:text-3xl font-bold tracking-tight leading-snug max-md:text-center">
             Unleash the Power of Data Science with Cutting-Edge Research and
@@ -116,172 +119,122 @@ const DataScience = () => {
       </section>
 
       {/* 6th */}
-      <section className="flex max-md:flex-col items-center justify-between gap-10">
-        <Box
-          label="Seamless Integration"
-          desc="Our Software Comes with a Hassle-Free, Step-by-Step Integration Guide!"
-          className="flex flex-col items-center justify-center space-y-5 text-center basis-1/3"
-          titleSize="text-3xl"
-          iconSize={40}
-          descSize="text-base"
-          isBtn
-          icon={MdAddModerator}
-          bgColor="meridian"
-          border="border-meridian"
-        />
-        <Separator orientation="vertical" />
-        <Box
-          label="Simplify to Amplify"
-          desc="Let Our Software Handle Complexity, While You Focus on Success!"
-          className="flex flex-col items-center justify-center space-y-5 text-center basis-1/3"
-          titleSize="text-3xl"
-          iconSize={40}
-          descSize="text-base"
-          isBtn
-          bgColor="unknown"
-          border="border-unknown"
-          icon={MdAppSettingsAlt}
-        />
-        <Separator orientation="vertical" />
-        <Box
-          label="Elevate Efficiency"
-          desc="Unleash the Power of Our Advanced Software Tools for Streamlined Processes!"
-          className="flex flex-col items-center justify-center space-y-5 text-center basis-1/3"
-          titleSize="text-3xl"
-          iconSize={40}
-          icon={MdAutoMode}
-          descSize="text-base"
-          isBtn
-        />
+      <section className="flex max-md:flex-col-reverse gap-10 items-center justify-between md:gap-16">
+        {/* non-image */}
+        <div className="gap-24 flex flex-col max-md:gap-10 md:w-1/2 w-full">
+          {/* title and description */}
+          <h1 className="text-5xl max-md:text-3xl font-bold tracking-tight leading-snug max-md:text-center">
+            Unlock the Power of Data Science for Your Business
+          </h1>
+          <p className="text- font-medium text-neutral-500 max-md:text-sm max-md:text-center">
+            Data science enables businesses to make informed decisions,
+            streamline operations, and deliver exceptional customer experiences.
+          </p>
+
+          {/* boxes */}
+          <div className="flex items-center justify-center space-x-5">
+            <Box
+              className="space-y-4 max-md:flex max-md:text-center flex-col items-center justify-center"
+              label="Improved Decision Making"
+              desc="Leverage data-driven
+              insights to make strategic
+              decisions that drive
+              growth and profitability."
+              icon={MdAutoFixHigh}
+              iconSize={35}
+            />
+            <Box
+              className="space-y-4 max-md:flex max-md:text-center flex-col items-center justify-center"
+              label="Greater Efficiency"
+              desc="Optimize processes and
+              workflows to increase
+              productivity and reduce
+              operational costs."
+              icon={FaArrowTrendUp}
+              iconSize={35}
+            />
+          </div>
+        </div>
+
+        {/* image */}
+        <div className="w-1/2 max-md:w-full">
+          <img
+            className="rounded-md shadow-md transition-all "
+            src="https://images.unsplash.com/photo-1543013309-0d1f4edeb868?q=80&w=1991&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="hero"
+          />
+        </div>
       </section>
 
       <Separator className="my-10 max-md:my-6" />
 
-      <section className="flex max-md:flex-col-reverse items-center md:*:w-1/2 justify-between gap-20 max-md:gap-7">
-        <div className="flex flex-col gap-8 max-md:text-center">
-          <h1 className="text-5xl tracking-wide font-bold max-md:text-3xl">
-            Crafting Beautiful Websites to tell Your Unique Story
+      <section className="flex items-center p-6 justify-between gap-20 max-md:gap-12 flex-col md:flex-row">
+        <div className="space-y-5">
+          <h1 className="text-6xl font-bold max-md:text-4xl tracking-tight leading-snug">
+            Engaging with Data Science: From Consultation to Completion
           </h1>
-          <hr />
-          <p className="text-neutral-600 max-md:text-sm font-medium tracking-tight">
-            Hey there! At our company, we're all about helping businesses like
-            yours shine online. We believe that every business has a unique
-            story to tell, and we're here to help you tell it. Our team
-            specializes in creating stunning website designs that capture the
-            essence of your brand and effectively communicate your message to
-            your target audience.
-            <br />
-            <br />
-            Whether you're looking for a simple and elegant website or a complex
-            and interactive web application, we've got you covered. Our talented
-            designers and developers work closely with you to understand your
-            vision and bring it to life. We're all about making sure you make a
-            lasting impression online.
-            <br />
-            <br />
-            So, what are you waiting for? Get in touch with us today to discuss
-            your project and let's create something amazing together!
-          </p>
+          <MoreBtn className="mt-6" link="/learn" />
         </div>
 
-        <div className="">
-          <img
-            className="rounded-lg shadow-md transition-all"
-            src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1955&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="room"
-          />
+        <div className="flex gap-8">
+          <div className="flex flex-col items-center justify-between gap-14">
+            {DataScWorkFlow.map((work) => (
+              <div className="flex items-center justify-between gap-14">
+                <div className="flex flex-col items-center space-y-8">
+                  <BsBox2Fill size={35} />
+                  <FaGripLinesVertical
+                    className={`${work.id === 4 ? "opacity-0" : ""}`}
+                    size={35}
+                  />
+                </div>
+                <div className="flex flex-col gap-4 justify-center">
+                  <h1 className="text-2xl tracking-tight font-bold max-md:text-xl">
+                    {work.label}
+                  </h1>
+                  <p className="max-md:text-sm tracking-wide text-slate-600 font-medium">
+                    {work.content}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
       <Separator className="my-10 max-md:my-6" />
 
       {/* 7th */}
-      <section className="flex max-md:flex-col max-md:*:w-full items-center justify-between gap-14 max-md:gap-8">
-        {/* image */}
-        <div className="w-1/2">
-          <img
-            className="rounded-lg shadow-md border transition-all"
-            src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="support"
-          />
-        </div>
-
+      <section className="flex max-md:flex-col max-md:*:w-full items-center justify-between gap-20 max-md:gap-8">
         {/* non-image */}
-        <div className="space-y-8 md:w-2/3 max-md:text-center">
-          {Supports.map((support) => (
-            <div className="space-y-5">
+        <div className="flex flex-col items-center justify-between gap-20 max-md:text-center">
+          {DataScSupports.map((support) => (
+            <div className="space-y-5 w-2/3">
               <h1 className="text-3xl font-bold max-md:text-2xl">
                 {support.label}
               </h1>
               <hr />
-              <p className="text-sm font-medium text-neutral-500 max-md:text-xs">
-                {support.desc}
+              <p className=" font-medium text-neutral-500 max-md:text-sm">
+                {support.content}
               </p>
             </div>
           ))}
         </div>
-      </section>
 
-      <Separator className="my-10 max-md:my-6" />
-
-      <section className="flex flex-col justify-between gap-20">
-        <section className="flex max-md:flex-col items-center justify-between gap-16">
-          <div className="flex flex-col gap-14 max-md:gap-8 max-md:text-center">
-            <h1 className="font-semibold text-3xl md:text-5xl">
-              Stay Updated with the Latest News and Updates from Our Software
-              Company
-            </h1>
-            <hr />
-            <p className="font-medium max-md:text-sm text-slate-600">
-              Discover the latest developments, product releases, and industry
-              insights in the world of software.
-            </p>
-            <div className="flex md:*:w-1/2 gap-10">
-              <Box
-                label="Product Launch"
-                desc="Introducing our new software solution that streamlines your workflow and boosts productivity."
-                iconDisabled
-                className="flex flex-col max-md:text-center gap-6"
-              />
-              <Box
-                label="Industry"
-                desc="Explore the latest trends and innovations shaping the software industry."
-                iconDisabled
-                className="flex flex-col max-md:text-center gap-6"
-              />
-            </div>
-          </div>
-          <div>
-            <ImageBox
-              imgSrc="https://images.unsplash.com/photo-1532522750741-628fde798c73?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              className=""
-              imgClassName="rounded-lg shadow-md"
-            />
-          </div>
-        </section>
-
-        {/* 12th */}
-        <section className="space-y-8 flex flex-col h-[80vh] max-md:h-[70vh] items-center justify-between text-center">
-          <div className="space-y-6">
-            <h1 className="text-5xl font-bold max-md:text-3xl">
-              Take Your Business Further
-            </h1>
-            <p className=" font-medium max-md:text-sm">
-              Discover our innovative solutions and boost your productivity
-              today.
-            </p>
-            <div className="flex items-center justify-center space-x-4">
-              <MoreBtn variant="default" link="contact" label="Contact Sales" />
-            </div>
-          </div>
-
-          <Newsletter />
-        </section>
+        {/* image */}
+        <div className="w-full">
+          <img className="transition-all" src={DS} alt="support" />
+        </div>
       </section>
 
       <Separator className="my-10 max-md:my-6" />
 
       <Transforming />
+
+      <Separator className="my-10 max-md:my-6" />
+
+      <section className="flex items-center flex-col justify-center space-y-4">
+        <Newsletter />
+      </section>
 
       <Separator className="my-10" />
 
