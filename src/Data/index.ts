@@ -45,21 +45,25 @@ const Supports = [
 
 const WorkFlow = [
   {
+    id: 1,
     label: "Efficiency Boost",
     content:
       "Our software seamlessly integrates into your existing systems, optimizing your operations.",
   },
   {
+    id: 2,
     label: "Cost Savings",
     content:
       "Reduce expenses and maximize your budget with our software's cost-effective features.",
   },
   {
+    id: 3,
     label: "User-Friendly",
     content:
       "Experience a smooth learning curve with our intuitive software interface and comprehensive support.",
   },
   {
+    id: 4,
     label: "Customizable Solutions",
     content:
       "Tailor our software to meet your specific needs and achieve your business goals.",
@@ -437,7 +441,57 @@ const DataScFeatures = [
   },
 ];
 
+const DataScWorkFlow = [
+  {
+    id: 1,
+    label: "Consultation Process",
+    content:
+      "Schedule a consultation to discuss your data science needs and goals.",
+  },
+  {
+    id: 2,
+    label: "Project Development",
+    content:
+      "Our team will work closely with you to develop and implement your data science project.",
+  },
+  {
+    id: 3,
+    label: "Testing and Refinement",
+    content:
+      "We will rigorously test and refine your data science solution for optimal performance",
+  },
+  {
+    id: 4,
+    label: "Project Completion",
+    content:
+      "Once finalized, we will deliver your completed data science project to you.",
+  },
+];
+
+const DataScSupports = [
+  {
+    id: 1,
+    label: "Expert Data Science Solutions",
+    content:
+      "Our department offers a range of services including consulting, analytics as a service, and custom solution development. We have a team of experienced data scientists ready to help you leverage the power of data for your business.",
+  },
+  {
+    id: 2,
+    label: "Data Analytics Consulting",
+    content:
+      "Our consulting services provide expert guidance and support in leveraging data analytics to drive business growth. We analyze your data, identify insights, and help you make data-driven decisions to optimize your operations and achieve your goals.",
+  },
+  {
+    id: 3,
+    label: "Analytics as a Service",
+    content:
+      "With our analytics as a service offering, you can access advanced analytics capabilities without the need for extensive infrastructure or in-house expertise. We provide scalable and flexible solutions that enable you to extract valuable insights from your data and drive innovation.",
+  },
+];
+
 export {
+  DataScSupports,
+  DataScWorkFlow,
   DataScFeatures,
   Features,
   Supports,

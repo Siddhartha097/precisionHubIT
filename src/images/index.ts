@@ -18,8 +18,10 @@ import firebase from "./firebase.png";
 import reactNative from "./reactNative.png";
 import objC from "./objC.png";
 import swift from "./swift.png";
+import DS from "./DS.png";
 
 export {
+  DS,
   swift,
   objC,
   reactNative,

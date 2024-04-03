@@ -19,7 +19,7 @@ import {
   MdOutlineLocationOn,
   MdOutlinePhoneAndroid,
 } from "react-icons/md";
-import { FaStar } from "react-icons/fa";
+import { FaGripLinesVertical, FaStar } from "react-icons/fa";
 
 import { Services, WorkFlow } from "@/Data";
 
@@ -46,7 +46,6 @@ const About = () => {
             developing cutting-edge solutions to help businesses thrive in the
             digital age.
           </p>
-          
         </div>
       </section>
 
@@ -121,8 +120,6 @@ const About = () => {
             iconSize={35}
           />
         </div>
-
-        
       </section>
 
       <Separator className="my-10" />
@@ -137,7 +134,7 @@ const About = () => {
         </div>
 
         <div className="flex gap-8">
-          <div className="gap-20 flex flex-col items-center">
+          {/* <div className="gap-20 flex flex-col items-center">
             <div className="flex flex-col items-center space-y-8">
               <BsBoxFill size={30} />
               <div className="h-[2px] w-[50px] bg-black rotate-90" />
@@ -154,16 +151,25 @@ const About = () => {
               <BsBoxFill size={30} />
               <div className="h-[2px] w-[50px] bg-black rotate-90" />
             </div>
-          </div>
+          </div> */}
           <div className="space-y-10">
             {WorkFlow.map((work) => (
-              <div className="space-y-5">
-                <h1 className="text-2xl font-bold max-md:text-xl">
-                  {work.label}
-                </h1>
-                <p className="max-md:text-sm text-slate-600 font-medium">
-                  {work.content}
-                </p>
+              <div className="flex items-center justify-between gap-14">
+                <div className="flex flex-col items-center space-y-8">
+                  <BsBoxFill size={35} />
+                  <FaGripLinesVertical
+                    className={`${work.id === 4 ? "opacity-0" : ""}`}
+                    size={35}
+                  />
+                </div>
+                <div className="flex flex-col">
+                  <h1 className="text-2xl font-bold max-md:text-xl">
+                    {work.label}
+                  </h1>
+                  <p className="max-md:text-sm text-slate-600 font-medium">
+                    {work.content}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
@@ -247,7 +253,6 @@ const About = () => {
             <PercentBox text="Increase in Revenue Year Over Year" />
             <PercentBox text="Reduction in Customer Churn Rate" />
           </div>
-
         </div>
 
         <div className="">
