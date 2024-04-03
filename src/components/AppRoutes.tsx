@@ -17,6 +17,7 @@ import Footer from "./Footer";
 import DataScience from "@/Pages/DataScience";
 import Contact from "@/Pages/Contact";
 import Page1 from "@/Pages/AboutButtons/Page1";
+import Solutions2 from "@/Pages/Solutions2";
 
 const AppRoutes = () => {
   return (
@@ -26,6 +27,7 @@ const AppRoutes = () => {
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/solutions" element={<Solutions />} />
+        <Route path="/solutions2" element={<Solutions2/>}></Route>
         <Route path="/research" element={<Researches />} />
         <Route path="/learn" element={<Learn />} />
         <Route path="/about" element={<About />}></Route>
@@ -38,6 +40,7 @@ const AppRoutes = () => {
         <Route path="/ResearchLearnMoreLA" element={<ResearchLearnMoreLM />} />
         <Route path="/InsightsLearn" element={<Insights />} />
         <Route path="/data-science" element={<DataScience />} />
+        
       </Routes>
       <Footer />
     </>
