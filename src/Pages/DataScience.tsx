@@ -221,7 +221,7 @@ const DataScience = () => {
         </div>
 
         {/* image */}
-        <div className="">
+        <div className="w-full">
           <img className="transition-all" src={DS} alt="support" />
         </div>
       </section>
