@@ -1,12 +1,12 @@
 import AboutPara from "@/components/AboutPara";
-import { Input } from "@/components/ui/input";
+
 const Page1 = () => {
   return (
     <>
     <div>
        <div className="p-10">
-         <section className="flex ">
-           <div className="w-1/2 ">
+         <section className="md:flex ">
+           <div className="md:w-1/2 ">
              
              <h1 className="text-5xl pb-5">
 
@@ -27,7 +27,7 @@ const Page1 = () => {
              <AboutPara name="Optimize your workflow with our intuitive interface" desc="Our software's intuitive interface makes it easy for you to manage and streamline 
      your workflow."></AboutPara>
            </div>
-           <div className="w-1/2 p-20">
+           <div className="md:w-1/2 md:p-20">
              
              <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className=" rounded-2xl" alt="" />
            </div>
@@ -35,7 +35,7 @@ const Page1 = () => {
 
          {/* part 2 */}
 
-         <div className="w-1/2 py-20">
+         <div className="md:w-1/2 py-20">
            <h1 className="text-5xl font-bold pb-10">Streamline your Company's Processes with our latest software</h1>
              <h1 className="text-red-600 text-2xl font-bold">Increase Efficiency</h1>
              <p className="pl-6 border-l-2 font-semibold h-40">Our software provides a step-by-step guide to help you streamline your 
@@ -152,7 +152,7 @@ const Page1 = () => {
           </p>
         </div> */}
         {/* part 3 */}
-        <div>
+        {/* <div>
           <form action="">
             <div>
               <Input type="text" name="name" value={"NAME"} />
@@ -172,7 +172,7 @@ const Page1 = () => {
             <div></div>
             
           </form>
-        </div>
+        </div> */}
       </div>
     </div>
     </>
