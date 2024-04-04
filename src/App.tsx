@@ -54,7 +54,10 @@ const App = () => {
           solutions to help businesses <div className="p-1" /> thrive in the
           digital age.
         </p>
-        <MoreBtn variant="default" link="/learn" />
+        <MoreBtn
+          variant="default"
+          link="/Transforming%businesses%with%innovative%software%solutions"
+        />
       </section>
 
       {/* 2nd */}

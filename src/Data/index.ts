@@ -489,7 +489,21 @@ const DataScSupports = [
   },
 ];
 
+const FBtnContent = [
+  {
+    label: "Streamline operations and increase efficiency with our software.",
+  },
+  {
+    label:
+      "Unlock new opportunities and drive growth with our innovative solutions.",
+  },
+  {
+    label: "Stay ahead of the competition with our industry-leading software.",
+  },
+];
+
 export {
+  FBtnContent,
   DataScSupports,
   DataScWorkFlow,
   DataScFeatures,

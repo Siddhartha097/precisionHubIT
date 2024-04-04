@@ -19,8 +19,12 @@ import reactNative from "./reactNative.png";
 import objC from "./objC.png";
 import swift from "./swift.png";
 import DS from "./DS.png";
+import fbtn from "./fbtn.png";
+import softsols from './softsols.png';
 
 export {
+  softsols,
+  fbtn,
   DS,
   swift,
   objC,
