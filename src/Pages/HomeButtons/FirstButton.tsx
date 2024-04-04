@@ -1,4 +1,5 @@
 import { FBtnContent } from "@/Data";
+import ContentBox from "@/components/ContentBox";
 import ImageBox from "@/components/ImageBox";
 import { Separator } from "@/components/ui/separator";
 import { fbtn, softsols } from "@/images";
@@ -32,26 +33,15 @@ const FirstButton = () => {
       </section>
 
       <Separator className="my-8" />
-
-      <section className="flex max-md:flex-col-reverse gap-16 max-md:gap-10">
-        <div className="flex flex-col gap-8 md:w-1/2">
-          <h1 className="font-bold text-5xl leading-normal tracking-tighter max-md:text-3xl">
-            Maximize your business potential with our cutting-edge and impactful
-            software solutions
-          </h1>
-          <p className=" tracking-wide leading-normal max-md:text-sm">
-            Our software services offer the resources and knowledge necessary to
-            facilitate business transformation. Through our creative solutions,
-            you can simplify operations, enhance productivity, and maintain a
-            competitive edge.
-          </p>
-        </div>
-        <ImageBox
-          imgSrc={softsols}
-          className="md:w-1/2 flex items-center justify-center"
-          imgClassName="object-contain shadow-md rounded-lg"
-        />
-      </section>
+      
+      <ContentBox
+        label="Maximize your business potential with our cutting-edge and impactful software solutions"
+        content=" Our software services offer the resources and knowledge necessary to
+        facilitate business transformation. Through our creative solutions,
+        you can simplify operations, enhance productivity, and maintain a
+        competitive edge."
+        img={softsols}
+      />
     </main>
   );
 };

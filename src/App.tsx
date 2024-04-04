@@ -109,7 +109,7 @@ const App = () => {
 
           {/* buttons */}
           <div className="space-x-4 flex items-center max-md:justify-center ">
-            <MoreBtn variant="default" link="/learn" />
+            <MoreBtn variant="default" link="/Transforming%Ideas%into%Powerful%Solutions" />
             <Link
               to={"contact"}
               className="p-6 rounded-none border-transparent hover:text-[#c31432] font-semibold"

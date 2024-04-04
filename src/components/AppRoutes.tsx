@@ -19,6 +19,7 @@ import Contact from "@/Pages/Contact";
 import Page1 from "@/Pages/AboutButtons/Page1";
 import Solutions2 from "@/Pages/Solutions2";
 import FirstButton from "@/Pages/HomeButtons/FirstButton";
+import SecondButton from "@/Pages/HomeButtons/SecondButton";
 // import NewContact from "@/Pages/AboutButtons/NewContact";
 
 const AppRoutes = () => {
@@ -36,6 +37,7 @@ const AppRoutes = () => {
         <Route path="/about/page1" element={<Page1 />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/insights" element={<Blogs />} />
+        <Route path="/Transforming%Ideas%into%Powerful%Solutions" element={<SecondButton />} />
         <Route path="/Transforming%businesses%with%innovative%software%solutions" element={<FirstButton />} />
         <Route path="/web-developement" element={<WebDev />} />
         <Route path="/app-developement" element={<AppDev />} />

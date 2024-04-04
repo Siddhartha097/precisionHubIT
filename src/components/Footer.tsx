@@ -61,7 +61,7 @@ const Footer = () => {
 
         {/* Socials */}
         <div>
-          <ul className="flex items-center justify-between space-x-6 max-md:space-x-10 text-3xl max-md:text-2xl">
+          <ul className="flex items-center justify-between space-x-6 max-md:space-x-10 text-2xl">
             {Socials.map((social) => (
               <Link key={social.label} to={social.link}>
                 {social.icon}

@@ -20,9 +20,13 @@ import objC from "./objC.png";
 import swift from "./swift.png";
 import DS from "./DS.png";
 import fbtn from "./fbtn.png";
-import softsols from './softsols.png';
+import softsols from "./softsols.png";
+import secBtn from "./secBtn.jpg";
+import secBtn1 from "./secbtn1.png";
 
 export {
+  secBtn,
+  secBtn1,
   softsols,
   fbtn,
   DS,
