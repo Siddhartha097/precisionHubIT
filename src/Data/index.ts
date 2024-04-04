@@ -502,8 +502,27 @@ const FBtnContent = [
   },
 ];
 
+const SecBtnContent = [
+  {
+    label: "Innovative Solutions for Your Software Needs",
+    content:
+      "Our software company offers a range of services to bring your ideas to life. From concept development to implementation, we are here to support you every step of the way.",
+  },
+  {
+    label: "Customized Software Solutions for Your Business",
+    content:
+      "We understand that every business is unique. Our team of experts will work closely with you to create tailored software solutions that meet your specific requirements.",
+  },
+  {
+    label: "Seamless Integration with Existing Systems",
+    content:
+      "Don t let outdated systems hold you back. Our software solutions seamlessly integrate with your existing infrastructure, ensuring smooth operations and enhanced efficiency",
+  },
+];
+
 export {
   FBtnContent,
+  SecBtnContent,
   DataScSupports,
   DataScWorkFlow,
   DataScFeatures,

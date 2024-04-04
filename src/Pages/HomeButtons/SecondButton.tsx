@@ -1,7 +1,10 @@
+import { SecBtnContent } from "@/Data";
 import ContentBox from "@/components/ContentBox";
 import ImageBox from "@/components/ImageBox";
 import { Separator } from "@/components/ui/separator";
 import { secBtn, secBtn1 } from "@/images";
+import { FaSquareCheck } from "react-icons/fa6";
+
 
 const SecondButton = () => {
   return (
@@ -31,14 +34,30 @@ const SecondButton = () => {
 
       <Separator className="my-8" />
 
-      <section>
-        <h1>
+      <section className="flex flex-col items-center justify-between gap-20 max-md:gap-12">
+        <h1 className="text-5xl text-center leading-snug max-md:text-3xl font-bold tracking-tighter">
           Turning your innovative concepts into robust and effective software
           solutions that meet your unique needs and exceed your expectations.
         </h1>
-        <div>
-          <div></div>
-          <ImageBox imgSrc={secBtn1} />
+        <div className="flex items-center justify-between gap-20 max-md:gap-10 max-md:flex-col-reverse">
+          <ul className="md:w-1/2 flex flex-col justify-between gap-8">
+            {SecBtnContent.map((list) => (
+              <li className="flex gap-4">
+                <FaSquareCheck size={35} />
+                <div className="flex flex-col gap-4">
+                  <h1 className="text-2xl font-semibold tracking-tight max-md:text-lg">
+                    {list.label}
+                  </h1>
+                  <p className="max-md:text-sm">{list.content}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+          <ImageBox
+            className="md:w-1/2 flex items-center justify-center"
+            imgClassName="rounded-lg shadow-md border"
+            imgSrc={secBtn1}
+          />
         </div>
       </section>
     </main>
