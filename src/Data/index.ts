@@ -520,7 +520,26 @@ const SecBtnContent = [
   },
 ];
 
+const SecBtnList = [
+  {
+    label: "Submit Your Idea",
+    content:
+      "Share your idea with us by submitting it through our user-friendly platform to connect and collaborate with our company.",
+  },
+  {
+    label: "Project Development",
+    content:
+      "Our team of experienced developers will bring your idea to life, ensuring high-quality and efficient project development.",
+  },
+  {
+    label: "Testing and Refinement",
+    content:
+      "We rigorously test and refine your software project to ensure it meets your requirements and exceeds your expectations.",
+  },
+];
+
 export {
+  SecBtnList,
   FBtnContent,
   SecBtnContent,
   DataScSupports,
