@@ -109,7 +109,10 @@ const App = () => {
 
           {/* buttons */}
           <div className="space-x-4 flex items-center max-md:justify-center ">
-            <MoreBtn variant="default" link="/Transforming%Ideas%into%Powerful%Solutions" />
+            <MoreBtn
+              variant="default"
+              link="/Transforming%Ideas%into%Powerful%Solutions"
+            />
             <Link
               to={"contact"}
               className="p-6 rounded-none border-transparent hover:text-[#c31432] font-semibold"
@@ -197,11 +200,11 @@ const App = () => {
 
       <section className="flex max-md:flex-col-reverse items-center md:*:w-1/2 justify-between gap-20 max-md:gap-7">
         <div className="flex flex-col gap-8 max-md:text-center">
-          <h1 className="text-5xl tracking-wide font-bold max-md:text-3xl">
+          <h1 className="text-5xl tracking-tight leading-snug font-bold max-md:text-3xl">
             Crafting Beautiful Websites to tell Your Unique Story
           </h1>
           <hr />
-          <p className="text-neutral-600 max-md:text-sm font-medium tracking-tight">
+          <p className="text-neutral-600 max-md:text-sm font-medium tracking-wide">
             Hey there! At our company, we're all about helping businesses like
             yours shine online. We believe that every business has a unique
             story to tell, and we're here to help you tell it. Our team
@@ -265,7 +268,7 @@ const App = () => {
       <section className="flex flex-col justify-between gap-20">
         <section className="flex max-md:flex-col items-center justify-between gap-16">
           <div className="flex flex-col gap-14 max-md:gap-8 max-md:text-center">
-            <h1 className="font-semibold text-3xl md:text-5xl">
+            <h1 className="font-semibold text-3xl md:text-5xl leading-normal tracking-tight">
               Stay Updated with the Latest News and Updates from Our Software
               Company
             </h1>

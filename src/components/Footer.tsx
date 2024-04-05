@@ -44,7 +44,7 @@ const Footer = () => {
             <div className="space-y-1">
               <h1 className="font-bold text-3xl">PreciSync</h1>
               <p className="text-xs tracking-widest font-semibold">
-                Precision Hub IT Industries.
+                PrecisionHub IT Industries.
               </p>
             </div>
           </Link>
