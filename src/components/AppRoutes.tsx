@@ -20,6 +20,7 @@ import Page1 from "@/Pages/AboutButtons/Page1";
 import Solutions2 from "@/Pages/Solutions2";
 import FirstButton from "@/Pages/HomeButtons/FirstButton";
 import SecondButton from "@/Pages/HomeButtons/SecondButton";
+import Seemless from "@/Pages/HomeButtons/Seemless";
 // import NewContact from "@/Pages/AboutButtons/NewContact";
 
 const AppRoutes = () => {
@@ -37,7 +38,7 @@ const AppRoutes = () => {
         <Route path="/about/page1" element={<Page1 />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/insights" element={<Blogs />} />
-        <Route path="/insights" element={<Blogs />} />
+        <Route path="/seemless%integration" element={<Seemless />} />
         <Route
           path="/Transforming%Ideas%into%Powerful%Solutions"
           element={<SecondButton />}

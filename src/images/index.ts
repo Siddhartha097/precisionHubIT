@@ -23,8 +23,10 @@ import fbtn from "./fbtn.png";
 import softsols from "./softsols.png";
 import secBtn from "./secBtn.jpg";
 import secBtn1 from "./secbtn1.png";
+import seemless from './seemless.png';
 
 export {
+  seemless,
   secBtn,
   secBtn1,
   softsols,

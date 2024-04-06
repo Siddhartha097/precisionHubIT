@@ -166,6 +166,7 @@ const App = () => {
           iconSize={40}
           descSize="text-base"
           isBtn
+          link="/seemless%integration"
           icon={MdAddModerator}
           bgColor="meridian"
           border="border-meridian"

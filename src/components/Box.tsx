@@ -16,6 +16,7 @@ interface BoxProps {
   iconDisabled?: boolean;
   bgColor?: string;
   border?: string;
+  link?: string;
 }
 
 const Box: React.FC<BoxProps> = ({
@@ -30,6 +31,7 @@ const Box: React.FC<BoxProps> = ({
   bgColor,
   border ,
   icon: Icon = BsBoxFill,
+  link = '#',
 }) => {
   return (
     <main className={className}>
@@ -56,7 +58,7 @@ const Box: React.FC<BoxProps> = ({
           <MoreBtn variant="default" bgColor={bgColor} border={border} label="Get Started" />
           <Link
             className={`font-semibold hover:text-[#c31432] underline`}
-            to={"#"}
+            to={link}
           >
             Learn More
           </Link>

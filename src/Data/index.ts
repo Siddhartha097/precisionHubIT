@@ -538,7 +538,23 @@ const SecBtnList = [
   },
 ];
 
+const SeemlessList =[
+  {
+    label: "Enhance Collaboration and Efficiency",
+    content: "Our seamless integration capabilities enable teams to work together seamlessly, breaking down silos and fostering collaboration. Increase efficiency and achieve better results with integrated workflows",
+  },
+  {
+    label: "Automate Tasks and Save Time",
+    content: "With our software's seamless integration, you can automate repetitive tasks and save valuable time. Focus on what matters most while our integration takes care of the rest",
+  },
+  {
+    label: "Seamless Integration for Enhanced Productivity",
+    content: "Unlock the full potential of your team with our seamless integration capabilities. Boost productivity, streamline processes, and achieve your goals faster.",
+  },
+];
+
 export {
+  SeemlessList,
   SecBtnList,
   FBtnContent,
   SecBtnContent,
