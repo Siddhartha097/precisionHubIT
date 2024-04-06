@@ -553,8 +553,24 @@ const SeemlessList =[
   },
 ];
 
+const SeemlessList2 = [
+  {
+    label: "Submit Your Idea",
+    content: "We offer tailored integration solutions to meet the unique needs of your business. Our team will work closely with you to understand your requirements and deliver a solution that fits perfectly.",
+  },
+  {
+    label: "Project Development",
+    content: "Efficiently exchange data between your software systems with our seamless integration services. Say goodbye to manual data entry and enjoy automated processes.",
+  },
+  {
+    label: "Testing and Refinement",
+    content: "Our integration solutions enable better collaboration and productivity by ensuring smooth communication between your software applications. Experience seamless workflows and improved efficiency.",
+  },
+];
+
 export {
   SeemlessList,
+  SeemlessList2,
   SecBtnList,
   FBtnContent,
   SecBtnContent,
