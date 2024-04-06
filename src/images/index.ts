@@ -26,8 +26,10 @@ import secBtn1 from "./secbtn1.png";
 import seemless from './seemless.png';
 import simplify from './simplAplif.png';
 import simplApli from './simplAplif.webp';
+import efficiency from './efficiency.jpg';
 
 export {
+  efficiency,
   seemless,
   simplApli,
   simplify,
