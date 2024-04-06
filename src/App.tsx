@@ -180,6 +180,7 @@ const App = () => {
           iconSize={40}
           descSize="text-base"
           isBtn
+          link="/simplify%to%amplify"
           bgColor="unknown"
           border="border-unknown"
           icon={MdAppSettingsAlt}
@@ -190,6 +191,7 @@ const App = () => {
           desc="Unleash the Power of Our Advanced Software Tools for Streamlined Processes!"
           className="flex flex-col items-center justify-center space-y-5 text-center basis-1/3"
           titleSize="text-3xl"
+          link="/elevate%efficiency"
           iconSize={40}
           icon={MdAutoMode}
           descSize="text-base"

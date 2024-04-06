@@ -6,6 +6,8 @@ interface ContentBoxProps {
   content?: string;
   img?: string;
   reverse?: boolean;
+  children?: React.ReactNode;
+  isChildren?: boolean;
 }
 
 const ContentBox: React.FC<ContentBoxProps> = ({
@@ -13,6 +15,8 @@ const ContentBox: React.FC<ContentBoxProps> = ({
   content,
   img = softsols,
   reverse,
+  isChildren,
+  children,
 }) => {
   return (
     <section
@@ -27,6 +31,9 @@ const ContentBox: React.FC<ContentBoxProps> = ({
         <p className=" tracking-wide leading-normal max-md:text-sm">
           {content}
         </p>
+        <div className={`${!isChildren && 'hidden'}`}>
+          {children}
+        </div>
       </div>
       <ImageBox
         imgSrc={img}

@@ -24,9 +24,13 @@ import softsols from "./softsols.png";
 import secBtn from "./secBtn.jpg";
 import secBtn1 from "./secbtn1.png";
 import seemless from './seemless.png';
+import simplify from './simplAplif.png';
+import simplApli from './simplAplif.webp';
 
 export {
   seemless,
+  simplApli,
+  simplify,
   secBtn,
   secBtn1,
   softsols,

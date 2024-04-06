@@ -21,6 +21,8 @@ import Solutions2 from "@/Pages/Solutions2";
 import FirstButton from "@/Pages/HomeButtons/FirstButton";
 import SecondButton from "@/Pages/HomeButtons/SecondButton";
 import Seemless from "@/Pages/HomeButtons/Seemless";
+import Simplify from "@/Pages/HomeButtons/Simplify";
+import Elevate from "@/Pages/HomeButtons/Elevate";
 // import NewContact from "@/Pages/AboutButtons/NewContact";
 
 const AppRoutes = () => {
@@ -39,6 +41,8 @@ const AppRoutes = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/insights" element={<Blogs />} />
         <Route path="/seemless%integration" element={<Seemless />} />
+        <Route path="/simplify%to%amplify" element={<Simplify />} />
+        <Route path="/elevate%efficiency" element={<Elevate />} />
         <Route
           path="/Transforming%Ideas%into%Powerful%Solutions"
           element={<SecondButton />}

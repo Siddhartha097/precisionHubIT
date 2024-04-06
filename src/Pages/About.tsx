@@ -134,24 +134,6 @@ const About = () => {
         </div>
 
         <div className="flex gap-8">
-          {/* <div className="gap-20 flex flex-col items-center">
-            <div className="flex flex-col items-center space-y-8">
-              <BsBoxFill size={30} />
-              <div className="h-[2px] w-[50px] bg-black rotate-90" />
-            </div>
-            <div className="flex flex-col items-center space-y-8">
-              <BsBoxFill size={30} />
-              <div className="h-[2px] w-[50px] bg-black rotate-90" />
-            </div>
-            <div className="flex flex-col items-center space-y-8">
-              <BsBoxFill size={30} />
-              <div className="h-[2px] w-[50px] bg-black rotate-90" />
-            </div>
-            <div className="flex flex-col items-center space-y-8">
-              <BsBoxFill size={30} />
-              <div className="h-[2px] w-[50px] bg-black rotate-90" />
-            </div>
-          </div> */}
           <div className="space-y-10">
             {WorkFlow.map((work) => (
               <div className="flex items-center justify-between gap-14">

@@ -568,7 +568,47 @@ const SeemlessList2 = [
   },
 ];
 
+const SimplifyList = [
+  {
+    label: 'Streamline Your Workflow',
+    content: 'Effortlessly manage tasks, projects, and deadlines.',
+  },
+  {
+    label: 'Seamless Integration',
+    content: 'Connect with your favorite tools and platforms.',
+  },
+  {
+    label: 'Increase Collaboration',
+    content: 'Work together in real time, from anywhere.',
+  },
+];
+
+const SimplifyList2 = [
+  {
+    id: 1,
+    label: "Increase Efficiency",
+    content: "Implement Simplify to Amplify in your company's workflow to increase efficiency",
+  },
+  {
+    id: 2,
+    label: "Improve Productivity",
+    content: "Utilize Simplify to Amplify to improve productivity and streamline your processes.",
+  },
+  {
+    id: 3,
+    label: "Optimize Performance",
+    content: "Optimize performance by integrating Simplify to Amplify into your workflow.",
+  },
+  {
+    id: 4,
+    label: "Achieve Success",
+    content: "With Simplify to Amplify, you can achieve success and take your company to new heights.",
+  },
+];
+
 export {
+  SimplifyList,
+  SimplifyList2,
   SeemlessList,
   SeemlessList2,
   SecBtnList,
