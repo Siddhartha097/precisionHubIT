@@ -1,6 +1,8 @@
 import {
+  Elevate,
   JAVA,
   LM,
+  Productivity,
   QA,
   RD,
   dev,
@@ -538,48 +540,54 @@ const SecBtnList = [
   },
 ];
 
-const SeemlessList =[
+const SeemlessList = [
   {
     label: "Enhance Collaboration and Efficiency",
-    content: "Our seamless integration capabilities enable teams to work together seamlessly, breaking down silos and fostering collaboration. Increase efficiency and achieve better results with integrated workflows",
+    content:
+      "Our seamless integration capabilities enable teams to work together seamlessly, breaking down silos and fostering collaboration. Increase efficiency and achieve better results with integrated workflows",
   },
   {
     label: "Automate Tasks and Save Time",
-    content: "With our software's seamless integration, you can automate repetitive tasks and save valuable time. Focus on what matters most while our integration takes care of the rest",
+    content:
+      "With our software's seamless integration, you can automate repetitive tasks and save valuable time. Focus on what matters most while our integration takes care of the rest",
   },
   {
     label: "Seamless Integration for Enhanced Productivity",
-    content: "Unlock the full potential of your team with our seamless integration capabilities. Boost productivity, streamline processes, and achieve your goals faster.",
+    content:
+      "Unlock the full potential of your team with our seamless integration capabilities. Boost productivity, streamline processes, and achieve your goals faster.",
   },
 ];
 
 const SeemlessList2 = [
   {
     label: "Submit Your Idea",
-    content: "We offer tailored integration solutions to meet the unique needs of your business. Our team will work closely with you to understand your requirements and deliver a solution that fits perfectly.",
+    content:
+      "We offer tailored integration solutions to meet the unique needs of your business. Our team will work closely with you to understand your requirements and deliver a solution that fits perfectly.",
   },
   {
     label: "Project Development",
-    content: "Efficiently exchange data between your software systems with our seamless integration services. Say goodbye to manual data entry and enjoy automated processes.",
+    content:
+      "Efficiently exchange data between your software systems with our seamless integration services. Say goodbye to manual data entry and enjoy automated processes.",
   },
   {
     label: "Testing and Refinement",
-    content: "Our integration solutions enable better collaboration and productivity by ensuring smooth communication between your software applications. Experience seamless workflows and improved efficiency.",
+    content:
+      "Our integration solutions enable better collaboration and productivity by ensuring smooth communication between your software applications. Experience seamless workflows and improved efficiency.",
   },
 ];
 
 const SimplifyList = [
   {
-    label: 'Streamline Your Workflow',
-    content: 'Effortlessly manage tasks, projects, and deadlines.',
+    label: "Streamline Your Workflow",
+    content: "Effortlessly manage tasks, projects, and deadlines.",
   },
   {
-    label: 'Seamless Integration',
-    content: 'Connect with your favorite tools and platforms.',
+    label: "Seamless Integration",
+    content: "Connect with your favorite tools and platforms.",
   },
   {
-    label: 'Increase Collaboration',
-    content: 'Work together in real time, from anywhere.',
+    label: "Increase Collaboration",
+    content: "Work together in real time, from anywhere.",
   },
 ];
 
@@ -587,26 +595,79 @@ const SimplifyList2 = [
   {
     id: 1,
     label: "Increase Efficiency",
-    content: "Implement Simplify to Amplify in your company's workflow to increase efficiency",
+    content:
+      "Implement Simplify to Amplify in your company's workflow to increase efficiency",
   },
   {
     id: 2,
     label: "Improve Productivity",
-    content: "Utilize Simplify to Amplify to improve productivity and streamline your processes.",
+    content:
+      "Utilize Simplify to Amplify to improve productivity and streamline your processes.",
   },
   {
     id: 3,
     label: "Optimize Performance",
-    content: "Optimize performance by integrating Simplify to Amplify into your workflow.",
+    content:
+      "Optimize performance by integrating Simplify to Amplify into your workflow.",
   },
   {
     id: 4,
     label: "Achieve Success",
-    content: "With Simplify to Amplify, you can achieve success and take your company to new heights.",
+    content:
+      "With Simplify to Amplify, you can achieve success and take your company to new heights.",
   },
 ];
 
+const ElevateListU = [
+  {
+    label: "Save Time",
+    content:
+      "Automate repetitive tasks and streamline your workflow for increased productivity",
+  },
+  {
+    label: "Reduce Errors",
+    content:
+      "Eliminate manual data entry and minimize the risk of costly mistakes",
+  },
+];
+
+const ElevateListL = [
+  {
+    label: "Real-time",
+    content:
+      "Collaborate seamlessly with your team, ensuring everyone is on the same page and working together towards success.",
+  },
+  {
+    label: "Task Management",
+    content:
+      "Stay organized and prioritize tasks effectively with our intuitive task management features.",
+  },
+];
+
+const ElevateList = [
+  {
+    title:
+      "Easily integrate our solutions to simplify and improve your workflow.",
+    subTitle:
+      "Discover our software's powerful automation features that save time and eliminate manual errors",
+    id: 1,
+    img: Elevate,
+    list: ElevateListU
+  },
+  {
+    title: "Enhance Team Productivity with Collaboration Tools",
+    subTitle:
+      "Our software provides a range of collaboration tools designed to boost team productivity and streamline workflows. From real-time document editing to task management, our platform has everything you need to work efficiently.",
+    id: 1,
+    img: Productivity,
+    list: ElevateListL,
+  },
+];
+
+
+
 export {
+  ElevateList,
   SimplifyList,
   SimplifyList2,
   SeemlessList,

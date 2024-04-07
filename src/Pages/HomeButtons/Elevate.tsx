@@ -1,4 +1,6 @@
+import { ElevateList } from "@/Data";
 import ContentBox from "@/components/ContentBox";
+import ListBox from "@/components/ListBox";
 import { Separator } from "@/components/ui/separator";
 import { efficiency } from "@/images";
 
@@ -20,7 +22,7 @@ const Elevate = () => {
             capabilities. Make data-driven decisions faster and more
             effectively.
           </h1>
-          <ol className="space-y-4 *:list-decimal pl-4 *:tracking-wide">
+          <ol className="space-y-4 *:list-decimal pl-4 *:tracking-tight font-medium text-purple-600">
             <li>Track performance metrics in real-time</li>
             <li>Visualize data with interactive charts and graphs</li>
             <li>Work together in real-time, from anywhere.</li>
@@ -29,6 +31,29 @@ const Elevate = () => {
       </ContentBox>
 
       <Separator className="my-8" />
+
+      <div className={`flex flex-col gap-20 items-center text-center leading-tight`}>
+        {ElevateList.map((List) => (
+          <ContentBox
+            label={List.title}
+            content={List.subTitle}
+            img={List.img}
+            isChildren
+          >
+            <div className="flex *:basis-1/2 gap-12 max-md:gap-6 leading-normal justify-between">
+              {List.list.map((item) => (
+                <ListBox
+                  seeIcon
+                  label={item.label}
+                  content={item.content}
+                  titleClass="text-rose-500 font-extrabold tracking-tighter"
+                  contentClass="text-purple-500 font-medium tracking-tight"
+                />
+              ))}
+            </div>
+          </ContentBox>
+        ))}
+      </div>
     </div>
   );
 };
