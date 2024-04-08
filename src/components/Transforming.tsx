@@ -10,7 +10,7 @@ const Transforming = () => {
         Discover innovative software solutions that streamline your business
         operations.
       </p>
-      <MoreBtn label="Learn More" link="/Researchlearnmorela" />
+      <MoreBtn label="Learn More" link="/transforming%business" />
     </section>
   );
 };

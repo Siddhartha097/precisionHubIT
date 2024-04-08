@@ -1,6 +1,8 @@
 import {
+  Elevate,
   JAVA,
   LM,
+  Productivity,
   QA,
   RD,
   dev,
@@ -489,7 +491,226 @@ const DataScSupports = [
   },
 ];
 
+const FBtnContent = [
+  {
+    label: "Streamline operations and increase efficiency with our software.",
+  },
+  {
+    label:
+      "Unlock new opportunities and drive growth with our innovative solutions.",
+  },
+  {
+    label: "Stay ahead of the competition with our industry-leading software.",
+  },
+];
+
+const SecBtnContent = [
+  {
+    label: "Innovative Solutions for Your Software Needs",
+    content:
+      "Our software company offers a range of services to bring your ideas to life. From concept development to implementation, we are here to support you every step of the way.",
+  },
+  {
+    label: "Customized Software Solutions for Your Business",
+    content:
+      "We understand that every business is unique. Our team of experts will work closely with you to create tailored software solutions that meet your specific requirements.",
+  },
+  {
+    label: "Seamless Integration with Existing Systems",
+    content:
+      "Don t let outdated systems hold you back. Our software solutions seamlessly integrate with your existing infrastructure, ensuring smooth operations and enhanced efficiency",
+  },
+];
+
+const SecBtnList = [
+  {
+    label: "Submit Your Idea",
+    content:
+      "Share your idea with us by submitting it through our user-friendly platform to connect and collaborate with our company.",
+  },
+  {
+    label: "Project Development",
+    content:
+      "Our team of experienced developers will bring your idea to life, ensuring high-quality and efficient project development.",
+  },
+  {
+    label: "Testing and Refinement",
+    content:
+      "We rigorously test and refine your software project to ensure it meets your requirements and exceeds your expectations.",
+  },
+];
+
+const SeemlessList = [
+  {
+    label: "Enhance Collaboration and Efficiency",
+    content:
+      "Our seamless integration capabilities enable teams to work together seamlessly, breaking down silos and fostering collaboration. Increase efficiency and achieve better results with integrated workflows",
+  },
+  {
+    label: "Automate Tasks and Save Time",
+    content:
+      "With our software's seamless integration, you can automate repetitive tasks and save valuable time. Focus on what matters most while our integration takes care of the rest",
+  },
+  {
+    label: "Seamless Integration for Enhanced Productivity",
+    content:
+      "Unlock the full potential of your team with our seamless integration capabilities. Boost productivity, streamline processes, and achieve your goals faster.",
+  },
+];
+
+const SeemlessList2 = [
+  {
+    label: "Submit Your Idea",
+    content:
+      "We offer tailored integration solutions to meet the unique needs of your business. Our team will work closely with you to understand your requirements and deliver a solution that fits perfectly.",
+  },
+  {
+    label: "Project Development",
+    content:
+      "Efficiently exchange data between your software systems with our seamless integration services. Say goodbye to manual data entry and enjoy automated processes.",
+  },
+  {
+    label: "Testing and Refinement",
+    content:
+      "Our integration solutions enable better collaboration and productivity by ensuring smooth communication between your software applications. Experience seamless workflows and improved efficiency.",
+  },
+];
+
+const SimplifyList = [
+  {
+    label: "Streamline Your Workflow",
+    content: "Effortlessly manage tasks, projects, and deadlines.",
+  },
+  {
+    label: "Seamless Integration",
+    content: "Connect with your favorite tools and platforms.",
+  },
+  {
+    label: "Increase Collaboration",
+    content: "Work together in real time, from anywhere.",
+  },
+];
+
+const SimplifyList2 = [
+  {
+    id: 1,
+    label: "Increase Efficiency",
+    content:
+      "Implement Simplify to Amplify in your company's workflow to increase efficiency",
+  },
+  {
+    id: 2,
+    label: "Improve Productivity",
+    content:
+      "Utilize Simplify to Amplify to improve productivity and streamline your processes.",
+  },
+  {
+    id: 3,
+    label: "Optimize Performance",
+    content:
+      "Optimize performance by integrating Simplify to Amplify into your workflow.",
+  },
+  {
+    id: 4,
+    label: "Achieve Success",
+    content:
+      "With Simplify to Amplify, you can achieve success and take your company to new heights.",
+  },
+];
+
+const ElevateListU = [
+  {
+    label: "Save Time",
+    content:
+      "Automate repetitive tasks and streamline your workflow for increased productivity",
+  },
+  {
+    label: "Reduce Errors",
+    content:
+      "Eliminate manual data entry and minimize the risk of costly mistakes",
+  },
+];
+
+const ElevateListL = [
+  {
+    label: "Real-time",
+    content:
+      "Collaborate seamlessly with your team, ensuring everyone is on the same page and working together towards success.",
+  },
+  {
+    label: "Task Management",
+    content:
+      "Stay organized and prioritize tasks effectively with our intuitive task management features.",
+  },
+];
+
+const ElevateList = [
+  {
+    title:
+      "Easily integrate our solutions to simplify and improve your workflow.",
+    subTitle:
+      "Discover our software's powerful automation features that save time and eliminate manual errors",
+    id: 1,
+    img: Elevate,
+    list: ElevateListU,
+  },
+  {
+    title: "Enhance Team Productivity with Collaboration Tools",
+    subTitle:
+      "Our software provides a range of collaboration tools designed to boost team productivity and streamline workflows. From real-time document editing to task management, our platform has everything you need to work efficiently.",
+    id: 1,
+    img: Productivity,
+    list: ElevateListL,
+  },
+];
+
+const TransformingList = [
+  {
+    title: "Transformative Features Highlighted",
+    subtitle:
+      "Discover the top three transformative features of our software that will revolutionize your workflow. ",
+  },
+  {
+    title: "Streamline Your Processes",
+    subtitle:
+      "Our software simplifies complex tasks, automates repetitive processes, and improves overall efficiency.",
+  },
+  {
+    title: "Enhance Collaboration",
+    subtitle:
+      "Collaborate seamlessly with your team, share files, and communicate in real time for increased productivity. ",
+  },
+];
+
+const TransformingList2 = [
+  {
+    label: "Streamline Your Workflow with the Transforming Software Solution",
+    content:
+      "The transforming software solution simplifies and automates your business processes, saving you time and effort.",
+  },
+  {
+    label: "Optimize Your Operations with the Transforming Software Solution ",
+    content:
+      "With the transforming software solution, you can easily manage and track your business activities.",
+  },
+  {
+    label: "Increase Efficiency with the Transforming Software Solution",
+    content:
+      "The transforming software solution empowers your team to work smarter and achieve better results.",
+  },
+];
+
 export {
+  TransformingList,
+  TransformingList2,
+  ElevateList,
+  SimplifyList,
+  SimplifyList2,
+  SeemlessList,
+  SeemlessList2,
+  SecBtnList,
+  FBtnContent,
+  SecBtnContent,
   DataScSupports,
   DataScWorkFlow,
   DataScFeatures,

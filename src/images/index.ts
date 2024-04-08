@@ -19,8 +19,30 @@ import reactNative from "./reactNative.png";
 import objC from "./objC.png";
 import swift from "./swift.png";
 import DS from "./DS.png";
+import fbtn from "./fbtn.png";
+import softsols from "./softsols.png";
+import secBtn from "./secBtn.jpg";
+import secBtn1 from "./secbtn1.png";
+import seemless from "./seemless.png";
+import simplify from "./simplAplif.png";
+import simplApli from "./simplAplif.webp";
+import efficiency from "./efficiency.jpg";
+import Productivity from "./Productivity.png";
+import Elevate from "./Elevate.webp";
+import Transforming from './transforming.png';
 
 export {
+  Elevate,
+  Transforming,
+  Productivity,
+  efficiency,
+  seemless,
+  simplApli,
+  simplify,
+  secBtn,
+  secBtn1,
+  softsols,
+  fbtn,
   DS,
   swift,
   objC,

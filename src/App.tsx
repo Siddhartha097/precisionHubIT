@@ -54,7 +54,10 @@ const App = () => {
           solutions to help businesses <div className="p-1" /> thrive in the
           digital age.
         </p>
-        <MoreBtn variant="default" link="/learn" />
+        <MoreBtn
+          variant="default"
+          link="/Transforming%businesses%with%innovative%software%solutions"
+        />
       </section>
 
       {/* 2nd */}
@@ -106,7 +109,10 @@ const App = () => {
 
           {/* buttons */}
           <div className="space-x-4 flex items-center max-md:justify-center ">
-            <MoreBtn variant="default" link="/learn" />
+            <MoreBtn
+              variant="default"
+              link="/Transforming%Ideas%into%Powerful%Solutions"
+            />
             <Link
               to={"contact"}
               className="p-6 rounded-none border-transparent hover:text-[#c31432] font-semibold"
@@ -160,6 +166,7 @@ const App = () => {
           iconSize={40}
           descSize="text-base"
           isBtn
+          link="/seemless%integration"
           icon={MdAddModerator}
           bgColor="meridian"
           border="border-meridian"
@@ -173,6 +180,7 @@ const App = () => {
           iconSize={40}
           descSize="text-base"
           isBtn
+          link="/simplify%to%amplify"
           bgColor="unknown"
           border="border-unknown"
           icon={MdAppSettingsAlt}
@@ -183,6 +191,7 @@ const App = () => {
           desc="Unleash the Power of Our Advanced Software Tools for Streamlined Processes!"
           className="flex flex-col items-center justify-center space-y-5 text-center basis-1/3"
           titleSize="text-3xl"
+          link="/elevate%efficiency"
           iconSize={40}
           icon={MdAutoMode}
           descSize="text-base"
@@ -194,11 +203,11 @@ const App = () => {
 
       <section className="flex max-md:flex-col-reverse items-center md:*:w-1/2 justify-between gap-20 max-md:gap-7">
         <div className="flex flex-col gap-8 max-md:text-center">
-          <h1 className="text-5xl tracking-wide font-bold max-md:text-3xl">
+          <h1 className="text-5xl tracking-tight leading-snug font-bold max-md:text-3xl">
             Crafting Beautiful Websites to tell Your Unique Story
           </h1>
           <hr />
-          <p className="text-neutral-600 max-md:text-sm font-medium tracking-tight">
+          <p className="text-neutral-600 max-md:text-sm font-medium tracking-wide">
             Hey there! At our company, we're all about helping businesses like
             yours shine online. We believe that every business has a unique
             story to tell, and we're here to help you tell it. Our team
@@ -242,14 +251,14 @@ const App = () => {
         </div>
 
         {/* non-image */}
-        <div className="space-y-8 md:w-2/3 max-md:text-center">
+        <div className=" flex items-center justify-between gap-20 max-md:gap-10 flex-col md:w-2/3 max-md:text-center">
           {Supports.map((support) => (
             <div className="space-y-5">
-              <h1 className="text-3xl font-bold max-md:text-2xl">
+              <h1 className="text-4xl font-bold max-md:text-2xl">
                 {support.label}
               </h1>
               <hr />
-              <p className="text-sm font-medium text-neutral-500 max-md:text-xs">
+              <p className=" font-medium text-neutral-500 max-md:text-sm">
                 {support.desc}
               </p>
             </div>
@@ -262,12 +271,12 @@ const App = () => {
       <section className="flex flex-col justify-between gap-20">
         <section className="flex max-md:flex-col items-center justify-between gap-16">
           <div className="flex flex-col gap-14 max-md:gap-8 max-md:text-center">
-            <h1 className="font-semibold text-3xl md:text-5xl">
+            <h1 className="font-semibold text-3xl md:text-5xl tracking-tight leading-snug">
               Stay Updated with the Latest News and Updates from Our Software
               Company
             </h1>
-            <hr />
-            <p className="font-medium max-md:text-sm text-slate-600">
+           
+            <p className="font-medium max-md:text-sm text-slate-600 tracking-tight">
               Discover the latest developments, product releases, and industry
               insights in the world of software.
             </p>
@@ -276,13 +285,13 @@ const App = () => {
                 label="Product Launch"
                 desc="Introducing our new software solution that streamlines your workflow and boosts productivity."
                 iconDisabled
-                className="flex flex-col max-md:text-center gap-6"
+                className="flex flex-col max-md:text-center gap-6 tracking-wide"
               />
               <Box
                 label="Industry"
                 desc="Explore the latest trends and innovations shaping the software industry."
                 iconDisabled
-                className="flex flex-col max-md:text-center gap-6"
+                className="flex flex-col max-md:text-center gap-6 tracking-wide"
               />
             </div>
           </div>
