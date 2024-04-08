@@ -160,7 +160,7 @@ const Sols = [
     content:
       "Our solutions are designed to meet your specific needs, ensuring seamless implementation and maximum efficiency.",
     button: "Learn More",
-    link: "learn",
+    link: "/about/page1",
     imgSrc:
       "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
@@ -169,7 +169,7 @@ const Sols = [
     content:
       "We work closely with you to understand your challenges and provide customized solutions that drive results.",
     button: "Contact Us",
-    link: "contact",
+    link: "/contact",
     imgSrc:
       "https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
@@ -178,7 +178,7 @@ const Sols = [
     content:
       "Our team of experts will guide you through the implementation process, ensuring a smooth transition and optimal performance.",
     button: "Get Started",
-    link: "#",
+    link: "/contact",
     imgSrc:
       "https://images.unsplash.com/photo-1527689368864-3a821dbccc34?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },

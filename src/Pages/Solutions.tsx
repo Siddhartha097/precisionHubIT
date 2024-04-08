@@ -29,7 +29,7 @@ const Solutions = () => {
         <HeroBox
           title="Transforming Businesses with Innovative Solutions"
           subTitle="Discover how our cutting-edge solutions can revolutionize your business and drive growth."
-          btnName="Learn More"
+          btnName="Learn More" link="/Solutions2"
           headingClass="bg-gradient-to-l from-[#c33765] to-[#1d2678] text-transparent bg-clip-text"
         />
       </section>
