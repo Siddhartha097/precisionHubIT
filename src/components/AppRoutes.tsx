@@ -24,6 +24,7 @@ import Seemless from "@/Pages/HomeButtons/Seemless";
 import Simplify from "@/Pages/HomeButtons/Simplify";
 import Elevate from "@/Pages/HomeButtons/Elevate";
 import TransFormingBusiness from "@/Pages/TransFormingBusiness";
+import Page2 from "@/Pages/AboutButtons/Page2";
 // import NewContact from "@/Pages/AboutButtons/NewContact";
 
 const AppRoutes = () => {
@@ -39,6 +40,7 @@ const AppRoutes = () => {
         <Route path="/learn" element={<Learn />} />
         <Route path="/about" element={<About />} />
         <Route path="/about/page1" element={<Page1 />} />
+        <Route path="/about/page2" element={<Page2/>}/>
         <Route path="/contact" element={<Contact />} />
         <Route path="/insights" element={<Blogs />} />
         <Route path="/seemless%integration" element={<Seemless />} />
