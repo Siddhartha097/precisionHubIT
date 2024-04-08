@@ -251,14 +251,14 @@ const App = () => {
         </div>
 
         {/* non-image */}
-        <div className="space-y-8 md:w-2/3 max-md:text-center">
+        <div className=" flex items-center justify-between gap-20 max-md:gap-10 flex-col md:w-2/3 max-md:text-center">
           {Supports.map((support) => (
             <div className="space-y-5">
-              <h1 className="text-3xl font-bold max-md:text-2xl">
+              <h1 className="text-4xl font-bold max-md:text-2xl">
                 {support.label}
               </h1>
               <hr />
-              <p className="text-sm font-medium text-neutral-500 max-md:text-xs">
+              <p className=" font-medium text-neutral-500 max-md:text-sm">
                 {support.desc}
               </p>
             </div>
@@ -271,12 +271,12 @@ const App = () => {
       <section className="flex flex-col justify-between gap-20">
         <section className="flex max-md:flex-col items-center justify-between gap-16">
           <div className="flex flex-col gap-14 max-md:gap-8 max-md:text-center">
-            <h1 className="font-semibold text-3xl md:text-5xl leading-normal tracking-tight">
+            <h1 className="font-semibold text-3xl md:text-5xl tracking-tight leading-snug">
               Stay Updated with the Latest News and Updates from Our Software
               Company
             </h1>
-            <hr />
-            <p className="font-medium max-md:text-sm text-slate-600">
+           
+            <p className="font-medium max-md:text-sm text-slate-600 tracking-tight">
               Discover the latest developments, product releases, and industry
               insights in the world of software.
             </p>
@@ -285,13 +285,13 @@ const App = () => {
                 label="Product Launch"
                 desc="Introducing our new software solution that streamlines your workflow and boosts productivity."
                 iconDisabled
-                className="flex flex-col max-md:text-center gap-6"
+                className="flex flex-col max-md:text-center gap-6 tracking-wide"
               />
               <Box
                 label="Industry"
                 desc="Explore the latest trends and innovations shaping the software industry."
                 iconDisabled
-                className="flex flex-col max-md:text-center gap-6"
+                className="flex flex-col max-md:text-center gap-6 tracking-wide"
               />
             </div>
           </div>

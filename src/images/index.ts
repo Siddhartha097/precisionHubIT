@@ -29,9 +29,11 @@ import simplApli from "./simplAplif.webp";
 import efficiency from "./efficiency.jpg";
 import Productivity from "./Productivity.png";
 import Elevate from "./Elevate.webp";
+import Transforming from './transforming.png';
 
 export {
   Elevate,
+  Transforming,
   Productivity,
   efficiency,
   seemless,

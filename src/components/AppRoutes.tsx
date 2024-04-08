@@ -23,6 +23,7 @@ import SecondButton from "@/Pages/HomeButtons/SecondButton";
 import Seemless from "@/Pages/HomeButtons/Seemless";
 import Simplify from "@/Pages/HomeButtons/Simplify";
 import Elevate from "@/Pages/HomeButtons/Elevate";
+import TransFormingBusiness from "@/Pages/TransFormingBusiness";
 // import NewContact from "@/Pages/AboutButtons/NewContact";
 
 const AppRoutes = () => {
@@ -43,6 +44,7 @@ const AppRoutes = () => {
         <Route path="/seemless%integration" element={<Seemless />} />
         <Route path="/simplify%to%amplify" element={<Simplify />} />
         <Route path="/elevate%efficiency" element={<Elevate />} />
+        <Route path="/transforming%business" element={<TransFormingBusiness />} />
         <Route
           path="/Transforming%Ideas%into%Powerful%Solutions"
           element={<SecondButton />}

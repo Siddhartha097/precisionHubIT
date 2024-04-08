@@ -26,7 +26,7 @@ const ListBox: React.FC<ListBoxProps> = ({
     <div className={`flex gap-4 ${className}`}>
       <Icon className={`${seeIcon && "hidden"}`} size={size} />
       <div className="flex flex-col gap-4">
-        <h1 className={`text-2xl font-semibold tracking-tight max-md:text-lg ${titleClass}`}>
+        <h1 className={`text-xl tracking-tight max-md:text-lg ${titleClass}`}>
           {label}
         </h1>
         <p className={`max-md:text-sm ${contentClass}`}>{content}</p>

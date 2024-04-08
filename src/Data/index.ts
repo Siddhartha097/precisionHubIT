@@ -652,7 +652,7 @@ const ElevateList = [
       "Discover our software's powerful automation features that save time and eliminate manual errors",
     id: 1,
     img: Elevate,
-    list: ElevateListU
+    list: ElevateListU,
   },
   {
     title: "Enhance Team Productivity with Collaboration Tools",
@@ -664,9 +664,45 @@ const ElevateList = [
   },
 ];
 
+const TransformingList = [
+  {
+    title: "Transformative Features Highlighted",
+    subtitle:
+      "Discover the top three transformative features of our software that will revolutionize your workflow. ",
+  },
+  {
+    title: "Streamline Your Processes",
+    subtitle:
+      "Our software simplifies complex tasks, automates repetitive processes, and improves overall efficiency.",
+  },
+  {
+    title: "Enhance Collaboration",
+    subtitle:
+      "Collaborate seamlessly with your team, share files, and communicate in real time for increased productivity. ",
+  },
+];
 
+const TransformingList2 = [
+  {
+    label: "Streamline Your Workflow with the Transforming Software Solution",
+    content:
+      "The transforming software solution simplifies and automates your business processes, saving you time and effort.",
+  },
+  {
+    label: "Optimize Your Operations with the Transforming Software Solution ",
+    content:
+      "With the transforming software solution, you can easily manage and track your business activities.",
+  },
+  {
+    label: "Increase Efficiency with the Transforming Software Solution",
+    content:
+      "The transforming software solution empowers your team to work smarter and achieve better results.",
+  },
+];
 
 export {
+  TransformingList,
+  TransformingList2,
   ElevateList,
   SimplifyList,
   SimplifyList2,
