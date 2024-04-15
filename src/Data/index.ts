@@ -234,7 +234,7 @@ const workServices = [
   },
   {
     label: "FAQ",
-    link: "#",
+    link: "#faq",
   },
   {
     label: "Insights",

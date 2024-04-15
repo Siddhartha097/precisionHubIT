@@ -275,7 +275,7 @@ const App = () => {
               Stay Updated with the Latest News and Updates from Our Software
               Company
             </h1>
-           
+
             <p className="font-medium max-md:text-sm text-slate-600 tracking-tight">
               Discover the latest developments, product releases, and industry
               insights in the world of software.
@@ -329,7 +329,10 @@ const App = () => {
 
       <Separator className="my-10" />
 
-      <Faq />
+      <div id="#faq">
+        <Faq />
+      </div>
+      {/* <Faq /> */}
     </main>
   );
 };

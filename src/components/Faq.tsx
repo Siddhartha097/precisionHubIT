@@ -9,7 +9,7 @@ import {
 
 const Faq = () => {
   return (
-    <section className="flex flex-col items-center space-y-6 justify-between">
+    <section id="faq" className="flex flex-col items-center space-y-6 justify-between">
       <div className="space-y-6 text-center">
         <h1 className="text-5xl font-bold max-md:text-3xl">
           Frquently Asked Questions
