@@ -146,7 +146,7 @@ const Contact = () => {
                   render={({ field }) => (
                     <FormItem>
                       <Label className="font-normal" htmlFor="text">
-                        Zood ID
+                        Zoom ID
                       </Label>
                       <FormControl>
                         <Input
