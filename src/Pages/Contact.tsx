@@ -15,8 +15,10 @@ import { Textarea } from "@/components/ui/textarea";
 import { Separator } from "@/components/ui/separator";
 import { Checkbox } from "@/components/ui/checkbox";
 import MoreBtn from "@/components/MoreBtn";
-import { PhoneInput } from "@/components/PhoneInput";
-// import { useState } from "react";
+// import { PhoneInput } from "@/components/PhoneInput";
+import PhoneInput from "react-phone-input-2";
+import { useState } from "react";
+import 'react-phone-input-2/lib/style.css'
 
 const FormSchema = z.object({
   name: z.string(),
@@ -38,7 +40,7 @@ const Contact = () => {
     },
   });
 
-  // const [value, setValue] = useState();
+  const [value, setValue] = useState("in");
 
   const onSubmit = (values: z.infer<typeof FormSchema>) => {
     console.log(values);
@@ -122,9 +124,38 @@ const Contact = () => {
                     </FormItem>
                   )}
                 />
-                <PhoneInput
-                  defaultCountry="IN"
+                {/* <PhoneInput
+                  value={value}
                   international
+                  onChange={(country) => {
+                    setValue(country);
+                  }}
+                /> */}
+
+                <FormField
+                  control={contactForm.control}
+                  name="phoneNumber"
+                  render={() => (
+                    <FormItem>
+                      <Label className="font-normal" htmlFor="text">
+                        Phone
+                      </Label>
+                      <FormControl>
+                        <PhoneInput
+                          country={value}
+                          placeholder="Enter your phone number"
+                          onChange={(country) => {
+                            setValue(country);
+                          }}
+                          countryCodeEditable={false}
+                          inputClass="rounded-none p-4 font-medium max-md:text-sm border-2 focus-within:border-none transition-all border-black"
+                          containerClass="w-full border-black font-bold"
+                          buttonClass="border border-black"
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
                 />
 
                 {/* Message */}
